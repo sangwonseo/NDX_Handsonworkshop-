@@ -59,6 +59,7 @@ data:
 NAME    TYPE           CLUSTER-IP      EXTERNAL-IP       PORT(S)        AGE
 ghost   LoadBalancer   10.255.100.23   115.144.174.247   80:31435/TCP   4h36</code></pre> 
 <blockquote>
-<p><strong>해당 Service 향후 Task 2 POD 배포시 사용될 예정</strong></p>
+<p><strong>해당 Service는 향후 Task 2 POD 배포시 사용될 예정</strong></p>
 </blockquote>
+<p><a href="https://github.com/netappkr/NDX_Handsonworkshop-/">메인 메뉴로 이동</a></p>
 
