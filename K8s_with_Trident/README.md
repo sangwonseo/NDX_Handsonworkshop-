@@ -141,7 +141,7 @@ spec:
 
 On-premise의 Linux서버에 Mount 되어 있는 Legacy NAS 스토리지 Volume 에 테스트 데이터를 생성 한 후, 이 Volume을 Linux 서버에서 Umount 한 후, 기 생성되어 있는 K8s Cluster의 PV로 Import 한 후 Legacy 에서 생성한 data 가 그대로 인식되는지 확인합니다.
 
-우선, 본 Task에서는 Legacy Linux 서버를 대신해서 K8s master 노드에 스토리지를 NFS 마운트하여 환경을 대신합니다.
+기 설치되어 있는 사용자 Linux 에 접속하여 ONTAP Select
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">ssh debian@115.144.xxx.xxx
 login as: debian 
 debian@net5c0rjuz-master-1:~$ sudo -i
@@ -151,9 +151,9 @@ debian@net5c0rjuz-master-1:~$ sudo -i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMDkyNTY1OSw0Nzg3Nzc0MTIsLTE2Nj
-g1MTU4MzUsMTc2OTMyMDc3NSwxMzkyMTUzNjY3LC04NDA3MzE4
-NDMsNDg0NDQxOTAyLC0xMjcxMTgwNjUyLC0xMDk0NzA3MjA2LC
-0yODIzNzAyOTEsLTE0NzI3MjIwNTUsLTIxMTQyOTU4MTcsMTAw
-MzMzNDAxN119
+eyJoaXN0b3J5IjpbLTI2OTMzNDQ2MSwtMjMwOTI1NjU5LDQ3OD
+c3NzQxMiwtMTY2ODUxNTgzNSwxNzY5MzIwNzc1LDEzOTIxNTM2
+NjcsLTg0MDczMTg0Myw0ODQ0NDE5MDIsLTEyNzExODA2NTIsLT
+EwOTQ3MDcyMDYsLTI4MjM3MDI5MSwtMTQ3MjcyMjA1NSwtMjEx
+NDI5NTgxNywxMDAzMzM0MDE3XX0=
 -->
