@@ -146,7 +146,7 @@ On-premise의 Linux서버에 Mount 되어 있는 Legacy NAS 스토리지 Volume 
 웹 브라우저에서 https://[ONTAP select cluster management IP] 로 접속합니다.
 - login : admin
 - password : **********
-창 우측 Storage
+창 우측 Storage 메뉴 > SVMs > svm-userX > 
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">ssh debian@115.144.xxx.xxx
 login as: debian 
 debian@net5c0rjuz-master-1:~$ sudo -i
@@ -156,9 +156,9 @@ debian@net5c0rjuz-master-1:~$ sudo -i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI2NTg1NjA5LC0yNjkzMzQ0NjEsLTIzMD
-kyNTY1OSw0Nzg3Nzc0MTIsLTE2Njg1MTU4MzUsMTc2OTMyMDc3
-NSwxMzkyMTUzNjY3LC04NDA3MzE4NDMsNDg0NDQxOTAyLC0xMj
-cxMTgwNjUyLC0xMDk0NzA3MjA2LC0yODIzNzAyOTEsLTE0NzI3
-MjIwNTUsLTIxMTQyOTU4MTcsMTAwMzMzNDAxN119
+eyJoaXN0b3J5IjpbLTExMTA4NTMxNzIsLTI2OTMzNDQ2MSwtMj
+MwOTI1NjU5LDQ3ODc3NzQxMiwtMTY2ODUxNTgzNSwxNzY5MzIw
+Nzc1LDEzOTIxNTM2NjcsLTg0MDczMTg0Myw0ODQ0NDE5MDIsLT
+EyNzExODA2NTIsLTEwOTQ3MDcyMDYsLTI4MjM3MDI5MSwtMTQ3
+MjcyMjA1NSwtMjExNDI5NTgxNywxMDAzMzM0MDE3XX0=
 -->
