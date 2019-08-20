@@ -189,6 +189,7 @@ This is test data!!!
 [root@user1 /]# umount /mnt</code></pre>
 
 **Trident Import 수행**
+
 이제는 K8s cluster로 접속하여 trident import 기능을 통해, Legacy의 vol01 볼륨을 K8s의 Persistent Volume으로 가져오도록 하겠습니다.
 시작에 앞서, NKS on HCI는 기본적으로 ONTAP Select와 통신을 위한 10.255.xxx.xxx IP를 위한 Network interface가 disable 되어 있기 때문에, 수동으로 10.255.xxx.xxx 대 IP를 심어 주어야 합니다.  각 사용자 별로 Master node에 설정된 115.114.xxx.zzz의 마지막 IP(zzz)를 동일하게 10.255.yyy.zzz에 설정하도록 합니다.
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">ssh debian@115.144.xxx.xxx[kubernetes  master node IP]
@@ -257,11 +258,11 @@ command terminated with exit code 1
 
 </code></pre>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTYxODA2NjIsLTk0MjU4MTEyOCwyMD
-M3MTkxMzY2LC0zNzUwOTU5MywtOTk2MDY3NDE5LC00MTExMjk1
-NzUsMTgwNTY0ODA2MiwtNzM2MjMwMzM1LC0xMTEwODUzMTcyLC
-0yNjkzMzQ0NjEsLTIzMDkyNTY1OSw0Nzg3Nzc0MTIsLTE2Njg1
-MTU4MzUsMTc2OTMyMDc3NSwxMzkyMTUzNjY3LC04NDA3MzE4ND
-MsNDg0NDQxOTAyLC0xMjcxMTgwNjUyLC0xMDk0NzA3MjA2LC0y
-ODIzNzAyOTFdfQ==
+eyJoaXN0b3J5IjpbLTYwOTk5ODE2LC05NDI1ODExMjgsMjAzNz
+E5MTM2NiwtMzc1MDk1OTMsLTk5NjA2NzQxOSwtNDExMTI5NTc1
+LDE4MDU2NDgwNjIsLTczNjIzMDMzNSwtMTExMDg1MzE3MiwtMj
+Y5MzM0NDYxLC0yMzA5MjU2NTksNDc4Nzc3NDEyLC0xNjY4NTE1
+ODM1LDE3NjkzMjA3NzUsMTM5MjE1MzY2NywtODQwNzMxODQzLD
+Q4NDQ0MTkwMiwtMTI3MTE4MDY1MiwtMTA5NDcwNzIwNiwtMjgy
+MzcwMjkxXX0=
 -->
