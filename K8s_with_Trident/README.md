@@ -190,7 +190,7 @@ This is test data!!!
 
 **Trident Import 수행**
 이제는 K8s cluster로 접속하여 trident import 기능을 통해, Legacy의 vol01 볼륨을 K8s의 Persistent Volume으로 가져오도록 하겠습니다.
-시작에 앞서, ㅜㅏ
+시작에 앞서, NKS on HCI는 기본적으로 ONTAP Select와 통신을 위한 10.255.xxx.xxx IP를 위한 Network interface가 disable 되어 있기 때문에, 수동으로 10. 대 IP를 심어주어야 합니다
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">ssh debian@115.144.xxx.xxx[kubernetes  master node IP]
 login as: debian 
 debian@net5c0rjuz-master-1:~$ tridentctl get backend -n trident
@@ -228,7 +228,7 @@ command terminated with exit code 1
 
 </code></pre>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNTc2MTc1MSwtOTk2MDY3NDE5LC00MT
+eyJoaXN0b3J5IjpbLTc5MjA4Mzc3NCwtOTk2MDY3NDE5LC00MT
 ExMjk1NzUsMTgwNTY0ODA2MiwtNzM2MjMwMzM1LC0xMTEwODUz
 MTcyLC0yNjkzMzQ0NjEsLTIzMDkyNTY1OSw0Nzg3Nzc0MTIsLT
 E2Njg1MTU4MzUsMTc2OTMyMDc3NSwxMzkyMTUzNjY3LC04NDA3
