@@ -144,15 +144,16 @@ On-premise의 Linux서버에 Mount 되어 있는 Legacy NAS 스토리지 Volume 
 우선, 본 Task에서는 Legacy Linux 서버를 대신해서 K8s master 노드에 스토리지를 NFS 마운트하여 환경을 대신합니다.
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">ssh debian@115.144.xxx.xxx
 login as: debian 
-debian@net5c0rjuz-master-1:~$
+debian@net5c0rjuz-master-1:~$ sudo -i
+
 </code></pre>
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc4Nzc3NDEyLC0xNjY4NTE1ODM1LDE3Nj
-kzMjA3NzUsMTM5MjE1MzY2NywtODQwNzMxODQzLDQ4NDQ0MTkw
-MiwtMTI3MTE4MDY1MiwtMTA5NDcwNzIwNiwtMjgyMzcwMjkxLC
-0xNDcyNzIyMDU1LC0yMTE0Mjk1ODE3LDEwMDMzMzQwMTddfQ==
-
+eyJoaXN0b3J5IjpbLTIzMDkyNTY1OSw0Nzg3Nzc0MTIsLTE2Nj
+g1MTU4MzUsMTc2OTMyMDc3NSwxMzkyMTUzNjY3LC04NDA3MzE4
+NDMsNDg0NDQxOTAyLC0xMjcxMTgwNjUyLC0xMDk0NzA3MjA2LC
+0yODIzNzAyOTEsLTE0NzI3MjIwNTUsLTIxMTQyOTU4MTcsMTAw
+MzMzNDAxN119
 -->
