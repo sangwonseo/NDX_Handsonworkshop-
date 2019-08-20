@@ -12,7 +12,7 @@
 <p><a href="https://github.com/netappkr/NDX_Handsonworkshop-/tree/master/Data_Mobility_MultiCloud">Hands-on Scenario 1 : 멀티 클라우드 환경에서의 데이터 이동</a></p>
 <p><a href="https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/Costsaving/RADME.md">Hands-on Scenario 2 : 클라우드 자원 비용 절감</a></p>
 <p><a href="https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_on_MultiCloud/README.md">Hands-on Scenario 3 : 멀티 클라우드 환경에서 Kubernetes 구현</a></p>
-<p><a href="https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/README.md">Hands-on Scenario 4 : VM에서 Container로 Application 마이그레이션</a></p>
+<p><a href="https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/README.md">Hands-on Scenario 4 : **Legacy Application을 Containerization로 마이그레이션</a></p>
 <h2 id="devops--microservices-hands-on-workshop">DevOps &amp; MicroServices Hands-on Workshop</h2>
 <p><a href="https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_with_Trident/README.md">Hands-on Scenario 5 : Kubernetes 환경에서 Stateful Application 구현</a></p>
 <p>Hands-on Scenario 6 : 하이브리드 클라우드 환경에서 자동화 구현</p>
