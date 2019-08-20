@@ -158,7 +158,7 @@ On-premise의 Linux서버에 Mount 되어 있는 Legacy NAS 스토리지 Volume 
 ![enter image description here](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_with_Trident/images/10_VolCreate.PNG)
 
 **Legacy에 Test 데이터 생성**
-
+<pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">ssh root@115.144.xxx.xxx [user1 VM IP]
 
 
 
@@ -171,7 +171,7 @@ debian@net5c0rjuz-master-1:~$ sudo -i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExNjUxMTA0MiwtNzM2MjMwMzM1LC0xMT
+eyJoaXN0b3J5IjpbMTE3MzYwNTQ1MiwtNzM2MjMwMzM1LC0xMT
 EwODUzMTcyLC0yNjkzMzQ0NjEsLTIzMDkyNTY1OSw0Nzg3Nzc0
 MTIsLTE2Njg1MTU4MzUsMTc2OTMyMDc3NSwxMzkyMTUzNjY3LC
 04NDA3MzE4NDMsNDg0NDQxOTAyLC0xMjcxMTgwNjUyLC0xMDk0
