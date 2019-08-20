@@ -266,21 +266,21 @@ pvc-import   Bound    pvc-5ed37b32-c388-11e9-b1a8-005056a80a4b   1Gi        RWO 
 </code></pre>
 
 **POD에 mount하여 데이터 확인**
-debian@net5c0rjuz-master-1:~/trident-installer/setup$ kubectl get pod
+<pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">debian@net5c0rjuz-master-1:~/trident-installer/setup$ kubectl get pod
 NAME                     READY   STATUS              RESTARTS   AGE
 nginx-58df4bbfdd-l2tkt   1/1     Running             0          7d19h
 task-pod                 1/1     Running   0          18s
 debian@net5c0rjuz-master-1:~/trident-installer/setup$ kubectl exec -it task-pod -- df -h /usr/share/nginx/html
 Filesystem  Size  Used Avail Use% Mounted on
-10.200.xxx.xxx:/trident_pvc_6c2c5022_f48f_453a_a10c_a0f23d180478  1.0G  320K  1.0G  1% /usr/share/nginx/html
+10.200.xxx.xxx:/trident_pvc_6c2c5022_f48f_453a_a10c_a0f23d180478  1.0G  320K  1.0G  1% /usr/share/nginx/html</code></pre>
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTU2NTA2NDQsLTExMjQ3NjI1NjAsOD
-g2MzcyMjEwLDE5ODk4ODkyNDEsLTYwOTk5ODE2LC05NDI1ODEx
-MjgsMjAzNzE5MTM2NiwtMzc1MDk1OTMsLTk5NjA2NzQxOSwtND
-ExMTI5NTc1LDE4MDU2NDgwNjIsLTczNjIzMDMzNSwtMTExMDg1
-MzE3MiwtMjY5MzM0NDYxLC0yMzA5MjU2NTksNDc4Nzc3NDEyLC
-0xNjY4NTE1ODM1LDE3NjkzMjA3NzUsMTM5MjE1MzY2NywtODQw
-NzMxODQzXX0=
+eyJoaXN0b3J5IjpbOTk2NjEwNTM4LC0xMTI0NzYyNTYwLDg4Nj
+M3MjIxMCwxOTg5ODg5MjQxLC02MDk5OTgxNiwtOTQyNTgxMTI4
+LDIwMzcxOTEzNjYsLTM3NTA5NTkzLC05OTYwNjc0MTksLTQxMT
+EyOTU3NSwxODA1NjQ4MDYyLC03MzYyMzAzMzUsLTExMTA4NTMx
+NzIsLTI2OTMzNDQ2MSwtMjMwOTI1NjU5LDQ3ODc3NzQxMiwtMT
+Y2ODUxNTgzNSwxNzY5MzIwNzc1LDEzOTIxNTM2NjcsLTg0MDcz
+MTg0M119
 -->
