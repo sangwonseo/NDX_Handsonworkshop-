@@ -263,16 +263,17 @@ debian@net5c0rjuz-master-1:~/trident-installer/setup$ kubectl get pvc
 NAME         STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
 basic        Bound    pvc-db6adca2-bd17-11e9-b1a8-005056a80a4b   1Gi        RWO            basic          8d
 pvc-import   Bound    pvc-5ed37b32-c388-11e9-b1a8-005056a80a4b   1Gi        RWO            basic          2m5s
-
-
-
 </code></pre>
+
+**POD에 mount하여 데이터 확인**
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4OTg4OTI0MSwtNjA5OTk4MTYsLTk0Mj
-U4MTEyOCwyMDM3MTkxMzY2LC0zNzUwOTU5MywtOTk2MDY3NDE5
-LC00MTExMjk1NzUsMTgwNTY0ODA2MiwtNzM2MjMwMzM1LC0xMT
-EwODUzMTcyLC0yNjkzMzQ0NjEsLTIzMDkyNTY1OSw0Nzg3Nzc0
-MTIsLTE2Njg1MTU4MzUsMTc2OTMyMDc3NSwxMzkyMTUzNjY3LC
-04NDA3MzE4NDMsNDg0NDQxOTAyLC0xMjcxMTgwNjUyLC0xMDk0
-NzA3MjA2XX0=
+eyJoaXN0b3J5IjpbODg2MzcyMjEwLDE5ODk4ODkyNDEsLTYwOT
+k5ODE2LC05NDI1ODExMjgsMjAzNzE5MTM2NiwtMzc1MDk1OTMs
+LTk5NjA2NzQxOSwtNDExMTI5NTc1LDE4MDU2NDgwNjIsLTczNj
+IzMDMzNSwtMTExMDg1MzE3MiwtMjY5MzM0NDYxLC0yMzA5MjU2
+NTksNDc4Nzc3NDEyLC0xNjY4NTE1ODM1LDE3NjkzMjA3NzUsMT
+M5MjE1MzY2NywtODQwNzMxODQzLDQ4NDQ0MTkwMiwtMTI3MTE4
+MDY1Ml19
 -->
