@@ -270,15 +270,15 @@ debian@net5c0rjuz-master-1:~/trident-installer/setup$ kubectl get pod
 NAME                     READY   STATUS              RESTARTS   AGE
 nginx-58df4bbfdd-l2tkt   1/1     Running             0          7d19h
 task-pod                 1/1     Running   0          18s
-
+debian@net5c0rjuz-master-1:~/trident-installer/setup$ kubectl exec -it task-pod -- sh
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjQ3NjI1NjAsODg2MzcyMjEwLDE5OD
-k4ODkyNDEsLTYwOTk5ODE2LC05NDI1ODExMjgsMjAzNzE5MTM2
-NiwtMzc1MDk1OTMsLTk5NjA2NzQxOSwtNDExMTI5NTc1LDE4MD
-U2NDgwNjIsLTczNjIzMDMzNSwtMTExMDg1MzE3MiwtMjY5MzM0
-NDYxLC0yMzA5MjU2NTksNDc4Nzc3NDEyLC0xNjY4NTE1ODM1LD
-E3NjkzMjA3NzUsMTM5MjE1MzY2NywtODQwNzMxODQzLDQ4NDQ0
-MTkwMl19
+eyJoaXN0b3J5IjpbLTE5NDc4MTIwMjUsLTExMjQ3NjI1NjAsOD
+g2MzcyMjEwLDE5ODk4ODkyNDEsLTYwOTk5ODE2LC05NDI1ODEx
+MjgsMjAzNzE5MTM2NiwtMzc1MDk1OTMsLTk5NjA2NzQxOSwtND
+ExMTI5NTc1LDE4MDU2NDgwNjIsLTczNjIzMDMzNSwtMTExMDg1
+MzE3MiwtMjY5MzM0NDYxLC0yMzA5MjU2NTksNDc4Nzc3NDEyLC
+0xNjY4NTE1ODM1LDE3NjkzMjA3NzUsMTM5MjE1MzY2NywtODQw
+NzMxODQzXX0=
 -->
