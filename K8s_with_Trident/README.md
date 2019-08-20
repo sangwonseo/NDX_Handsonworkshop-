@@ -154,6 +154,7 @@ On-premise의 Linux서버에 Mount 되어 있는 Legacy NAS 스토리지 Volume 
 - Storage Type: NAS
 - Total Size: 1GB
 - Snapshot Reserve (%): 0
+
 ![enter image description here](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_with_Trident/images/10_VolCreate.PNG)
 
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">ssh debian@115.144.xxx.xxx
@@ -165,7 +166,7 @@ debian@net5c0rjuz-master-1:~$ sudo -i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2MzA3MDYyNSwtNzM2MjMwMzM1LC0xMT
+eyJoaXN0b3J5IjpbMTQ3NTM2NDU1OSwtNzM2MjMwMzM1LC0xMT
 EwODUzMTcyLC0yNjkzMzQ0NjEsLTIzMDkyNTY1OSw0Nzg3Nzc0
 MTIsLTE2Njg1MTU4MzUsMTc2OTMyMDc3NSwxMzkyMTUzNjY3LC
 04NDA3MzE4NDMsNDg0NDQxOTAyLC0xMjcxMTgwNjUyLC0xMDk0
