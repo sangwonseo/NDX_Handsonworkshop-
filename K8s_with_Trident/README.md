@@ -170,7 +170,7 @@ tmpfs                     1940444       0   1940444   0% /sys/fs/cgroup
 /dev/sda1                 1038336  182564    855772  18% /boot
 10.255.xxx.xxx:/content   4980736   14016   4966720   1% /var/lib/ghost/content
 tmpfs                      388092       0    388092   0% /run/user/0
-[root@user1 ~]# mount 10.255.xxx.xxx:/vol01 /mnt      ### 기존에 content 볼륨이 mount 되어 있는 IP를 사용하여 새로운 볼ㄹ
+[root@user1 ~]# mount 10.255.xxx.xxx:/vol01 /mnt      ###기존에 content 볼륨이 mount 되어 있는 IP를 사용하여 새로운 볼륨을 mount 함
 [root@user1 ~]# df -k
 Filesystem              1K-blocks    Used Available Use% Mounted on
 /dev/mapper/cl-root      27245572 3339096  23906476  13% /
@@ -179,17 +179,14 @@ tmpfs                     1940444       0   1940444   0% /dev/shm
 tmpfs                     1940444  131880   1808564   7% /run
 tmpfs                     1940444       0   1940444   0% /sys/fs/cgroup
 /dev/sda1                 1038336  182564    855772  18% /boot
-10.255.100.201:/content   4980736   14080   4966656   1% /var/lib/ghost/content
+10.255.xxx.xxx:/content   4980736   14080   4966656   1% /var/lib/ghost/content
 tmpfs                      388092       0    388092   0% /run/user/0
-10.255.100.201:/vol01     1048576     256   1048320   1% /mnt
-[root@user1 ~]# cd /mnt
-[root@user1 mnt]# vi testdata.txt
+10.255.xxx.xxx:/vol01     1048576     256   1048320   1% /mnt
+[root@user1 /]# vi mnt/testdata.txt
 ...
 This is test data!!!
 ...
-[root@user1 mnt]# cd ..
 [root@user1 /]# umount /mnt
-[root@user1 /]#
 
 
 
@@ -202,10 +199,10 @@ debian@net5c0rjuz-master-1:~$ sudo -i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQzOTM5MTg5LDE4MDU2NDgwNjIsLTczNj
-IzMDMzNSwtMTExMDg1MzE3MiwtMjY5MzM0NDYxLC0yMzA5MjU2
-NTksNDc4Nzc3NDEyLC0xNjY4NTE1ODM1LDE3NjkzMjA3NzUsMT
-M5MjE1MzY2NywtODQwNzMxODQzLDQ4NDQ0MTkwMiwtMTI3MTE4
-MDY1MiwtMTA5NDcwNzIwNiwtMjgyMzcwMjkxLC0xNDcyNzIyMD
-U1LC0yMTE0Mjk1ODE3LDEwMDMzMzQwMTddfQ==
+eyJoaXN0b3J5IjpbLTYxNzkyNzYyNCwxODA1NjQ4MDYyLC03Mz
+YyMzAzMzUsLTExMTA4NTMxNzIsLTI2OTMzNDQ2MSwtMjMwOTI1
+NjU5LDQ3ODc3NzQxMiwtMTY2ODUxNTgzNSwxNzY5MzIwNzc1LD
+EzOTIxNTM2NjcsLTg0MDczMTg0Myw0ODQ0NDE5MDIsLTEyNzEx
+ODA2NTIsLTEwOTQ3MDcyMDYsLTI4MjM3MDI5MSwtMTQ3MjcyMj
+A1NSwtMjExNDI5NTgxNywxMDAzMzM0MDE3XX0=
 -->
