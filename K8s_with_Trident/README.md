@@ -224,18 +224,14 @@ spec:
 debian@net5c0rjuz-master-1:~/trident-installer/setup$ tridentctl import volume nfsBackend vol01 -f pvc-import.yaml -n trident
 Error: could not import volume: a valid PVC namespace is required for volume import (400 Bad Request)
 command terminated with exit code 1
-debian@net5c0rjuz-master-1:~/trident-installer/setup$ tridentctl import volume nfsBackend vol01 -f pvc-import.yaml -n trident
-Error: could not import volume: a valid PVC namespace is required for volume import (400 Bad Request)
-command terminated with exit code 1
-
 
 </code></pre>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4ODU1MTA2LC00MTExMjk1NzUsMTgwNT
-Y0ODA2MiwtNzM2MjMwMzM1LC0xMTEwODUzMTcyLC0yNjkzMzQ0
-NjEsLTIzMDkyNTY1OSw0Nzg3Nzc0MTIsLTE2Njg1MTU4MzUsMT
-c2OTMyMDc3NSwxMzkyMTUzNjY3LC04NDA3MzE4NDMsNDg0NDQx
-OTAyLC0xMjcxMTgwNjUyLC0xMDk0NzA3MjA2LC0yODIzNzAyOT
-EsLTE0NzI3MjIwNTUsLTIxMTQyOTU4MTcsMTAwMzMzNDAxN119
-
+eyJoaXN0b3J5IjpbLTk5NjA2NzQxOSwtNDExMTI5NTc1LDE4MD
+U2NDgwNjIsLTczNjIzMDMzNSwtMTExMDg1MzE3MiwtMjY5MzM0
+NDYxLC0yMzA5MjU2NTksNDc4Nzc3NDEyLC0xNjY4NTE1ODM1LD
+E3NjkzMjA3NzUsMTM5MjE1MzY2NywtODQwNzMxODQzLDQ4NDQ0
+MTkwMiwtMTI3MTE4MDY1MiwtMTA5NDcwNzIwNiwtMjgyMzcwMj
+kxLC0xNDcyNzIyMDU1LC0yMTE0Mjk1ODE3LDEwMDMzMzQwMTdd
+fQ==
 -->
