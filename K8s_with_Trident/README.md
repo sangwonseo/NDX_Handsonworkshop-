@@ -192,17 +192,71 @@ This is test data!!!
 이제는 K8s cluster로 접속하여 trident import 기능을 통해, Legacy의 vol01 볼륨을 K8s의 Persistent Volume으로 가져오도록 하겠습니다.
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">ssh debian@115.144.xxx.xxx[kubernetes  master node IP]
 login as: debian 
-debian@net5c0rjuz-master-1:~$ 
+debian@net5c0rjuz-master-1:~$ tridentctl get backend -n trident
++------------+----------------+--------------------------------------+--------+---------+
+|    NAME    | STORAGE DRIVER |                 UUID                 | STATE  | VOLUMES |
++------------+----------------+--------------------------------------+--------+---------+
+| nfsBackend | ontap-nas      | 11c0fa46-1f52-4cec-87ce-fe6e410b0118 | online |       1 |
++------------+----------------+--------------------------------------+--------+---------+
+debian@net5c0rjuz-master-1:~$ kubectl get storageclass
+NAME                PROVISIONER                    AGE
+basic               csi.trident.netapp.io          8d
+vsphere (default)   kubernetes.io/vsphere-volume   12d
+debian@net5c0rjuz-master-1:~$ kubectl get pvc
+NAME    STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
+basic   Bound    pvc-db6adca2-bd17-11e9-b1a8-005056a80a4b   1Gi        RWO            basic          8d
+debian@net5c0rjuz-master-1:~$ cd trident-installer/
+debian@net5c0rjuz-master-1:~/trident-installer$ ls
+extras  sample-input  setup  tridentctl
+debian@net5c0rjuz-master-1:~/trident-installer$ cd setup
+debian@net5c0rjuz-master-1:~/trident-installer/setup$ ls
+backend-ontap-nas.json  pvc-basic.yaml  storage-class-basic.yaml
+debian@net5c0rjuz-master-1:~/trident-installer/setup$ cp pvc-basic.yaml pvc-import.yaml
+debian@net5c0rjuz-master-1:~/trident-installer/setup$ cat pvc-import.yaml
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: basic
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: basic
+debian@net5c0rjuz-master-1:~/trident-installer/setup$ vi pvc-import.yaml
+debian@net5c0rjuz-master-1:~/trident-installer/setup$ cat pvc-import.yaml
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: pvc-import
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+  storageClassName: basic
+debian@net5c0rjuz-master-1:~/trident-installer/setup$ tridentctl import volume nfsBackend mydata -f pvc-import.yaml -n trident
+Error: could not import volume: a valid PVC namespace is required for volume import (400 Bad Request)
+command terminated with exit code 1
+debian@net5c0rjuz-master-1:~/trident-installer/setup$ tridentctl import volume nfsBackend mydata -f pvc-import.yaml
+Error: could not find a Trident pod in the default namespace. You may need to use the -n option to specify the correct namespace
+debian@net5c0rjuz-master-1:~/trident-installer/setup$ tridentctl import volume nfsBackend vol01 -f pvc-import.yaml -n trident
+Error: could not import volume: a valid PVC namespace is required for volume import (400 Bad Request)
+command terminated with exit code 1
+debian@net5c0rjuz-master-1:~/trident-installer/setup$ tridentctl import volume nfsBackend vol01 -f pvc-import.yaml -n trident
+Error: could not import volume: a valid PVC namespace is required for volume import (400 Bad Request)
+command terminated with exit code 1
+
 
 </code></pre>
-
-
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMTEyOTU3NSwxODA1NjQ4MDYyLC03Mz
-YyMzAzMzUsLTExMTA4NTMxNzIsLTI2OTMzNDQ2MSwtMjMwOTI1
-NjU5LDQ3ODc3NzQxMiwtMTY2ODUxNTgzNSwxNzY5MzIwNzc1LD
-EzOTIxNTM2NjcsLTg0MDczMTg0Myw0ODQ0NDE5MDIsLTEyNzEx
-ODA2NTIsLTEwOTQ3MDcyMDYsLTI4MjM3MDI5MSwtMTQ3MjcyMj
-A1NSwtMjExNDI5NTgxNywxMDAzMzM0MDE3XX0=
+eyJoaXN0b3J5IjpbMTA0OTg0NTcxNCwtNDExMTI5NTc1LDE4MD
+U2NDgwNjIsLTczNjIzMDMzNSwtMTExMDg1MzE3MiwtMjY5MzM0
+NDYxLC0yMzA5MjU2NTksNDc4Nzc3NDEyLC0xNjY4NTE1ODM1LD
+E3NjkzMjA3NzUsMTM5MjE1MzY2NywtODQwNzMxODQzLDQ4NDQ0
+MTkwMiwtMTI3MTE4MDY1MiwtMTA5NDcwNzIwNiwtMjgyMzcwMj
+kxLC0xNDcyNzIyMDU1LC0yMTE0Mjk1ODE3LDEwMDMzMzQwMTdd
+fQ==
 -->
