@@ -137,11 +137,12 @@ spec:
 # kubectl get pvc
 </core></pre>
 
-## 4. Legacy Volume Import 기능 구현
+# Legacy Volume Import 기능 구현
 
 On-premise의 Linux서버에 Mount 되어 있는 Legacy NAS 스토리지 Volume 에 테스트 데이터를 생성 한 후, 이 Volume을 Linux 서버에서 Umount 한 후, 기 생성되어 있는 K8s Cluster의 PV로 Import 한 후 Legacy 에서 생성한 data 가 그대로 인식되는지 확인합니다.
 
 **Test 볼륨 생성**
+
 기 설치되어 있는 ONTAP Select의 System Manager에 접속하여 실습을 위한 볼륨을 각자 생성하도록 합니다.
 웹 브라우저에서 https://[ONTAP select cluster management IP] 로 접속합니다.
 - login : admin
@@ -164,10 +165,10 @@ debian@net5c0rjuz-master-1:~$ sudo -i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczNjIzMDMzNSwtMTExMDg1MzE3MiwtMj
-Y5MzM0NDYxLC0yMzA5MjU2NTksNDc4Nzc3NDEyLC0xNjY4NTE1
-ODM1LDE3NjkzMjA3NzUsMTM5MjE1MzY2NywtODQwNzMxODQzLD
-Q4NDQ0MTkwMiwtMTI3MTE4MDY1MiwtMTA5NDcwNzIwNiwtMjgy
-MzcwMjkxLC0xNDcyNzIyMDU1LC0yMTE0Mjk1ODE3LDEwMDMzMz
-QwMTddfQ==
+eyJoaXN0b3J5IjpbNTQ5MjE4OTQwLC03MzYyMzAzMzUsLTExMT
+A4NTMxNzIsLTI2OTMzNDQ2MSwtMjMwOTI1NjU5LDQ3ODc3NzQx
+MiwtMTY2ODUxNTgzNSwxNzY5MzIwNzc1LDEzOTIxNTM2NjcsLT
+g0MDczMTg0Myw0ODQ0NDE5MDIsLTEyNzExODA2NTIsLTEwOTQ3
+MDcyMDYsLTI4MjM3MDI5MSwtMTQ3MjcyMjA1NSwtMjExNDI5NT
+gxNywxMDAzMzM0MDE3XX0=
 -->
