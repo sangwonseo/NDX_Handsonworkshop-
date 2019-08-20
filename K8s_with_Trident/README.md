@@ -220,7 +220,6 @@ root@net5c0rjuz-master-1:~# /etc/init.d/networking restart
 [ ok ] Restarting networking (via systemctl): networking.service.
 
 
-
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">ssh debian@115.144.xxx.xxx[kubernetes  master node IP]
 login as: debian 
 debian@net5c0rjuz-master-1:~$ tridentctl get backend -n trident
@@ -258,11 +257,11 @@ command terminated with exit code 1
 
 </code></pre>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0MjU4MTEyOCwyMDM3MTkxMzY2LC0zNz
-UwOTU5MywtOTk2MDY3NDE5LC00MTExMjk1NzUsMTgwNTY0ODA2
-MiwtNzM2MjMwMzM1LC0xMTEwODUzMTcyLC0yNjkzMzQ0NjEsLT
-IzMDkyNTY1OSw0Nzg3Nzc0MTIsLTE2Njg1MTU4MzUsMTc2OTMy
-MDc3NSwxMzkyMTUzNjY3LC04NDA3MzE4NDMsNDg0NDQxOTAyLC
-0xMjcxMTgwNjUyLC0xMDk0NzA3MjA2LC0yODIzNzAyOTEsLTE0
-NzI3MjIwNTVdfQ==
+eyJoaXN0b3J5IjpbLTE5OTYxODA2NjIsLTk0MjU4MTEyOCwyMD
+M3MTkxMzY2LC0zNzUwOTU5MywtOTk2MDY3NDE5LC00MTExMjk1
+NzUsMTgwNTY0ODA2MiwtNzM2MjMwMzM1LC0xMTEwODUzMTcyLC
+0yNjkzMzQ0NjEsLTIzMDkyNTY1OSw0Nzg3Nzc0MTIsLTE2Njg1
+MTU4MzUsMTc2OTMyMDc3NSwxMzkyMTUzNjY3LC04NDA3MzE4ND
+MsNDg0NDQxOTAyLC0xMjcxMTgwNjUyLC0xMDk0NzA3MjA2LC0y
+ODIzNzAyOTFdfQ==
 -->
