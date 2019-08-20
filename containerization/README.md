@@ -9,4 +9,5 @@
 <li>Task 2. 오프레미스의 Legacy Application을 Container로 전환</li>
 <li>Task 3. 오프레미스의 Container Application을 Public Cloud (AWS,Azure) 확장</li>
 </ul>
+<p><a href="https://github.com/netappkr/NDX_Handsonworkshop-/">메인 메뉴로 이동</a></p>
 
