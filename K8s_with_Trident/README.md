@@ -168,11 +168,9 @@ tmpfs                     1940444       0   1940444   0% /dev/shm
 tmpfs                     1940444  131880   1808564   7% /run
 tmpfs                     1940444       0   1940444   0% /sys/fs/cgroup
 /dev/sda1                 1038336  182564    855772  18% /boot
-10.255.100.201:/content   4980736   14016   4966720   1% /var/lib/ghost/content
+10.255.xxx.xxx:/content   4980736   14016   4966720   1% /var/lib/ghost/content
 tmpfs                      388092       0    388092   0% /run/user/0
-[root@user1 ~]#
-[root@user1 ~]#
-[root@user1 ~]# mount 10.255.100.201:/vol01 /mnt
+[root@user1 ~]# mount 10.255.xxx.xxx:/vol01 /mnt      ###
 [root@user1 ~]# df -k
 Filesystem              1K-blocks    Used Available Use% Mounted on
 /dev/mapper/cl-root      27245572 3339096  23906476  13% /
@@ -186,8 +184,9 @@ tmpfs                      388092       0    388092   0% /run/user/0
 10.255.100.201:/vol01     1048576     256   1048320   1% /mnt
 [root@user1 ~]# cd /mnt
 [root@user1 mnt]# vi testdata.txt
-[root@user1 mnt]# cat testdata.txt
+...
 This is test data!!!
+...
 [root@user1 mnt]# cd ..
 [root@user1 /]# umount /mnt
 [root@user1 /]#
@@ -203,7 +202,7 @@ debian@net5c0rjuz-master-1:~$ sudo -i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4ODYwMTIyMywtNzM2MjMwMzM1LC0xMT
+eyJoaXN0b3J5IjpbMTgwNTY0ODA2MiwtNzM2MjMwMzM1LC0xMT
 EwODUzMTcyLC0yNjkzMzQ0NjEsLTIzMDkyNTY1OSw0Nzg3Nzc0
 MTIsLTE2Njg1MTU4MzUsMTc2OTMyMDc3NSwxMzkyMTUzNjY3LC
 04NDA3MzE4NDMsNDg0NDQxOTAyLC0xMjcxMTgwNjUyLC0xMDk0
