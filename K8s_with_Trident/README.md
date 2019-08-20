@@ -148,6 +148,11 @@ On-premise의 Linux서버에 Mount 되어 있는 Legacy NAS 스토리지 Volume 
 - password : **********
 
 우측 Storage 메뉴 > SVMs > svm-user1 > Volumes > + Create > Create FlexVol
+- Name: vol01
+- Aggregate: aggr1
+- Storage Type: NAS
+- Total Size: 1GB
+- Snapshot Reserve (%): 0
 
 
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">ssh debian@115.144.xxx.xxx
@@ -159,7 +164,7 @@ debian@net5c0rjuz-master-1:~$ sudo -i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MDMwOTIzNCwtMTExMDg1MzE3MiwtMj
+eyJoaXN0b3J5IjpbLTczNjIzMDMzNSwtMTExMDg1MzE3MiwtMj
 Y5MzM0NDYxLC0yMzA5MjU2NTksNDc4Nzc3NDEyLC0xNjY4NTE1
 ODM1LDE3NjkzMjA3NzUsMTM5MjE1MzY2NywtODQwNzMxODQzLD
 Q4NDQ0MTkwMiwtMTI3MTE4MDY1MiwtMTA5NDcwNzIwNiwtMjgy
