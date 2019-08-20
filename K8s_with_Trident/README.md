@@ -219,10 +219,6 @@ netmask 255.255.255.0
 root@net5c0rjuz-master-1:~# route add -net 10.255.xxx.0 netmask 255.255.255.0 dev ens192
 root@net5c0rjuz-master-1:~# /etc/init.d/networking restart
 [ ok ] Restarting networking (via systemctl): networking.service.
-
-
-<pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">ssh debian@115.144.xxx.xxx[kubernetes  master node IP]
-login as: debian 
 debian@net5c0rjuz-master-1:~$ tridentctl get backend -n trident
 +------------+----------------+--------------------------------------+--------+---------+
 |    NAME    | STORAGE DRIVER |                 UUID                 | STATE  | VOLUMES |
@@ -281,11 +277,11 @@ This is test data!!!
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjI0ODUxNTMsLTExMjQ3NjI1NjAsOD
-g2MzcyMjEwLDE5ODk4ODkyNDEsLTYwOTk5ODE2LC05NDI1ODEx
-MjgsMjAzNzE5MTM2NiwtMzc1MDk1OTMsLTk5NjA2NzQxOSwtND
-ExMTI5NTc1LDE4MDU2NDgwNjIsLTczNjIzMDMzNSwtMTExMDg1
-MzE3MiwtMjY5MzM0NDYxLC0yMzA5MjU2NTksNDc4Nzc3NDEyLC
-0xNjY4NTE1ODM1LDE3NjkzMjA3NzUsMTM5MjE1MzY2NywtODQw
-NzMxODQzXX0=
+eyJoaXN0b3J5IjpbLTYxMDQ1ODQ0OSwtMTEyNDc2MjU2MCw4OD
+YzNzIyMTAsMTk4OTg4OTI0MSwtNjA5OTk4MTYsLTk0MjU4MTEy
+OCwyMDM3MTkxMzY2LC0zNzUwOTU5MywtOTk2MDY3NDE5LC00MT
+ExMjk1NzUsMTgwNTY0ODA2MiwtNzM2MjMwMzM1LC0xMTEwODUz
+MTcyLC0yNjkzMzQ0NjEsLTIzMDkyNTY1OSw0Nzg3Nzc0MTIsLT
+E2Njg1MTU4MzUsMTc2OTMyMDc3NSwxMzkyMTUzNjY3LC04NDA3
+MzE4NDNdfQ==
 -->
