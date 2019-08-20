@@ -12,7 +12,7 @@
 >[Trident 설치 및 구성 가이드](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_on_MultiCloud/OnPremNKS.md#step3-k8s-cluster%EC%97%90-trident-%EC%84%A4%EC%B9%98)
 >Step3 - 4까지 진행
 
-**1. RWX Access mode PVC 구성**
+## 1. RWX Access mode PVC 구성**
 
 RWX(Read Write Many) 모드는 다수의 Worker에서 동시에 Volume을 mount 하여 Read/Write 가 가능 하도록 합니다. Kubernetes 환경에서 다수의 node에 다수의 container를 통해 파일 공유가 필요 할 경우에 사용합니다.
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined"># vi access-mode-pvc.yaml
@@ -141,6 +141,7 @@ spec:
 
 On-premise의 Linux서버에 Mount 되어 있는 Legacy NAS 스토리지 Volume 에 테스트 데이터를 생성 한 후, 이 Volume을 Linux 서버에서 Umount 한 후, 기 생성되어 있는 K8s Cluster의 PV로 Import 한 후 Legacy 에서 생성한 data 가 그대로 인식되는지 확인합니다.
 
+
 기 설치되어 있는 사용자 Linux 에 접속하여 ONTAP Select
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">ssh debian@115.144.xxx.xxx
 login as: debian 
@@ -151,9 +152,9 @@ debian@net5c0rjuz-master-1:~$ sudo -i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2OTMzNDQ2MSwtMjMwOTI1NjU5LDQ3OD
-c3NzQxMiwtMTY2ODUxNTgzNSwxNzY5MzIwNzc1LDEzOTIxNTM2
-NjcsLTg0MDczMTg0Myw0ODQ0NDE5MDIsLTEyNzExODA2NTIsLT
-EwOTQ3MDcyMDYsLTI4MjM3MDI5MSwtMTQ3MjcyMjA1NSwtMjEx
-NDI5NTgxNywxMDAzMzM0MDE3XX0=
+eyJoaXN0b3J5IjpbNTIyNDkwNzk3LC0yNjkzMzQ0NjEsLTIzMD
+kyNTY1OSw0Nzg3Nzc0MTIsLTE2Njg1MTU4MzUsMTc2OTMyMDc3
+NSwxMzkyMTUzNjY3LC04NDA3MzE4NDMsNDg0NDQxOTAyLC0xMj
+cxMTgwNjUyLC0xMDk0NzA3MjA2LC0yODIzNzAyOTEsLTE0NzI3
+MjIwNTUsLTIxMTQyOTU4MTcsMTAwMzMzNDAxN119
 -->
