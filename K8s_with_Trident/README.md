@@ -270,11 +270,13 @@ debian@net5c0rjuz-master-1:~/trident-installer/setup$ kubectl get pod
 NAME                     READY   STATUS              RESTARTS   AGE
 nginx-58df4bbfdd-l2tkt   1/1     Running             0          7d19h
 task-pod                 1/1     Running   0          18s
-debian@net5c0rjuz-master-1:~/trident-installer/setup$ kubectl exec -it task-pod -- sh
+debian@net5c0rjuz-master-1:~/trident-installer/setup$ kubectl exec -it task-pod -- df -h /usr/share/nginx/html
+Filesystem  Size  Used Avail Use% Mounted on
+10.200.xxx.xxx:/trident_pvc_6c2c5022_f48f_453a_a10c_a0f23d180478  1.0G  320K  1.0G  1% /usr/share/nginx/html
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDc4MTIwMjUsLTExMjQ3NjI1NjAsOD
+eyJoaXN0b3J5IjpbLTE3OTU2NTA2NDQsLTExMjQ3NjI1NjAsOD
 g2MzcyMjEwLDE5ODk4ODkyNDEsLTYwOTk5ODE2LC05NDI1ODEx
 MjgsMjAzNzE5MTM2NiwtMzc1MDk1OTMsLTk5NjA2NzQxOSwtND
 ExMTI5NTc1LDE4MDU2NDgwNjIsLTczNjIzMDMzNSwtMTExMDg1
