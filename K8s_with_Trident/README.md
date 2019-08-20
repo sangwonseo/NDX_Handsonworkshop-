@@ -157,7 +157,7 @@ On-premise의 Linux서버에 Mount 되어 있는 Legacy NAS 스토리지 Volume 
 
 ![enter image description here](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_with_Trident/images/10_VolCreate.PNG)
 
-
+**Legacy에 Test 데이터 생성**
 
 
 
@@ -171,10 +171,10 @@ debian@net5c0rjuz-master-1:~$ sudo -i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzM2MTU0OTksLTczNjIzMDMzNSwtMT
-ExMDg1MzE3MiwtMjY5MzM0NDYxLC0yMzA5MjU2NTksNDc4Nzc3
-NDEyLC0xNjY4NTE1ODM1LDE3NjkzMjA3NzUsMTM5MjE1MzY2Ny
-wtODQwNzMxODQzLDQ4NDQ0MTkwMiwtMTI3MTE4MDY1MiwtMTA5
-NDcwNzIwNiwtMjgyMzcwMjkxLC0xNDcyNzIyMDU1LC0yMTE0Mj
-k1ODE3LDEwMDMzMzQwMTddfQ==
+eyJoaXN0b3J5IjpbMTExNjUxMTA0MiwtNzM2MjMwMzM1LC0xMT
+EwODUzMTcyLC0yNjkzMzQ0NjEsLTIzMDkyNTY1OSw0Nzg3Nzc0
+MTIsLTE2Njg1MTU4MzUsMTc2OTMyMDc3NSwxMzkyMTUzNjY3LC
+04NDA3MzE4NDMsNDg0NDQxOTAyLC0xMjcxMTgwNjUyLC0xMDk0
+NzA3MjA2LC0yODIzNzAyOTEsLTE0NzI3MjIwNTUsLTIxMTQyOT
+U4MTcsMTAwMzMzNDAxN119
 -->
