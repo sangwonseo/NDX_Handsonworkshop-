@@ -190,6 +190,7 @@ This is test data!!!
 
 **Trident Import 수행**
 이제는 K8s cluster로 접속하여 trident import 기능을 통해, Legacy의 vol01 볼륨을 K8s의 Persistent Volume으로 가져오도록 하겠습니다.
+시작에 앞서, ㅜㅏ
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">ssh debian@115.144.xxx.xxx[kubernetes  master node IP]
 login as: debian 
 debian@net5c0rjuz-master-1:~$ tridentctl get backend -n trident
@@ -227,11 +228,11 @@ command terminated with exit code 1
 
 </code></pre>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NjA2NzQxOSwtNDExMTI5NTc1LDE4MD
-U2NDgwNjIsLTczNjIzMDMzNSwtMTExMDg1MzE3MiwtMjY5MzM0
-NDYxLC0yMzA5MjU2NTksNDc4Nzc3NDEyLC0xNjY4NTE1ODM1LD
-E3NjkzMjA3NzUsMTM5MjE1MzY2NywtODQwNzMxODQzLDQ4NDQ0
-MTkwMiwtMTI3MTE4MDY1MiwtMTA5NDcwNzIwNiwtMjgyMzcwMj
-kxLC0xNDcyNzIyMDU1LC0yMTE0Mjk1ODE3LDEwMDMzMzQwMTdd
-fQ==
+eyJoaXN0b3J5IjpbLTYxNTc2MTc1MSwtOTk2MDY3NDE5LC00MT
+ExMjk1NzUsMTgwNTY0ODA2MiwtNzM2MjMwMzM1LC0xMTEwODUz
+MTcyLC0yNjkzMzQ0NjEsLTIzMDkyNTY1OSw0Nzg3Nzc0MTIsLT
+E2Njg1MTU4MzUsMTc2OTMyMDc3NSwxMzkyMTUzNjY3LC04NDA3
+MzE4NDMsNDg0NDQxOTAyLC0xMjcxMTgwNjUyLC0xMDk0NzA3Mj
+A2LC0yODIzNzAyOTEsLTE0NzI3MjIwNTUsLTIxMTQyOTU4MTcs
+MTAwMzMzNDAxN119
 -->
