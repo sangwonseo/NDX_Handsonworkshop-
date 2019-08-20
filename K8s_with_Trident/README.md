@@ -259,12 +259,16 @@ debian@net5c0rjuz-master-1:~/trident-installer/setup$ tridentctl import volume n
 +------------------------------------------+---------+---------------+----------+--------------------------------------+--------+---------+
 | pvc-5ed37b32-c388-11e9-b1a8-005056a80a4b | 1.0 GiB | basic         | file     | b1f87f94-6966-4ffe-9bf0-cff7e2c1a2cd | online | true    |
 +------------------------------------------+---------+---------------+----------+--------------------------------------+--------+---------+
+debian@net5c0rjuz-master-1:~/trident-installer/setup$ kubectl get pvc
+NAME         STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
+basic        Bound    pvc-db6adca2-bd17-11e9-b1a8-005056a80a4b   1Gi        RWO            basic          8d
+pvc-import   Bound    pvc-5ed37b32-c388-11e9-b1a8-005056a80a4b   1Gi        RWO            basic          2m5s
 
 
 
 </code></pre>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NzY5MTA4MywtNjA5OTk4MTYsLTk0Mj
+eyJoaXN0b3J5IjpbMTk4OTg4OTI0MSwtNjA5OTk4MTYsLTk0Mj
 U4MTEyOCwyMDM3MTkxMzY2LC0zNzUwOTU5MywtOTk2MDY3NDE5
 LC00MTExMjk1NzUsMTgwNTY0ODA2MiwtNzM2MjMwMzM1LC0xMT
 EwODUzMTcyLC0yNjkzMzQ0NjEsLTIzMDkyNTY1OSw0Nzg3Nzc0
