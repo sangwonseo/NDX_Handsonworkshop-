@@ -189,7 +189,7 @@ This is test data!!!
 [root@user1 /]# umount /mnt</code></pre>
 
 **Trident Import 수행**
-
+이제는 K8s cluster로 접속하여 trident import 기능을 통해, Legacy의 vol01 볼륨을 K8s의 
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">ssh debian@115.144.xxx.xxx
 login as: debian 
 debian@net5c0rjuz-master-1:~$ sudo -i
@@ -199,10 +199,10 @@ debian@net5c0rjuz-master-1:~$ sudo -i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEyMDU5MDIsMTgwNTY0ODA2MiwtNzM2Mj
-MwMzM1LC0xMTEwODUzMTcyLC0yNjkzMzQ0NjEsLTIzMDkyNTY1
-OSw0Nzg3Nzc0MTIsLTE2Njg1MTU4MzUsMTc2OTMyMDc3NSwxMz
-kyMTUzNjY3LC04NDA3MzE4NDMsNDg0NDQxOTAyLC0xMjcxMTgw
-NjUyLC0xMDk0NzA3MjA2LC0yODIzNzAyOTEsLTE0NzI3MjIwNT
-UsLTIxMTQyOTU4MTcsMTAwMzMzNDAxN119
+eyJoaXN0b3J5IjpbLTI4ODA2NjY2NiwxODA1NjQ4MDYyLC03Mz
+YyMzAzMzUsLTExMTA4NTMxNzIsLTI2OTMzNDQ2MSwtMjMwOTI1
+NjU5LDQ3ODc3NzQxMiwtMTY2ODUxNTgzNSwxNzY5MzIwNzc1LD
+EzOTIxNTM2NjcsLTg0MDczMTg0Myw0ODQ0NDE5MDIsLTEyNzEx
+ODA2NTIsLTEwOTQ3MDcyMDYsLTI4MjM3MDI5MSwtMTQ3MjcyMj
+A1NSwtMjExNDI5NTgxNywxMDAzMzM0MDE3XX0=
 -->
