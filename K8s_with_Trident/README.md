@@ -272,15 +272,18 @@ nginx-58df4bbfdd-l2tkt   1/1     Running             0          7d19h
 task-pod                 1/1     Running   0          18s
 debian@net5c0rjuz-master-1:~/trident-installer/setup$ kubectl exec -it task-pod -- df -h /usr/share/nginx/html
 Filesystem  Size  Used Avail Use% Mounted on
-10.200.xxx.xxx:/trident_pvc_6c2c5022_f48f_453a_a10c_a0f23d180478  1.0G  320K  1.0G  1% /usr/share/nginx/html</code></pre>
+10.200.xxx.xxx:/trident_pvc_6c2c5022_f48f_453a_a10c_a0f23d180478  1.0G  320K  1.0G  1% /usr/share/nginx/html
+debian@net5c0rjuz-master-1:~/trident-installer/setup$ kubectl exec -it task-pod -- cat /usr/share/nginx/html
+
+</code></pre>
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk2NjEwNTM4LC0xMTI0NzYyNTYwLDg4Nj
-M3MjIxMCwxOTg5ODg5MjQxLC02MDk5OTgxNiwtOTQyNTgxMTI4
-LDIwMzcxOTEzNjYsLTM3NTA5NTkzLC05OTYwNjc0MTksLTQxMT
-EyOTU3NSwxODA1NjQ4MDYyLC03MzYyMzAzMzUsLTExMTA4NTMx
-NzIsLTI2OTMzNDQ2MSwtMjMwOTI1NjU5LDQ3ODc3NzQxMiwtMT
-Y2ODUxNTgzNSwxNzY5MzIwNzc1LDEzOTIxNTM2NjcsLTg0MDcz
-MTg0M119
+eyJoaXN0b3J5IjpbMTA4Nzk3NzA4OCwtMTEyNDc2MjU2MCw4OD
+YzNzIyMTAsMTk4OTg4OTI0MSwtNjA5OTk4MTYsLTk0MjU4MTEy
+OCwyMDM3MTkxMzY2LC0zNzUwOTU5MywtOTk2MDY3NDE5LC00MT
+ExMjk1NzUsMTgwNTY0ODA2MiwtNzM2MjMwMzM1LC0xMTEwODUz
+MTcyLC0yNjkzMzQ0NjEsLTIzMDkyNTY1OSw0Nzg3Nzc0MTIsLT
+E2Njg1MTU4MzUsMTc2OTMyMDc3NSwxMzkyMTUzNjY3LC04NDA3
+MzE4NDNdfQ==
 -->
