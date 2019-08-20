@@ -186,9 +186,9 @@ tmpfs                      388092       0    388092   0% /run/user/0
 ...
 This is test data!!!
 ...
-[root@user1 /]# umount /mnt
+[root@user1 /]# umount /mnt</code></pre>
 
-
+**Trident Import 수행**
 
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">ssh debian@115.144.xxx.xxx
 login as: debian 
@@ -199,10 +199,10 @@ debian@net5c0rjuz-master-1:~$ sudo -i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE0MTk0Nzc2LDE4MDU2NDgwNjIsLTczNj
-IzMDMzNSwtMTExMDg1MzE3MiwtMjY5MzM0NDYxLC0yMzA5MjU2
-NTksNDc4Nzc3NDEyLC0xNjY4NTE1ODM1LDE3NjkzMjA3NzUsMT
-M5MjE1MzY2NywtODQwNzMxODQzLDQ4NDQ0MTkwMiwtMTI3MTE4
-MDY1MiwtMTA5NDcwNzIwNiwtMjgyMzcwMjkxLC0xNDcyNzIyMD
-U1LC0yMTE0Mjk1ODE3LDEwMDMzMzQwMTddfQ==
+eyJoaXN0b3J5IjpbOTEyMDU5MDIsMTgwNTY0ODA2MiwtNzM2Mj
+MwMzM1LC0xMTEwODUzMTcyLC0yNjkzMzQ0NjEsLTIzMDkyNTY1
+OSw0Nzg3Nzc0MTIsLTE2Njg1MTU4MzUsMTc2OTMyMDc3NSwxMz
+kyMTUzNjY3LC04NDA3MzE4NDMsNDg0NDQxOTAyLC0xMjcxMTgw
+NjUyLC0xMDk0NzA3MjA2LC0yODIzNzAyOTEsLTE0NzI3MjIwNT
+UsLTIxMTQyOTU4MTcsMTAwMzMzNDAxN119
 -->
