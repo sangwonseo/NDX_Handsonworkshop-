@@ -213,9 +213,9 @@ allow-hotplug ens160
 iface ens160 inet dhcp
 auto ens192
 iface ens192 inet static
-address 10.255.100.37
+address 10.255.xxx.xxx
 netmask 255.255.255.0
-root@net5c0rjuz-master-1:~# route add -net 10.255.100.0 netmask 255.255.255.0 dev ens192
+root@net5c0rjuz-master-1:~# route add -net 10.255.xxx.0 netmask 255.255.255.0 dev ens192
 root@net5c0rjuz-master-1:~# /etc/init.d/networking restart
 [ ok ] Restarting networking (via systemctl): networking.service.
 
@@ -258,7 +258,7 @@ command terminated with exit code 1
 
 </code></pre>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNTU5ODQxNCwyMDM3MTkxMzY2LC0zNz
+eyJoaXN0b3J5IjpbLTk0MjU4MTEyOCwyMDM3MTkxMzY2LC0zNz
 UwOTU5MywtOTk2MDY3NDE5LC00MTExMjk1NzUsMTgwNTY0ODA2
 MiwtNzM2MjMwMzM1LC0xMTEwODUzMTcyLC0yNjkzMzQ0NjEsLT
 IzMDkyNTY1OSw0Nzg3Nzc0MTIsLTE2Njg1MTU4MzUsMTc2OTMy
