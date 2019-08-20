@@ -144,8 +144,9 @@ On-premise의 Linux서버에 Mount 되어 있는 Legacy NAS 스토리지 Volume 
 **Test 볼륨 생성**
 기 설치되어 있는 ONTAP Select의 System Manager에 접속하여 실습을 위한 볼륨을 각자 생성하도록 합니다.
 웹 브라우저에서 https://[ONTAP select cluster management IP] 로 접속합니다.
-- ㅇㄹㅇㄹ
-- 
+- login : admin
+- password : **********
+창 우측 Storage
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">ssh debian@115.144.xxx.xxx
 login as: debian 
 debian@net5c0rjuz-master-1:~$ sudo -i
@@ -155,7 +156,7 @@ debian@net5c0rjuz-master-1:~$ sudo -i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU5NDkxOTg5LC0yNjkzMzQ0NjEsLTIzMD
+eyJoaXN0b3J5IjpbODI2NTg1NjA5LC0yNjkzMzQ0NjEsLTIzMD
 kyNTY1OSw0Nzg3Nzc0MTIsLTE2Njg1MTU4MzUsMTc2OTMyMDc3
 NSwxMzkyMTUzNjY3LC04NDA3MzE4NDMsNDg0NDQxOTAyLC0xMj
 cxMTgwNjUyLC0xMDk0NzA3MjA2LC0yODIzNzAyOTEsLTE0NzI3
