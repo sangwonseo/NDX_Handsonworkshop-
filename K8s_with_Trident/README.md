@@ -197,6 +197,7 @@ debian@net5c0rjuz-master-1:~$ sudo -i
 root@net5c0rjuz-master-1:~# ifconfig ens160 | grep inet
         inet 115.144.xxx.xxx  netmask 255.255.255.0  broadcast 115.144.xxx.xxx
         inet6 fe80::250:56ff:fea8:a4b  prefixlen 64  scopeid 0x20<link>
+root@net5c0rjuz-master-1:~# ifconfig ens192 up
 
 
 
@@ -237,7 +238,7 @@ command terminated with exit code 1
 
 </code></pre>
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMDIxODk0OSwyMDM3MTkxMzY2LC0zNz
+eyJoaXN0b3J5IjpbLTQzMTQ1MjY5OSwyMDM3MTkxMzY2LC0zNz
 UwOTU5MywtOTk2MDY3NDE5LC00MTExMjk1NzUsMTgwNTY0ODA2
 MiwtNzM2MjMwMzM1LC0xMTEwODUzMTcyLC0yNjkzMzQ0NjEsLT
 IzMDkyNTY1OSw0Nzg3Nzc0MTIsLTE2Njg1MTU4MzUsMTc2OTMy
