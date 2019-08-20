@@ -12,7 +12,7 @@
 >[Trident 설치 및 구성 가이드](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_on_MultiCloud/OnPremNKS.md#step3-k8s-cluster%EC%97%90-trident-%EC%84%A4%EC%B9%98)
 >Step3 - 4까지 진행
 
-## 1. RWX Access mode PVC 구성**
+## RWX Access mode PVC 구성
 
 RWX(Read Write Many) 모드는 다수의 Worker에서 동시에 Volume을 mount 하여 Read/Write 가 가능 하도록 합니다. Kubernetes 환경에서 다수의 node에 다수의 container를 통해 파일 공유가 필요 할 경우에 사용합니다.
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined"># vi access-mode-pvc.yaml
@@ -75,7 +75,7 @@ sh> df -k    ## NAS mount 여부 확인
 sh> df -k    ## nginx1과 동일한 NAS mount 되었는지 확인
 </code></pre>
 
-**2. PVC/PV Resize 기능 구현**
+## PVC/PV Resize 기능 구현
 
 PVC Resize 기능은, 이미 배포되어 있는  PV의 사용량 증가로 인해, 온라인 중에 Volume 용량을 늘리고 싶을 때 사용 할 수 있는 기능입니다. 현재 Kubernetes의 PVC resize는 용량 증설만 가능하며, 용량 Shrink 는 지원하지 않습니다.
 
@@ -116,7 +116,7 @@ spec:
 ...
 </code></pre>
 
-**3. PVC/PV Clone 기능 구현**
+## PVC/PV Clone 기능 구현
 
 Clone 기능은 기존에 생성되어 운영중인 Volume을, Trident는 NetApp의 FlexClone 기능을 이용하기 때문에 Volume에 저장되어 있는 데이터량과 상관없이 수초내에 다수개의 PVC/PV를 복제 할 수 있습니다.
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined"># cat pvc-basic-clone-nfs.yaml
@@ -137,7 +137,7 @@ spec:
 # kubectl get pvc
 </core></pre>
 
-**4. Legacy Volume Import 기능 구현**
+## 4. Legacy Volume Import 기능 구현
 
 On-premise의 Linux서버에 Mount 되어 있는 Legacy NAS 스토리지 Volume 에 테스트 데이터를 생성 한 후, 이 Volume을 Linux 서버에서 Umount 한 후, 기 생성되어 있는 K8s Cluster의 PV로 Import 한 후 Legacy 에서 생성한 data 가 그대로 인식되는지 확인합니다.
 
@@ -152,9 +152,9 @@ debian@net5c0rjuz-master-1:~$ sudo -i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIyNDkwNzk3LC0yNjkzMzQ0NjEsLTIzMD
-kyNTY1OSw0Nzg3Nzc0MTIsLTE2Njg1MTU4MzUsMTc2OTMyMDc3
-NSwxMzkyMTUzNjY3LC04NDA3MzE4NDMsNDg0NDQxOTAyLC0xMj
-cxMTgwNjUyLC0xMDk0NzA3MjA2LC0yODIzNzAyOTEsLTE0NzI3
-MjIwNTUsLTIxMTQyOTU4MTcsMTAwMzMzNDAxN119
+eyJoaXN0b3J5IjpbLTYxNDIwNjE0OSwtMjY5MzM0NDYxLC0yMz
+A5MjU2NTksNDc4Nzc3NDEyLC0xNjY4NTE1ODM1LDE3NjkzMjA3
+NzUsMTM5MjE1MzY2NywtODQwNzMxODQzLDQ4NDQ0MTkwMiwtMT
+I3MTE4MDY1MiwtMTA5NDcwNzIwNiwtMjgyMzcwMjkxLC0xNDcy
+NzIyMDU1LC0yMTE0Mjk1ODE3LDEwMDMzMzQwMTddfQ==
 -->
