@@ -141,13 +141,10 @@ debian@net5c0rjuz-master-1:~/trident-installer$ vi setup/backend-ontap-nas.json
 "username": "admin",
 "password": "xxxxxxx"
 }
-debian@net5c0rjuz-master-1:~/trident-installer$ ./tridentctl -n trident create backend -f setup/backend-ontap-nas.json
-
-</code></pre>
-만약, Backend 생성시 위와 같은 Error가 발생하면, SVM에 aggregate가 assign 되지 않아 발생하는 error 입니다. 스토리지에 CLI로 접속하여 SVM에 aggr을 assign 하도록 합니다.
-<pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">ssh admin@  115.144.xxx.xxx
-password : xxxxxxxx
-
+debian@net5c0rjuz-master-1:~/trident-installer$ ./tridentctl -n trident create backend -f setup/backend-ontap-nas.json</code></pre>
+> 만약, Backend 생성시 aggr assign Error가 발생하면, SVM에 aggregate가 assign 되지 않아 발생하는 error 입니다. 스토리지에 CLI로 접속하여 SVM에 aggr을 assign 하도록 합니다.
+><pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">ssh admin@  115.144.xxx.xxx
+>password : xxxxxxxx
 OTC_Netapp_korea_lab::> vserver modify -vserver svm-test -aggr-list aggr1</code></pre>
 다시 Master node로 돌아가서,
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">debian@net5c0rjuz-master-1:~/trident-installer$ ./tridentctl -n trident create backend -f setup/backend-ontap-nas.json
@@ -264,11 +261,11 @@ Filesystem  Size  Used Avail Use% Mounted on
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1ODE3MTQxMiwxMjM5MDcyOTI3LC0xNT
-U3Njg4ODQyLC0xMTI1NjI2MjEwLDExMzk2NDgxOTQsMTE5OTAy
-MjExMSwtMTYzNzQ4MDY5Myw5NTUwMTg5OTksMTkzMDQ2NjExOC
-w5NTUwMTg5OTksMTkzMDQ2NjExOCwtNjk2NDgxNTc2LC04OTU4
-MjExNjAsMzA3NjQxOTI4LDExMTA3NDk3OCw0NTgzNzYxODIsMT
-U3ODQ5MzA3MywtMTY2NDUxNDMxOCwtMTc5NDM4NjA2LC0xMzk2
-ODc0NTY2XX0=
+eyJoaXN0b3J5IjpbLTE1MzI5MjkyNjEsMTIzOTA3MjkyNywtMT
+U1NzY4ODg0MiwtMTEyNTYyNjIxMCwxMTM5NjQ4MTk0LDExOTkw
+MjIxMTEsLTE2Mzc0ODA2OTMsOTU1MDE4OTk5LDE5MzA0NjYxMT
+gsOTU1MDE4OTk5LDE5MzA0NjYxMTgsLTY5NjQ4MTU3NiwtODk1
+ODIxMTYwLDMwNzY0MTkyOCwxMTEwNzQ5NzgsNDU4Mzc2MTgyLD
+E1Nzg0OTMwNzMsLTE2NjQ1MTQzMTgsLTE3OTQzODYwNiwtMTM5
+Njg3NDU2Nl19
 -->
