@@ -60,13 +60,14 @@ ghost   LoadBalancer   10.255.100.23   115.144.174.247   80:31435/TCP   21h</cod
 
 ![enter image description here](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/images/ghost_import.PNG)
 
+[메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/)
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0NjU0MjM2MCwzOTQ0OTY0OTAsLTc2Nj
-EzODkwOSwtODkyMjk1MTg5LDIwNTg4MzMzOSwtOTY4Mzg4OTUz
-LDc2MDc5ODk5OSwtMzg3NTI4NDg4LC0xMTAzNjQ4MjE5LDE2OT
-k5NzQ1MzksLTE0Mjk4ODQzMCwtOTM1MzcyMzA0LDg3NzYzNTUy
-Nl19
+eyJoaXN0b3J5IjpbOTI5MTkwNTU3LDE0NDY1NDIzNjAsMzk0ND
+k2NDkwLC03NjYxMzg5MDksLTg5MjI5NTE4OSwyMDU4ODMzMzks
+LTk2ODM4ODk1Myw3NjA3OTg5OTksLTM4NzUyODQ4OCwtMTEwMz
+Y0ODIxOSwxNjk5OTc0NTM5LC0xNDI5ODg0MzAsLTkzNTM3MjMw
+NCw4Nzc2MzU1MjZdfQ==
 -->
