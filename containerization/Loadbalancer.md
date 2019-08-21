@@ -8,8 +8,7 @@
 1. 이미 설치된  K8S Cluster에 접속합니다.
 
 2.  Metallb yaml 파일을 다운 받아 Cluster 내에서 적용합니다. ([Metallb.yaml](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/sourcefile/metallb.yaml))  
-
-`kubectl apply -f https://raw.githubusercontent.com/google/metallb/v0.7.3/manifests/metallb.yaml`
+ ``` # kubectl apply -f https://raw.githubusercontent.com/google/metallb/v0.7.3/manifests/metallb.yaml ``` 
 4.  MetalLB POD 정상 동작 동작을 확인합니다.
 
 `kubectl get pods -n metallb-system`
@@ -27,8 +26,9 @@ data:
       addresses:
       - xx.xx.xx.xx </code></pre>
 ## Step 2. External-IP Service  생성하기 
+
 1. Service 생성될 ghost라는 namespace를 생성합니다.
-     `# kubectl create namespace ghost`
+     ``` # kubectl create namespace ghost ``` 
      
 2. 생성된 ghost namespace를 확인합니다. 
      `# kubectl get namespaces`
@@ -48,6 +48,6 @@ ghost   LoadBalancer   10.255.100.23   115.144.174.247   80:31435/TCP   4h36</co
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NDYzMjAsMzc4NTQ3NzUzLC0xNDgwOD
-Y5MTMsODY3Njk0ODg1XX0=
+eyJoaXN0b3J5IjpbMTg5Mjc1NTM1NSwzNzg1NDc3NTMsLTE0OD
+A4NjkxMyw4Njc2OTQ4ODVdfQ==
 -->
