@@ -103,11 +103,11 @@ Cluster Name을 EKS-cluster로 변경 후 진행하며, 다른 설정값은 기�
 
 약45-60초 경과 후 배포가 완료 됩니다.
 
-CONTROL PLANE 창에서 Azure-cluster 클릭 > Solutions 에서 HAPROXY 가 설치되었는지 확인 합니다.
+CONTROL PLANE 창에서 Azure-cluster 클릭 > Solutions 에서 HAPROXY 가 설치 되었는지 확인 합니다.
 
 >Kubernetes Dashboard 클릭하면 기본으로 설치된 dashboard를 볼수 있습니다. Dashboard를 통해 자원 사용 모니터링, Deploy 된 Object 정보들을 조회할 수 있습니다. Azure-cluster 창으로 돌아가서, Event Log 를 클릭하면 요청한 Job에 대한 처리 이력을 확인 할 수 있습니다.
 
-또다른 설치 예제로, K8s Cluster의 자세한 시스템 자원 모니터링을 위해 Promethus를 설치해 보도록 하겠습니다.
+또 다른 설치 예제로, K8s Cluster의 자세한 시스템 자원 모니터링을 위해 Promethus를 설치해 보도록 하겠습니다.
 Azure-cluster 창에서 + ADD SOLUTION 메뉴 클릭 > Application Marketplace에서 Promethus 선택 > 1분이내 설치가 완료 됩니다.
 
 설치 완료 후, Prometheus Endpoint URL을 클릭 합니다.
@@ -122,7 +122,7 @@ Grafana home 창의 좌측 메뉴 중 Dashboard 메뉴 > manage 클릭하여 Nod
 NKS 홈페이지 > Cluster (Azure-cluster) 선택 하여 kubeconfig를 자신의 Local PC 에 다운로드 합니다. 
 - 저장경로 : C:\Users\JINHAK\.kube\kubeconfig
 
->자신의 Local PC에는 사전에 kubectl을 설치 합니다. (참고 링크 : [Windows 에 kubectl 설치하기](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-windows) )
+>자신의 Local PC에는 사전에 kubectl을 설치 함 (참고 링크 : [Windows 에 kubectl 설치하기](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-on-windows) )
 
 설치 완료 후, window CMD 창을 띄운 후 아래와 같이 접속 확인합니다.
 
@@ -135,7 +135,7 @@ net65b5yqh-worker-2  Ready  <none>  25h  v1.15.0
 C:\Users\JINHAK\.kube></code></pre>
 
 이외에, 다양한 Kubectl client를 이용해 다양한 K8s Cluster의 operation이 가능합니다.
->자세한 Kubectl client에 대한 사용법은 이번 과정에서는 다루지 않습니다.
+>자세한 Kubectl client에 대한 사용법은 이번 과정에서는 다루지 않음
 
 3. Helm Chart를 이용한 Application 배포
 
@@ -155,8 +155,8 @@ MY CHARTS에 등록이 완료 되면, NKS Home > CONTROL PLANE > CLUSTERS > Azur
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4NjQ5OTYwOCw3MzIzMDE2OTMsLTU1OT
-M2MTYxOSwxNTk1NTQ5MzcwLC0xNzE5OTg4NjUsNjg3MjIwNzM1
-LC0yMDQ2MjExOTExLC00Mjg3NjQ5NzYsLTIwNTA1NjQ2NDEsLT
-Q5NDE2Nzk2NCwtMTY1NTI1ODkxNyw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTY3OTk5ODM2LDczMjMwMTY5MywtNTU5Mz
+YxNjE5LDE1OTU1NDkzNzAsLTE3MTk5ODg2NSw2ODcyMjA3MzUs
+LTIwNDYyMTE5MTEsLTQyODc2NDk3NiwtMjA1MDU2NDY0MSwtND
+k0MTY3OTY0LC0xNjU1MjU4OTE3LDczMDk5ODExNl19
 -->
