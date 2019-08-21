@@ -15,7 +15,7 @@
 ![enter image description here](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_on_MultiCloud/images/01_NKS%20memu1.png)
 >30일 trial license를 제공하기 때문에, credit card 등록없이 체험 가능
 
-또는, [NKS 홈페이지(https://nks.netapp.io)](https://nks.netapp.io)  로 직접 접속하여서 로그인하면, 아래 웹페이지로 접속이 되고, '+ADD A CLUSTER NOW' 메뉴 선택하여 다음 단계를 진행 할 수 있습니다.
+또는, NKS 홈페이지([https://nks.netapp.io](https://nks.netapp.io))  로 직접 접속하여서 로그인하면, 아래 웹페이지로 접속이 되고, '+ADD A CLUSTER NOW' 메뉴 선택하여 다음 단계를 진행 할 수 있습니다.
 ![enter image description here](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_on_MultiCloud/images/02_NKS%20home.png)
 
 2. 다음 단계는 Provider를 선택하는 단계입니다.
@@ -227,11 +227,11 @@ Filesystem  Size  Used Avail Use% Mounted on
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NjkzMzc5OSw5NTUwMTg5OTksMTkzMD
-Q2NjExOCw5NTUwMTg5OTksMTkzMDQ2NjExOCwtNjk2NDgxNTc2
-LC04OTU4MjExNjAsMzA3NjQxOTI4LDExMTA3NDk3OCw0NTgzNz
-YxODIsMTU3ODQ5MzA3MywtMTY2NDUxNDMxOCwtMTc5NDM4NjA2
-LC0xMzk2ODc0NTY2LC0xMzk2ODc0NTY2LC0xMjExMzg5NDkzLC
-02MzIwMDg5NjcsLTEyMTEzODk0OTMsMTg3MDUxNjg4NiwtMTUy
-NzkzNTEwMF19
+eyJoaXN0b3J5IjpbLTE2Mzc0ODA2OTMsOTU1MDE4OTk5LDE5Mz
+A0NjYxMTgsOTU1MDE4OTk5LDE5MzA0NjYxMTgsLTY5NjQ4MTU3
+NiwtODk1ODIxMTYwLDMwNzY0MTkyOCwxMTEwNzQ5NzgsNDU4Mz
+c2MTgyLDE1Nzg0OTMwNzMsLTE2NjQ1MTQzMTgsLTE3OTQzODYw
+NiwtMTM5Njg3NDU2NiwtMTM5Njg3NDU2NiwtMTIxMTM4OTQ5My
+wtNjMyMDA4OTY3LC0xMjExMzg5NDkzLDE4NzA1MTY4ODYsLTE1
+Mjc5MzUxMDBdfQ==
 -->
