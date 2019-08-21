@@ -191,35 +191,7 @@ This is test data!!!
 **Trident Import 수행**
 
 이제는 K8s cluster로 접속하여 trident import 기능을 통해, Legacy의 vol01 볼륨을 K8s의 Persistent Volume으로 가져오도록 하겠습니다.
-시작에 앞서, NKS on HCI는 기본적으로 ONTAP Select와 통신을 위한 10.255.xxx.xxx IP를 위한 Network interface가 disable 되어 있기 때문에, 수동으로 10.255.xxx.xxx 대 IP를 심어 주어야 합니다.  각 사용자 별로 Master node에 설정된 115.114.xxx.zzz의 마지막 IP(zzz)를 동일하게 10.255.yyy.zzz에 설정하도록 합니다.
-<pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">ssh debian@115.144.xxx.xxx[kubernetes  master node IP]
-login as: debian 
-debian@net5c0rjuz-master-1:~$ sudo -i
-root@net5c0rjuz-master-1:~# ifconfig ens160 | grep inet
-        inet 115.144.xxx.xxx  netmask 255.255.255.0  broadcast 115.144.xxx.xxx
-        inet6 fe80::250:56ff:fea8:a4b  prefixlen 64  scopeid 0x20<link>
-root@net5c0rjuz-master-1:~# ifconfig ens192 up
-root@net5c0rjuz-master-1:~# vi /etc/network/interfaces
-# This file describes the network interfaces available on your system
-# and how to activate them. For more information, see interfaces(5).
 
-source /etc/network/interfaces.d/*
-
-# The loopback network interface
-auto lo
-iface lo inet loopback
-
-# The primary network interface
-allow-hotplug ens160
-iface ens160 inet dhcp
-auto ens192
-iface ens192 inet static
-address 10.255.xxx.xxx
-netmask 255.255.255.0
-root@net5c0rjuz-master-1:~# route add -net 10.255.xxx.0 netmask 255.255.255.0 dev ens192
-root@net5c0rjuz-master-1:~# /etc/init.d/networking restart
-[ ok ] Restarting networking (via systemctl): networking.service.</code></pre>
-나머지 두개의 worker node 도 동일하게 ens192 네트웍 설정을 진행 합니다. 
 
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">
 
@@ -281,11 +253,11 @@ This is test data!!!
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU4MDc0OTI4LDEyMzI5Njk5NDAsLTYxMD
-Q1ODQ0OSwtMTEyNDc2MjU2MCw4ODYzNzIyMTAsMTk4OTg4OTI0
-MSwtNjA5OTk4MTYsLTk0MjU4MTEyOCwyMDM3MTkxMzY2LC0zNz
-UwOTU5MywtOTk2MDY3NDE5LC00MTExMjk1NzUsMTgwNTY0ODA2
-MiwtNzM2MjMwMzM1LC0xMTEwODUzMTcyLC0yNjkzMzQ0NjEsLT
-IzMDkyNTY1OSw0Nzg3Nzc0MTIsLTE2Njg1MTU4MzUsMTc2OTMy
-MDc3NV19
+eyJoaXN0b3J5IjpbMTE0MTM0NzY0NiwyNTgwNzQ5MjgsMTIzMj
+k2OTk0MCwtNjEwNDU4NDQ5LC0xMTI0NzYyNTYwLDg4NjM3MjIx
+MCwxOTg5ODg5MjQxLC02MDk5OTgxNiwtOTQyNTgxMTI4LDIwMz
+cxOTEzNjYsLTM3NTA5NTkzLC05OTYwNjc0MTksLTQxMTEyOTU3
+NSwxODA1NjQ4MDYyLC03MzYyMzAzMzUsLTExMTA4NTMxNzIsLT
+I2OTMzNDQ2MSwtMjMwOTI1NjU5LDQ3ODc3NzQxMiwtMTY2ODUx
+NTgzNV19
 -->
