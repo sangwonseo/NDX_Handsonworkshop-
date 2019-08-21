@@ -199,6 +199,9 @@ debian@net5c0rjuz-master-1:~/trident-installer$</code></pre>
 }
 debian@net5c0rjuz-master-1:~/trident-installer$</code></pre>
 3. 첫번째 PVC, PV, Volume 프로비저닝
+PV (PersistentVolume)는 시스템 관리자가, Storage Class를 사용하여 프로비저닝 한 클러스터의 스토리지입니다. 
+
+PVC (PersistentVolumeClaim)는 사용자의 저장 요청입니다. 포드와 비슷합니다. 포드는 노드 리소스를 소비하고 PVC는 PV 리소스를 소비합니다. 포드는 특정 수준의 리소스 (CPU 및 메모리)를 요청할 수 있습니다. 클레임은 특정 크기 및 액세스 모드를 요청할 수 있습니다 (예 : 한 번 읽기 / 쓰기 또는 여러 번 읽기 전용으로 마운트 할 수 있음).
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">debian@net5c0rjuz-master-1:~/trident-installer$ cp sample-input/pvc-basic.yaml setup
 debian@net5c0rjuz-master-1:~/trident-installer$ cat setup/pvc-basic.yaml
 kind: PersistentVolumeClaim
@@ -262,7 +265,7 @@ Filesystem  Size  Used Avail Use% Mounted on
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0MjMyNTk4LDUzNDUwNDA4MiwxMjM5MD
+eyJoaXN0b3J5IjpbODI3NTkxNDY0LDUzNDUwNDA4MiwxMjM5MD
 cyOTI3LC0xNTU3Njg4ODQyLC0xMTI1NjI2MjEwLDExMzk2NDgx
 OTQsMTE5OTAyMjExMSwtMTYzNzQ4MDY5Myw5NTUwMTg5OTksMT
 kzMDQ2NjExOCw5NTUwMTg5OTksMTkzMDQ2NjExOCwtNjk2NDgx
