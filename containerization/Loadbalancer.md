@@ -27,7 +27,7 @@ data:
       addresses:
       - xx.xx.xx.xx </code></pre>
       
-## Step 2. External-IP Service  생성하기 
+## Step 2. External-IP Service  생성
 
 1. Service 생성될 ghost라는 namespace를 생성합니다.
 
@@ -55,7 +55,7 @@ ghost   LoadBalancer   10.255.100.23   115.144.174.247   80:31435/TCP   4h36</co
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTgzODYwMDE0LC0xNTEzMTM1MiwxODYzND
-YxNjMyLDE2NTk1MTc4OTQsMTY2ODc5NTYxNCwzNzg1NDc3NTMs
-LTE0ODA4NjkxMyw4Njc2OTQ4ODVdfQ==
+eyJoaXN0b3J5IjpbLTQyNTEyODYwNCwtMTUxMzEzNTIsMTg2Mz
+Q2MTYzMiwxNjU5NTE3ODk0LDE2Njg3OTU2MTQsMzc4NTQ3NzUz
+LC0xNDgwODY5MTMsODY3Njk0ODg1XX0=
 -->
