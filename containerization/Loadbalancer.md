@@ -2,9 +2,54 @@
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE0ODA4NjkxMyw4Njc2OTQ4ODVdfQ==
 -->
+이번 Task는 K8S Cluster내의 Container를 외부에서 접속할 수 있는 S/W Load balancer Pod를 설치 합니다.
 
+**사전 준비사항** 
+ - [ ] [K8s Cluster 접속 환경 셋업](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_on_MultiCloud/OnPremNKS.md)    
+
+## Step 1. MetalLB manifest  적용 
+
+1. 이미 설치된  K8S Cluster에 접속합니다.
+2.  Metallb yaml 파일을 다운 받아 Cluster 내에서 적용합니다. ([Metallb.yaml](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/sourcefile/metallb.yaml))  
+
+`kubectl apply -f https://raw.githubusercontent.com/google/metallb/v0.7.3/manifests/metallb.yaml`
+4.  MetalLB POD 정상 동작 동작을 확인합니다.
+
+`kubectl get pods -n metallb-system`
+5. Metallb configmap 파일을 다운 받아 address 부분에 사전에 배정된 IP을 기입합니다. ([Metallb_configmap.yaml](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/sourcefile/metallbconfigmap.yaml))
+ <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: metallb-system
+  name: config
+data:
+  config: |
+    address-pools:
+    - name: my-ip-space
+      protocol: layer2
+      addresses:
+      - xx.xx.xx.xx </code></pre>
+## Step 2. External-IP Service  생성하기 
+1. Service 생성될 ghost라는 namespace를 생성합니다.
+     `# kubectl create namespace ghost`
+     
+2. 생성된 ghost namespace를 확인합니다. 
+     `# kubectl get namespaces`
+3.  Service yaml 파일을 다운 받아 ghost namesapce에 Service를 생성합니다.([ghost_service.yaml](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/sourcefile/ghost_service.yaml))
+
+       `# kubectl apply -f ghost_service.yaml`
+       
+4.  생성된 Service와 해당됭 External IP를 확인합니다.
+<pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined"># kubectl get svc -n ghost
+NAME    TYPE           CLUSTER-IP      EXTERNAL-IP       PORT(S)        AGE
+ghost   LoadBalancer   10.255.100.23   115.144.174.247   80:31435/TCP   4h36</code></pre> 
+
+> **해당 Service는 향후 Task 2 POD 배포시 사용될 예정** 
+
+[메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/)
+   
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc4NTQ3NzUzLDEyODE0OTg5MjIsLTE0OD
-A4NjkxMyw4Njc2OTQ4ODVdfQ==
+eyJoaXN0b3J5IjpbLTE5MTUyMjAwNjEsMzc4NTQ3NzUzLC0xND
+gwODY5MTMsODY3Njk0ODg1XX0=
 -->
