@@ -51,14 +51,15 @@ ghost-75869fbd6-68ccd   1/1     Running   0          10m</code></pre>
 debian@net8uz4wdg-master-1:/home/admindebian/trident-installer$ kubectl get svc -n ghost
 NAME    TYPE           CLUSTER-IP      EXTERNAL-IP       PORT(S)        AGE
 ghost   LoadBalancer   10.255.100.23   115.144.174.247   80:31435/TCP   21h</code></pre>
-4. 웹브라우저을 열어 http://EXTERNAL-IP 을 입력 후 Ghost 블로그 정상 동작 및 기존 데이터 
+4. 웹브라우저을 열어 http://EXTERNAL-IP 을 입력 후 Ghost 블로그 정상 동작 및 기존 데이터 Import 여부를 확인합니다.
+
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwOTg1OTE0OCwtODkyMjk1MTg5LDIwNT
-g4MzMzOSwtOTY4Mzg4OTUzLDc2MDc5ODk5OSwtMzg3NTI4NDg4
-LC0xMTAzNjQ4MjE5LDE2OTk5NzQ1MzksLTE0Mjk4ODQzMCwtOT
-M1MzcyMzA0LDg3NzYzNTUyNl19
+eyJoaXN0b3J5IjpbLTIxMTk5OTYxNTMsLTg5MjI5NTE4OSwyMD
+U4ODMzMzksLTk2ODM4ODk1Myw3NjA3OTg5OTksLTM4NzUyODQ4
+OCwtMTEwMzY0ODIxOSwxNjk5OTc0NTM5LC0xNDI5ODg0MzAsLT
+kzNTM3MjMwNCw4Nzc2MzU1MjZdfQ==
 -->
