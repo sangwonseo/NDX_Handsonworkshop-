@@ -65,6 +65,36 @@ netyo6pai7-pool-1-wz8p8  Ready  <none>  17h  v1.13.7
 netyo6pai7-pool-1-z6x66  Ready  <none>  17h  v1.13.7
 debian@netyo6pai7-master-1:~$</code></pre>
 
+다음 단계로 넘어가기 전에, NKS on HCI는 기본적으로 ONTAP Select와 통신을 위한 10.255.xxx.xxx IP를 위한 Network interface가 disable 되어 있기 때문에, 수동으로 10.255.xxx.xxx 대 IP를 심어 주어야 합니다.  각 사용자 별로 Master node에 설정된 115.114.xxx.zzz의 마지막 IP(zzz)를 동일하게 10.255.yyy.zzz에 설정하도록 합니다.
+<pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">ssh debian@115.144.xxx.xxx[kubernetes  master node IP]
+login as: debian 
+debian@net5c0rjuz-master-1:~$ sudo -i
+root@net5c0rjuz-master-1:~# ifconfig ens160 | grep inet
+        inet 115.144.xxx.xxx  netmask 255.255.255.0  broadcast 115.144.xxx.xxx
+        inet6 fe80::250:56ff:fea8:a4b  prefixlen 64  scopeid 0x20<link>
+root@net5c0rjuz-master-1:~# ifconfig ens192 up
+root@net5c0rjuz-master-1:~# vi /etc/network/interfaces
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+allow-hotplug ens160
+iface ens160 inet dhcp
+auto ens192
+iface ens192 inet static
+address 10.255.xxx.xxx
+netmask 255.255.255.0
+root@net5c0rjuz-master-1:~# route add -net 10.255.xxx.0 netmask 255.255.255.0 dev ens192
+root@net5c0rjuz-master-1:~# /etc/init.d/networking restart
+[ ok ] Restarting networking (via systemctl): networking.service.</code></pre>
+나머지 두개의 worker node 도 동일하게 ens192 네트웍 설정을 진행 합니다. 
+
 ## Step3. K8s cluster에 Trident 설치
 다음으로 Trident 구성을 진행합니다. NKS HCI에는 기본으로 Trident 19.04.1 버전의 패키지가 다운로드 되어 있습니다. 그렇지 않으면, 다시 다운로드하여 설치하여도 됩니다.
 1. Installer download (기존 download 되어 있는 패키지 사용시는 skip)
@@ -232,11 +262,11 @@ Filesystem  Size  Used Avail Use% Mounted on
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzOTA3MjkyNywtMTU1NzY4ODg0MiwtMT
-EyNTYyNjIxMCwxMTM5NjQ4MTk0LDExOTkwMjIxMTEsLTE2Mzc0
-ODA2OTMsOTU1MDE4OTk5LDE5MzA0NjYxMTgsOTU1MDE4OTk5LD
-E5MzA0NjYxMTgsLTY5NjQ4MTU3NiwtODk1ODIxMTYwLDMwNzY0
-MTkyOCwxMTEwNzQ5NzgsNDU4Mzc2MTgyLDE1Nzg0OTMwNzMsLT
-E2NjQ1MTQzMTgsLTE3OTQzODYwNiwtMTM5Njg3NDU2NiwtMTM5
+eyJoaXN0b3J5IjpbLTE4NDQyODIwMDQsMTIzOTA3MjkyNywtMT
+U1NzY4ODg0MiwtMTEyNTYyNjIxMCwxMTM5NjQ4MTk0LDExOTkw
+MjIxMTEsLTE2Mzc0ODA2OTMsOTU1MDE4OTk5LDE5MzA0NjYxMT
+gsOTU1MDE4OTk5LDE5MzA0NjYxMTgsLTY5NjQ4MTU3NiwtODk1
+ODIxMTYwLDMwNzY0MTkyOCwxMTEwNzQ5NzgsNDU4Mzc2MTgyLD
+E1Nzg0OTMwNzMsLTE2NjQ1MTQzMTgsLTE3OTQzODYwNiwtMTM5
 Njg3NDU2Nl19
 -->
