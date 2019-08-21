@@ -219,9 +219,9 @@ netmask 255.255.255.0
 root@net5c0rjuz-master-1:~# route add -net 10.255.xxx.0 netmask 255.255.255.0 dev ens192
 root@net5c0rjuz-master-1:~# /etc/init.d/networking restart
 [ ok ] Restarting networking (via systemctl): networking.service.</code></pre>
-나머지 두개의 worker node 도 동일하게 ens19
+나머지 두개의 worker node 도 동일하게 ens192 네트웍 설정을 진행 합니다.
 
-debian@net5c0rjuz-master-1:~$ tridentctl get backend -n trident
+<pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">debian@net5c0rjuz-master-1:~$ tridentctl get backend -n trident
 +------------+----------------+--------------------------------------+--------+---------+
 |    NAME    | STORAGE DRIVER |                 UUID                 | STATE  | VOLUMES |
 +------------+----------------+--------------------------------------+--------+---------+
@@ -279,11 +279,11 @@ This is test data!!!
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNjk1NjM0LC02MTA0NTg0NDksLTExMj
-Q3NjI1NjAsODg2MzcyMjEwLDE5ODk4ODkyNDEsLTYwOTk5ODE2
-LC05NDI1ODExMjgsMjAzNzE5MTM2NiwtMzc1MDk1OTMsLTk5Nj
-A2NzQxOSwtNDExMTI5NTc1LDE4MDU2NDgwNjIsLTczNjIzMDMz
-NSwtMTExMDg1MzE3MiwtMjY5MzM0NDYxLC0yMzA5MjU2NTksND
-c4Nzc3NDEyLC0xNjY4NTE1ODM1LDE3NjkzMjA3NzUsMTM5MjE1
-MzY2N119
+eyJoaXN0b3J5IjpbLTY1OTI2ODAxMCwtNjEwNDU4NDQ5LC0xMT
+I0NzYyNTYwLDg4NjM3MjIxMCwxOTg5ODg5MjQxLC02MDk5OTgx
+NiwtOTQyNTgxMTI4LDIwMzcxOTEzNjYsLTM3NTA5NTkzLC05OT
+YwNjc0MTksLTQxMTEyOTU3NSwxODA1NjQ4MDYyLC03MzYyMzAz
+MzUsLTExMTA4NTMxNzIsLTI2OTMzNDQ2MSwtMjMwOTI1NjU5LD
+Q3ODc3NzQxMiwtMTY2ODUxNTgzNSwxNzY5MzIwNzc1LDEzOTIx
+NTM2NjddfQ==
 -->
