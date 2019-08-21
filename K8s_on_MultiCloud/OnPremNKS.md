@@ -104,7 +104,7 @@ root@net5c0rjuz-master-1:~# /etc/init.d/networking restart
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">$ wget https://github.com/NetApp/trident/releases/download/v19.07.0/trident-installer-19.07.0.tar.gz
 $ tar -xf trident-installer-19.07.0.tar.gz
 $ cd trident-installer/</code></pre>
-기본적으로 K8s의 base OS인 debian 에는 NFS client 프로그램이 설치되어 있기 때문에 Trident NFS plug-in을 사용하더라도 설치 할 필요가 없습니다.
+기본적으로 K8s의 base OS인 debian 에는 NFS client 프로그램이 설치되어 있기 때문에 Trident NFS plug-in을 사용 하더라도 설치 할 필요가 없습니다.
 >19.04 이전 버전에서는 metadata 저장용으로 etcd를 사용하였기 때문에, Trident 설치 이전에 backend.json 파일을 setup 디렉토리에 copy한 후 Install을 시작해야 했지만, 19.07버전 이후 부터는 metadata 관리를 CRD를 이용해서 하기 때문에 사전에 backend.json이 필요 없음.
 2. Trident 설치
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined"> ~/trident-installer$ ./tridentctl install -n trident   ### 여기서 -d 옵션을 붙이면 debug 모드로 좀 더 자세한 install 과정을 볼 수 있습니다.
@@ -265,11 +265,11 @@ Filesystem  Size  Used Avail Use% Mounted on
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMTU2MjYzOCwxMjM5MDcyOTI3LC0xNT
-U3Njg4ODQyLC0xMTI1NjI2MjEwLDExMzk2NDgxOTQsMTE5OTAy
-MjExMSwtMTYzNzQ4MDY5Myw5NTUwMTg5OTksMTkzMDQ2NjExOC
-w5NTUwMTg5OTksMTkzMDQ2NjExOCwtNjk2NDgxNTc2LC04OTU4
-MjExNjAsMzA3NjQxOTI4LDExMTA3NDk3OCw0NTgzNzYxODIsMT
-U3ODQ5MzA3MywtMTY2NDUxNDMxOCwtMTc5NDM4NjA2LC0xMzk2
-ODc0NTY2XX0=
+eyJoaXN0b3J5IjpbNDYxODM3NjAyLDEyMzkwNzI5MjcsLTE1NT
+c2ODg4NDIsLTExMjU2MjYyMTAsMTEzOTY0ODE5NCwxMTk5MDIy
+MTExLC0xNjM3NDgwNjkzLDk1NTAxODk5OSwxOTMwNDY2MTE4LD
+k1NTAxODk5OSwxOTMwNDY2MTE4LC02OTY0ODE1NzYsLTg5NTgy
+MTE2MCwzMDc2NDE5MjgsMTExMDc0OTc4LDQ1ODM3NjE4MiwxNT
+c4NDkzMDczLC0xNjY0NTE0MzE4LC0xNzk0Mzg2MDYsLTEzOTY4
+NzQ1NjZdfQ==
 -->
