@@ -23,7 +23,7 @@
 5.  Trident 설치 시 사용한 trident-installer 폴더로 이동합니다.
 
 6.  Trident에서 제공하는 Import 기능을 통해  Step1에서 생성한 content clone 볼륨을 해당 Cluster내의 PVC 볼륨으로 Import 합니다.
-
+<pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">
 
 
 
@@ -31,8 +31,7 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDgxOTgyNDgsLTk2ODM4ODk1Myw3Nj
-A3OTg5OTksLTM4NzUyODQ4OCwtMTEwMzY0ODIxOSwxNjk5OTc0
-NTM5LC0xNDI5ODg0MzAsLTkzNTM3MjMwNCw4Nzc2MzU1MjZdfQ
-==
+eyJoaXN0b3J5IjpbMTgxNTM4MTc4LC05NjgzODg5NTMsNzYwNz
+k4OTk5LC0zODc1Mjg0ODgsLTExMDM2NDgyMTksMTY5OTk3NDUz
+OSwtMTQyOTg4NDMwLC05MzUzNzIzMDQsODc3NjM1NTI2XX0=
 -->
