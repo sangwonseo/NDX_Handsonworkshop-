@@ -202,7 +202,7 @@ debian@net5c0rjuz-master-1:~/trident-installer$</code></pre>
 PV (PersistentVolume)는 시스템 관리자가, Storage Class를 사용하여 프로비저닝 한 클러스터의 스토리지입니다. 
 PVC (PersistentVolumeClaim)는 사용자의 클러스터 Storage 요청입니다. PVC는 PV와 맵핑이 되고, POD는 맵핑된 스토리지를 Mount 하여 사용하게 됩니다.
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">debian@net5c0rjuz-master-1:~/trident-installer$ cp sample-input/pvc-basic.yaml setup
-debian@net5c0rjuz-master-1:~/trident-installer$ cat setup/pvc-basic.yaml
+debian@net5c0rjuz-master-1:~/trident-installer$ vi setup/pvc-basic.yaml
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
@@ -235,8 +235,7 @@ aggr1  online  RW  1GB  1023MB  0%
 svm-user1 SVM에 trident_로 시작하는 1GB 사이즈의 볼륨이 생성 된 것을 확인 할 수 있습니다.
 
 4. POD에 마운트
-<pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">s
-$ vi task-pv-pod.yaml
+<pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">debian@net5c0rjuz-master-1:~/trident-installer$ vi task-pv-pod.yaml
 kind: Pod
 apiVersion: v1
 metadata:
@@ -267,7 +266,7 @@ Filesystem  Size  Used Avail Use% Mounted on
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDY1ODQ3NDIsMTQxNjIwNjIxLDY4OT
+eyJoaXN0b3J5IjpbLTE4ODIzMTc1NzgsMTQxNjIwNjIxLDY4OT
 YxNTgzMCw1MzQ1MDQwODIsMTIzOTA3MjkyNywtMTU1NzY4ODg0
 MiwtMTEyNTYyNjIxMCwxMTM5NjQ4MTk0LDExOTkwMjIxMTEsLT
 E2Mzc0ODA2OTMsOTU1MDE4OTk5LDE5MzA0NjYxMTgsOTU1MDE4
