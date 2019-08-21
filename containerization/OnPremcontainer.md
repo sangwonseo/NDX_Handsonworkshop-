@@ -6,7 +6,7 @@
  - [ ] [VM 기반의 Ghost 블로그 App 설치](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/Pre-Work2/README.md)
  
  ## Step 1. 기존 Ghost 블로그 데이터 Clone 복제  
-1. 이미 설치된  K8S Cluster에 접속합니다.
+1. 웹 브라우저를 통해 Net
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NzY0MTg5MV19
+eyJoaXN0b3J5IjpbLTE0ODMyNDE2NjNdfQ==
 -->
