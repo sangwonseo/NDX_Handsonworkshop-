@@ -140,6 +140,7 @@
 
 
 	> **_NOTE:_**  [1_createSVM.yml](./files/1_createSVM.yml) 화일은 아래와 같은 NetApp Module을 수행합니다.   
+	> **_NOTE:_**  <a href="./files/1_createSVM.yml" target="_blank">1_createSVM.yml</a> 화일은 아래와 같은 NetApp Module을 수행합니다.   
 
 	  |    module명                 |                        module 기능                     |
 	  |-----------------------------|--------------------------------------------------------|
@@ -193,5 +194,6 @@
 ### 수고하셨습니다. 실습을 위한 랩 환경 구성을 완료하였습니다. 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MDQ2ODE5NSwxNTExNDQ5NzU1XX0=
+eyJoaXN0b3J5IjpbMTgzMjczMjIwMywxOTUwNDY4MTk1LDE1MT
+E0NDk3NTVdfQ==
 -->
