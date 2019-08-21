@@ -219,7 +219,7 @@ netmask 255.255.255.0
 root@net5c0rjuz-master-1:~# route add -net 10.255.xxx.0 netmask 255.255.255.0 dev ens192
 root@net5c0rjuz-master-1:~# /etc/init.d/networking restart
 [ ok ] Restarting networking (via systemctl): networking.service.</code></pre>
-나머지 두개의 worker node 도 동일하게 ens192 네트웍 설정을 진행 합니다.
+나머지 두개의 worker node 도 동일하게 ens192 네트웍 설정을 진행 합니다. 
 
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">debian@net5c0rjuz-master-1:~$ tridentctl get backend -n trident
 +------------+----------------+--------------------------------------+--------+---------+
@@ -279,7 +279,7 @@ This is test data!!!
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1OTI2ODAxMCwtNjEwNDU4NDQ5LC0xMT
+eyJoaXN0b3J5IjpbMTIzMjk2OTk0MCwtNjEwNDU4NDQ5LC0xMT
 I0NzYyNTYwLDg4NjM3MjIxMCwxOTg5ODg5MjQxLC02MDk5OTgx
 NiwtOTQyNTgxMTI4LDIwMzcxOTEzNjYsLTM3NTA5NTkzLC05OT
 YwNjc0MTksLTQxMTEyOTU3NSwxODA1NjQ4MDYyLC03MzYyMzAz
