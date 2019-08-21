@@ -126,7 +126,7 @@ debian@net5c0rjuz-master-1:~/trident-installer$</code></pre>
 >$ ./tridentctl uninstall -n trident  여기서 -a 옵션을 붙이면, namespace를 제외한 모든 object가 삭제 됨
 
 ## Step4. 기타 Object 생성 및 운영 예제
-1. Backend 생성
+1. Trident Backend 생성
 
 Trident는 다양한 sample yaml 파일을 제공합니다. 이 sample 파일을 활용해서 backend를 생성해 보도록 하겠습니다.
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">debian@net5c0rjuz-master-1:~/trident-installer$ cp sample-input/backend-ontap-nas.json setup
@@ -265,7 +265,7 @@ Filesystem  Size  Used Avail Use% Mounted on
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MjY3MjIxNCwxMjM5MDcyOTI3LC0xNT
+eyJoaXN0b3J5IjpbMTg4MzAxMTQ5MiwxMjM5MDcyOTI3LC0xNT
 U3Njg4ODQyLC0xMTI1NjI2MjEwLDExMzk2NDgxOTQsMTE5OTAy
 MjExMSwtMTYzNzQ4MDY5Myw5NTUwMTg5OTksMTkzMDQ2NjExOC
 w5NTUwMTg5OTksMTkzMDQ2NjExOCwtNjk2NDgxNTc2LC04OTU4
