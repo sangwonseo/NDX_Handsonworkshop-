@@ -191,11 +191,7 @@ This is test data!!!
 **Trident Import 수행**
 
 이제는 K8s cluster로 접속하여 trident import 기능을 통해, Legacy의 vol01 볼륨을 K8s의 Persistent Volume으로 가져오도록 하겠습니다.
-
-
-<pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">
-
-debian@net5c0rjuz-master-1:~$ tridentctl get backend -n trident
+<pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">debian@net5c0rjuz-master-1:~$ tridentctl get backend -n trident
 +------------+----------------+--------------------------------------+--------+---------+
 |    NAME    | STORAGE DRIVER |                 UUID                 | STATE  | VOLUMES |
 +------------+----------------+--------------------------------------+--------+---------+
@@ -253,11 +249,11 @@ This is test data!!!
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MTM0NzY0NiwyNTgwNzQ5MjgsMTIzMj
-k2OTk0MCwtNjEwNDU4NDQ5LC0xMTI0NzYyNTYwLDg4NjM3MjIx
-MCwxOTg5ODg5MjQxLC02MDk5OTgxNiwtOTQyNTgxMTI4LDIwMz
-cxOTEzNjYsLTM3NTA5NTkzLC05OTYwNjc0MTksLTQxMTEyOTU3
-NSwxODA1NjQ4MDYyLC03MzYyMzAzMzUsLTExMTA4NTMxNzIsLT
-I2OTMzNDQ2MSwtMjMwOTI1NjU5LDQ3ODc3NzQxMiwtMTY2ODUx
-NTgzNV19
+eyJoaXN0b3J5IjpbOTMzNjM3NTY2LDI1ODA3NDkyOCwxMjMyOT
+Y5OTQwLC02MTA0NTg0NDksLTExMjQ3NjI1NjAsODg2MzcyMjEw
+LDE5ODk4ODkyNDEsLTYwOTk5ODE2LC05NDI1ODExMjgsMjAzNz
+E5MTM2NiwtMzc1MDk1OTMsLTk5NjA2NzQxOSwtNDExMTI5NTc1
+LDE4MDU2NDgwNjIsLTczNjIzMDMzNSwtMTExMDg1MzE3MiwtMj
+Y5MzM0NDYxLC0yMzA5MjU2NTksNDc4Nzc3NDEyLC0xNjY4NTE1
+ODM1XX0=
 -->
