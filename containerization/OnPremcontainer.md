@@ -20,14 +20,14 @@
  ## Step 2. Clone 볼륨을 K8S Cluster내의 PVC로 Import 수행      
 1. 기 설치된 K8S Cluster에 접속합니다.
 
-2. 
+2.  
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTI0MTEyMDcsNzYwNzk4OTk5LC0zOD
-c1Mjg0ODgsLTExMDM2NDgyMTksMTY5OTk3NDUzOSwtMTQyOTg4
-NDMwLC05MzUzNzIzMDQsODc3NjM1NTI2XX0=
+eyJoaXN0b3J5IjpbLTk2ODM4ODk1Myw3NjA3OTg5OTksLTM4Nz
+UyODQ4OCwtMTEwMzY0ODIxOSwxNjk5OTc0NTM5LC0xNDI5ODg0
+MzAsLTkzNTM3MjMwNCw4Nzc2MzU1MjZdfQ==
 -->
