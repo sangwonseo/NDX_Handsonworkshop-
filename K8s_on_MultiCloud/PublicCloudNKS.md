@@ -36,7 +36,7 @@ Azure Portal ([https://portal.azure.com/](https://portal.azure.com/)) 에 로그
 
 >위 9단계의 Step 동안 SUBSCRIPTION ID, APPLICATION (CLIENT) ID, Secret key (Client Password), Directory ID (Tenant ID) 정보를 별도로 메모해 둡니다.
 
-NetApp Cloud portal로 돌아가서, ADD CREDENTIALS 클릭하여 Azure 인증정보를 기입합니다.
+NetApp Cloud portal로 돌아가서, 'ADD CREDENTIALS' 클릭하여 Azure 인증정보를 기입합니다.
 
 3. Cloud 환경 구성 셋업
 기본 설정으로 1 Master (Standard D2, Disk 50GB) 와 2 Workers (Standard D2, Disk 50GB) 노드가 셋업이 되고 설치 하고자 하는 Azure region, Resource Group, Network의 값들을 기본값으로 가져 옵니다. 
@@ -152,8 +152,8 @@ MY CHARTS에 등록이 완료 되면, NKS Home > CONTROL PLANE > CLUSTERS > Azur
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1OTM2MTYxOSwxNTk1NTQ5MzcwLC0xNz
-E5OTg4NjUsNjg3MjIwNzM1LC0yMDQ2MjExOTExLC00Mjg3NjQ5
-NzYsLTIwNTA1NjQ2NDEsLTQ5NDE2Nzk2NCwtMTY1NTI1ODkxNy
-w3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTEzMDc5NzI3OSwtNTU5MzYxNjE5LDE1OT
+U1NDkzNzAsLTE3MTk5ODg2NSw2ODcyMjA3MzUsLTIwNDYyMTE5
+MTEsLTQyODc2NDk3NiwtMjA1MDU2NDY0MSwtNDk0MTY3OTY0LC
+0xNjU1MjU4OTE3LDczMDk5ODExNl19
 -->
