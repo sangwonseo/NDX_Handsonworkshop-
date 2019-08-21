@@ -157,6 +157,7 @@ debian@net5c0rjuz-master-1:~/trident-installer$</code></pre>
 Trident의 첫번째 ONTAP NFS backend를 연동 시켰습니다. 다음은 Storage Class를 생성 하도록 합니다. 이제부터는 tridentctl command 사용은 끝이 나고 kubectl을 통해서 operation을 하겠습니다.
 
 2. Storage Class 생성
+StorageClass는 관리자가 제공하는 스토리지의 "클래스"를 설명 할 수있는 방법을 제공합니다. 다른 클래스는 서비스 품질 수준, 백업 정책 또는 클러스터 관리자가 결정한 임의의 정책에 매핑 될 수 있습니다.
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">debian@net5c0rjuz-master-1:~/trident-installer$ cp sample-input/storage-class-basic.yaml.templ setup/storage-class-basic.yaml
 debian@net5c0rjuz-master-1:~/trident-installer$ vi setup/storage-class-basic.yaml
 apiVersion: storage.k8s.io/v1
@@ -261,11 +262,11 @@ Filesystem  Size  Used Avail Use% Mounted on
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM0NTA0MDgyLDEyMzkwNzI5MjcsLTE1NT
-c2ODg4NDIsLTExMjU2MjYyMTAsMTEzOTY0ODE5NCwxMTk5MDIy
-MTExLC0xNjM3NDgwNjkzLDk1NTAxODk5OSwxOTMwNDY2MTE4LD
-k1NTAxODk5OSwxOTMwNDY2MTE4LC02OTY0ODE1NzYsLTg5NTgy
-MTE2MCwzMDc2NDE5MjgsMTExMDc0OTc4LDQ1ODM3NjE4MiwxNT
-c4NDkzMDczLC0xNjY0NTE0MzE4LC0xNzk0Mzg2MDYsLTEzOTY4
-NzQ1NjZdfQ==
+eyJoaXN0b3J5IjpbMTAxNTI1NjExMiw1MzQ1MDQwODIsMTIzOT
+A3MjkyNywtMTU1NzY4ODg0MiwtMTEyNTYyNjIxMCwxMTM5NjQ4
+MTk0LDExOTkwMjIxMTEsLTE2Mzc0ODA2OTMsOTU1MDE4OTk5LD
+E5MzA0NjYxMTgsOTU1MDE4OTk5LDE5MzA0NjYxMTgsLTY5NjQ4
+MTU3NiwtODk1ODIxMTYwLDMwNzY0MTkyOCwxMTEwNzQ5NzgsND
+U4Mzc2MTgyLDE1Nzg0OTMwNzMsLTE2NjQ1MTQzMTgsLTE3OTQz
+ODYwNl19
 -->
