@@ -26,14 +26,24 @@
   ` # ./tridentctl import volume nfsBackend content_clone -f import-pvc.yaml -n trident
 `
 4. Import된 PVC 볼륨을 확인합니다. 
- <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">
+ <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">debian@net8uz4wdg-master-1:/home/admindebian/trident-installer$ ./tridentctl import volume ontapnfs-user17 content_clone -f import-pvc.yaml -n trident
++------------------------------------------+---------+---------------+----------+--------------------------------------+--------+---------+
+|                   NAME                   |  SIZE   | STORAGE CLASS | PROTOCOL |             BACKEND UUID             | STATE  | MANAGED |
++------------------------------------------+---------+---------------+----------+--------------------------------------+--------+---------+
+| pvc-d1e07765-c416-11e9-8a78-005056a8832a | 5.0 GiB | netapp-csi    | file     | b9fefdec-5645-4ef4-95a6-e3d9f208bc63 | online | true    |
++------------------------------------------+---------+---------------+----------+--------------------------------------+--------+---------+
+debian@net8uz4wdg-master-1:/home/admindebian/trident-installer$ kubectl get pvc -n ghost
+NAME              STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
+ghost-content     Bound    pvc-d1e07765-c416-11e9-8a78-005056a8832a   5Gi        RWO            netapp-csi     14s
+ghost-content-2   Bound    pvc-a902f622-c366-11e9-8a78-005056a8832a   7Gi        RWO            netapp-csi     21h
+debian@net8uz4wdg-master-1:/home/admindebian/trident-installer$
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNDg2MjM1OCwyMDU4ODMzMzksLTk2OD
+eyJoaXN0b3J5IjpbLTcxMzExMDIxOSwyMDU4ODMzMzksLTk2OD
 M4ODk1Myw3NjA3OTg5OTksLTM4NzUyODQ4OCwtMTEwMzY0ODIx
 OSwxNjk5OTc0NTM5LC0xNDI5ODg0MzAsLTkzNTM3MjMwNCw4Nz
 c2MzU1MjZdfQ==
