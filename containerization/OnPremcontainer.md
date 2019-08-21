@@ -35,15 +35,15 @@
 debian@net8uz4wdg-master-1:/home/admindebian/trident-installer$ kubectl get pvc -n ghost
 NAME              STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
 ghost-content     Bound    pvc-d1e07765-c416-11e9-8a78-005056a8832a   5Gi        RWO            netapp-csi     14s
-ghost-content-2   Bound    pvc-a902f622-c366-11e9-8a78-005056a8832a   7Gi        RWO            netapp-csi     21h
-debian@net8uz4wdg-master-1:/home/admindebian/trident-installer$
+</code></pre>
 
+ ## Step 3. Ghost 블로그 Container ㅅ  
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMzExMDIxOSwyMDU4ODMzMzksLTk2OD
+eyJoaXN0b3J5IjpbLTU3MTY1NzgxMywyMDU4ODMzMzksLTk2OD
 M4ODk1Myw3NjA3OTg5OTksLTM4NzUyODQ4OCwtMTEwMzY0ODIx
 OSwxNjk5OTc0NTM5LC0xNDI5ODg0MzAsLTkzNTM3MjMwNCw4Nz
 c2MzU1MjZdfQ==
