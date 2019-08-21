@@ -15,6 +15,7 @@
      * Thin Provisioning 활성화
      * Create new Snapshot copy now 선택 
      * Clone 클릭  
+     
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMTg5MTk4Miw4Nzc2MzU1MjZdfQ==
+eyJoaXN0b3J5IjpbLTQ1MDI4MTYwOCw4Nzc2MzU1MjZdfQ==
 -->
