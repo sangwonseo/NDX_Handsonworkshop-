@@ -235,7 +235,8 @@ aggr1  online  RW  1GB  1023MB  0%
 svm-user1 SVM에 trident_로 시작하는 1GB 사이즈의 볼륨이 생성 된 것을 확인 할 수 있습니다.
 
 4. POD에 마운트
-<pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">$ vi task-pv-pod.yaml
+<pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">s
+$ vi task-pv-pod.yaml
 kind: Pod
 apiVersion: v1
 metadata:
@@ -256,8 +257,8 @@ spec:
           name: task-pv-storage
 
 $ kubectl create -f task-pv-pod.yaml
-$ kubectl get pod --watch     ## POD가 구동되었는지 확인
-$ kubectl exec -it task-pv-pod -- df -h /usr/share/nginx/html    ##POD에 Volume이 mount 되었는지 확인
+$ kubectl get pod --watch     ### POD가 구동되었는지 확인
+$ kubectl exec -it task-pv-pod -- df -h /usr/share/nginx/html    ### POD에 Volume이 mount 되었는지 확인
 
 Filesystem  Size  Used Avail Use% Mounted on
 115.144.xxx.xxx:/trident_pvc_db6adca2_bd17_11e9_b1a8_005056a80a4b  1.0G  256K  1.0G  1% /usr/share/nginx/html</code></pre>
@@ -266,11 +267,11 @@ Filesystem  Size  Used Avail Use% Mounted on
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNjIwNjIxLDY4OTYxNTgzMCw1MzQ1MD
-QwODIsMTIzOTA3MjkyNywtMTU1NzY4ODg0MiwtMTEyNTYyNjIx
-MCwxMTM5NjQ4MTk0LDExOTkwMjIxMTEsLTE2Mzc0ODA2OTMsOT
-U1MDE4OTk5LDE5MzA0NjYxMTgsOTU1MDE4OTk5LDE5MzA0NjYx
-MTgsLTY5NjQ4MTU3NiwtODk1ODIxMTYwLDMwNzY0MTkyOCwxMT
-EwNzQ5NzgsNDU4Mzc2MTgyLDE1Nzg0OTMwNzMsLTE2NjQ1MTQz
-MThdfQ==
+eyJoaXN0b3J5IjpbLTE1MDY1ODQ3NDIsMTQxNjIwNjIxLDY4OT
+YxNTgzMCw1MzQ1MDQwODIsMTIzOTA3MjkyNywtMTU1NzY4ODg0
+MiwtMTEyNTYyNjIxMCwxMTM5NjQ4MTk0LDExOTkwMjIxMTEsLT
+E2Mzc0ODA2OTMsOTU1MDE4OTk5LDE5MzA0NjYxMTgsOTU1MDE4
+OTk5LDE5MzA0NjYxMTgsLTY5NjQ4MTU3NiwtODk1ODIxMTYwLD
+MwNzY0MTkyOCwxMTEwNzQ5NzgsNDU4Mzc2MTgyLDE1Nzg0OTMw
+NzNdfQ==
 -->
