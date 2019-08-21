@@ -15,7 +15,9 @@
      * Thin Provisioning 활성화
      * Create new Snapshot copy now 선택 
      * Clone 클릭  
-   ![enter image description here](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/images/content_clone.PNG)
+   ![enter image description here](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/images/content_clone.PNG) 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNTM3MjMwNCw4Nzc2MzU1MjZdfQ==
+eyJoaXN0b3J5IjpbLTE0Mjk4ODQzMCwtOTM1MzcyMzA0LDg3Nz
+YzNTUyNl19
 -->
