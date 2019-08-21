@@ -53,9 +53,10 @@ Putty를 실행하고,
 * Connection > SSH > Auth > Browse 클릭하여 Putty Private Key (.ppk 파일) 선택 > Open
 ![enter image description here](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_on_MultiCloud/images/04_Putty.png)
 
-On-premise에 구성되는 K8s는 기본으로 Debian OS를 기반으로 하고 있으며, SSH 접속 가능한 계정은 debian user를 이용하여 login 하면 됩니다.
+On-premise에 구성되는 K8s는 디폴트로 Debian OS를 기반으로 하고 있으며, SSH 접속 가능한 계정은 debian user를 이용하여 login 하면 됩니다.
 debian user로 접속 후, 해당 계정으로 kubectl 사용을 위해 kubeconfig 파일을 $HOME 에 copy합니다.
-<pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">debian@netyo6pai7-master-1:~$ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+<pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">ssh debian@115.144.xxx.xxx
+debian@netyo6pai7-master-1:~$ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 debian@netyo6pai7-master-1:~/.kube$ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 debian@netyo6pai7-master-1:~$ kubectl get nodes
 NAME  STATUS  ROLES  AGE  VERSION
@@ -231,11 +232,11 @@ Filesystem  Size  Used Avail Use% Mounted on
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIyMTk4MTkyLC0xNTU3Njg4ODQyLC0xMT
-I1NjI2MjEwLDExMzk2NDgxOTQsMTE5OTAyMjExMSwtMTYzNzQ4
-MDY5Myw5NTUwMTg5OTksMTkzMDQ2NjExOCw5NTUwMTg5OTksMT
-kzMDQ2NjExOCwtNjk2NDgxNTc2LC04OTU4MjExNjAsMzA3NjQx
-OTI4LDExMTA3NDk3OCw0NTgzNzYxODIsMTU3ODQ5MzA3MywtMT
-Y2NDUxNDMxOCwtMTc5NDM4NjA2LC0xMzk2ODc0NTY2LC0xMzk2
-ODc0NTY2XX0=
+eyJoaXN0b3J5IjpbMTIzOTA3MjkyNywtMTU1NzY4ODg0MiwtMT
+EyNTYyNjIxMCwxMTM5NjQ4MTk0LDExOTkwMjIxMTEsLTE2Mzc0
+ODA2OTMsOTU1MDE4OTk5LDE5MzA0NjYxMTgsOTU1MDE4OTk5LD
+E5MzA0NjYxMTgsLTY5NjQ4MTU3NiwtODk1ODIxMTYwLDMwNzY0
+MTkyOCwxMTEwNzQ5NzgsNDU4Mzc2MTgyLDE1Nzg0OTMwNzMsLT
+E2NjQ1MTQzMTgsLTE3OTQzODYwNiwtMTM5Njg3NDU2NiwtMTM5
+Njg3NDU2Nl19
 -->
