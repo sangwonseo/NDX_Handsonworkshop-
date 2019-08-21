@@ -37,13 +37,13 @@ NAME              STATUS   VOLUME                                     CAPACITY  
 ghost-content     Bound    pvc-d1e07765-c416-11e9-8a78-005056a8832a   5Gi        RWO            netapp-csi     14s
 </code></pre>
 
- ## Step 3. Ghost 블로그 Container ㅅ  
-
+ ## Step 3. Ghost 블로그 Container 실행   
+1. 기 설치된 K8S Cluster에 접속합니다.
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MTY1NzgxMywyMDU4ODMzMzksLTk2OD
+eyJoaXN0b3J5IjpbLTg5MjI5NTE4OSwyMDU4ODMzMzksLTk2OD
 M4ODk1Myw3NjA3OTg5OTksLTM4NzUyODQ4OCwtMTEwMzY0ODIx
 OSwxNjk5OTc0NTM5LC0xNDI5ODg0MzAsLTkzNTM3MjMwNCw4Nz
 c2MzU1MjZdfQ==
