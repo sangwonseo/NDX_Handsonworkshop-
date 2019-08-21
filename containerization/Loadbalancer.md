@@ -23,15 +23,17 @@
 </li>
 <li>
 <p>Metallb yaml 파일을 다운 받아 Cluster 내에서 적용합니다. ([Metallb.yaml](<a href="https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/sourcefile/metallb.yaml))  
+
 `">Metallb.yaml</a>)<br>
 <code>kubectl apply -f https://raw.githubusercontent.com/google/metallb/v0.7.3/manifests/metallb.yaml`
 3. </code></p>
 </li>
 <li>
 <p>MetalLB POD 정상 동작 동작을 확인합니다.
+
 `<br>
 <code>kubectl get pods -n metallb-system`
-4. </code></p>
+. </code></p>
 </li>
 <li>
 <p>Metallb configmap 파일을 다운 받아 address 부분에 사전에 배정된 IP을 기입합니다. ([Metallb_configmap.yaml](<a href="https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/sourcefile/metallbconfigmap.yaml))">Metallb_configmap.yaml</a>)</p>
@@ -54,6 +56,7 @@ data:
 <ol>
 <li>
 <p>Service 생성될 ghost라는 namespace를 생성합니다.
+
      `<br>
 <code># kubectl create namespace ghost`
      
@@ -61,15 +64,17 @@ data:
 </li>
 <li>
 <p>생성된 ghost namespace를 확인합니다. 
+
      `<br>
 <code># kubectl get namespaces`
 3.  </code></p>
 </li>
 <li>
 <p>Service yaml 파일을 다운 받아 ghost namesapce에 Service를 생성합니다.([ghost_service.yaml](<a href="https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/sourcefile/ghost_service.yaml))
+
        `">ghost_service.yaml</a>)<br>
 <code># kubectl apply -f ghost_service.yaml`
-4. </code></p>
+. </code></p>
 </li>
 <li>
 <p>생성된 Service와 해당됭 External IP를 확인합니다.</p>
@@ -88,5 +93,5 @@ ghost   LoadBalancer   10.255.100.23   115.144.174.247   80:31435/TCP   4h36</co
    ">메인 메뉴로 이동</a></p>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxMzg5Nzk4OCwtMTc4MDE3NTM0Nl19
+eyJoaXN0b3J5IjpbLTkyOTIzNDk5MiwxOTEzODk3OTg4XX0=
 -->
