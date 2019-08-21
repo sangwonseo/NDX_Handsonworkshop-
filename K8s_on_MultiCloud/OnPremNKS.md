@@ -220,8 +220,9 @@ debian@net5c0rjuz-master-1:~/trident-installer$ kubectl get pvc
 NAME  STATUS  VOLUME  CAPACITY  ACCESS MODES  STORAGECLASS  AGE
 basic  Bound  pvc-db6adca2-bd17-11e9-b1a8-005056a80a4b  1Gi  RWO  basic  5s
 debian@net5c0rjuz-master-1:~/trident-installer$</code></pre>
-PVC, PV 및 스토리지에 Volume까지 dynamic하게 생성 되었으며 서로 mapping 된 구조를 확인 할 수 있습니다. Storage CLI로 들어가서,
-<pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">OTC_Netapp_korea_lab::> vol show -vserver svm-user1
+PVC, PV 및 스토리지에 Volume까지 dynamic하게 생성 되었으며 서로 mapping 된 구조를 확인 할 수 있습니다. ONTAP System Manager GUI 또는 Storage CLI로 들어가서,
+<pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined"> ssh admin@
+OTC_Netapp_korea_lab::> vol show -vserver svm-user1
 Vserver  Volume  Aggregate  State  Type  Size  Available Used%
 --------- ------------ ------------ ---------- ---- ---------- ---------- -----
 svm-user1  svm_user1_root
@@ -264,11 +265,11 @@ Filesystem  Size  Used Avail Use% Mounted on
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2NDc1MjI3Miw2ODk2MTU4MzAsNTM0NT
-A0MDgyLDEyMzkwNzI5MjcsLTE1NTc2ODg4NDIsLTExMjU2MjYy
-MTAsMTEzOTY0ODE5NCwxMTk5MDIyMTExLC0xNjM3NDgwNjkzLD
-k1NTAxODk5OSwxOTMwNDY2MTE4LDk1NTAxODk5OSwxOTMwNDY2
-MTE4LC02OTY0ODE1NzYsLTg5NTgyMTE2MCwzMDc2NDE5MjgsMT
-ExMDc0OTc4LDQ1ODM3NjE4MiwxNTc4NDkzMDczLC0xNjY0NTE0
-MzE4XX0=
+eyJoaXN0b3J5IjpbODUyMzA0MDQ2LDY4OTYxNTgzMCw1MzQ1MD
+QwODIsMTIzOTA3MjkyNywtMTU1NzY4ODg0MiwtMTEyNTYyNjIx
+MCwxMTM5NjQ4MTk0LDExOTkwMjIxMTEsLTE2Mzc0ODA2OTMsOT
+U1MDE4OTk5LDE5MzA0NjYxMTgsOTU1MDE4OTk5LDE5MzA0NjYx
+MTgsLTY5NjQ4MTU3NiwtODk1ODIxMTYwLDMwNzY0MTkyOCwxMT
+EwNzQ5NzgsNDU4Mzc2MTgyLDE1Nzg0OTMwNzMsLTE2NjQ1MTQz
+MThdfQ==
 -->
