@@ -37,7 +37,7 @@ NAME              STATUS   VOLUME                                     CAPACITY  
 ghost-content     Bound    pvc-d1e07765-c416-11e9-8a78-005056a8832a   5Gi        RWO            netapp-csi     14s
 </code></pre>
 
-> Trident Import 기능 상세 
+> Trident Import 기능 상세
 
  ## Step 3. Ghost 블로그 Container 실행   
 1. Ghost deployment yaml 파일로 신규 Ghost 블로그 POD를 생성합니다. 
@@ -47,7 +47,7 @@ ghost-content     Bound    pvc-d1e07765-c416-11e9-8a78-005056a8832a   5Gi       
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTA1OTE2MjUsLTg5MjI5NTE4OSwyMD
+eyJoaXN0b3J5IjpbLTE3NDk3NzA2MzcsLTg5MjI5NTE4OSwyMD
 U4ODMzMzksLTk2ODM4ODk1Myw3NjA3OTg5OTksLTM4NzUyODQ4
 OCwtMTEwMzY0ODIxOSwxNjk5OTc0NTM5LC0xNDI5ODg0MzAsLT
 kzNTM3MjMwNCw4Nzc2MzU1MjZdfQ==
