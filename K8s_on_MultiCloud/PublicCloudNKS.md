@@ -40,7 +40,8 @@ NetApp Cloud portal로 돌아가서, 'ADD CREDENTIALS' 클릭하여 Azure 인증
 
 3. Cloud 환경 구성 셋업
 기본 설정으로 1 Master (Standard D2, Disk 50GB) 와 2 Workers (Standard D2, Disk 50GB) 노드가 셋업이 되고 설치 하고자 하는 Azure region, Resource Group, Network의 값들을 기본값으로 가져 옵니다. 
-이 클라우드 설정값은 Edit 메뉴를 통해 변경이 가능합니다. 여기서는 기본 설정값을 유지하고 SUBMIT을 클릭 합니다.
+이 클라우드 설정값은 Edit 메뉴를 통해 변경이 가능합니다. 여기서는 아래와 같이 설정값을 변경 후 SUBMIT을 클릭 합니다.
+* 
 
 4. K8s Cluster 구성 셋업
 Cluster Name을 Azure-cluster로 변경 후 진행 합니다. 나머지는 기본값으로 변경 없이 유지하고 SUBMIT을 클릭 합니다.
@@ -152,7 +153,7 @@ MY CHARTS에 등록이 완료 되면, NKS Home > CONTROL PLANE > CLUSTERS > Azur
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDc5NzI3OSwtNTU5MzYxNjE5LDE1OT
+eyJoaXN0b3J5IjpbLTkyMTIyMTk0MywtNTU5MzYxNjE5LDE1OT
 U1NDkzNzAsLTE3MTk5ODg2NSw2ODcyMjA3MzUsLTIwNDYyMTE5
 MTEsLTQyODc2NDk3NiwtMjA1MDU2NDY0MSwtNDk0MTY3OTY0LC
 0xNjU1MjU4OTE3LDczMDk5ODExNl19
