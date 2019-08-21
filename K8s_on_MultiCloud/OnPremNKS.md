@@ -20,7 +20,7 @@
 
 2. 다음 단계는 Provider를 선택하는 단계입니다.
 
-3개의 Cloud Service Provider(AWS, Azure, GCP) 환경에서 Instance(VM)기반의 배포 또는 Managed Service 형태의 배포가 가능합니다. 또한, 최근에 On-premise의 NetApp HCI 기반 배포를 지원하고 있습니다.
+3개의 Cloud Service Provider(AWS, Azure, GCP) 환경에서 Instance(VM)기반의 배포 또는 Managed Service 형태의 배포가 가능합니다. 또한, 최근에는 On-premise의 NetApp HCI 기반 배포를 지원하므로써, Cloud DC 및 On-premise DC 에서 동시에 다수의 K8s Cluster를 배포 할 수 있게 되었습니다.
 
 이번 Task에서는 On-premise에 위치한 NetApp HCI상에 NKS를 배포하는 실습을 진행 하겠습니다. 
 
@@ -227,11 +227,11 @@ Filesystem  Size  Used Avail Use% Mounted on
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mzc0ODA2OTMsOTU1MDE4OTk5LDE5Mz
-A0NjYxMTgsOTU1MDE4OTk5LDE5MzA0NjYxMTgsLTY5NjQ4MTU3
-NiwtODk1ODIxMTYwLDMwNzY0MTkyOCwxMTEwNzQ5NzgsNDU4Mz
-c2MTgyLDE1Nzg0OTMwNzMsLTE2NjQ1MTQzMTgsLTE3OTQzODYw
-NiwtMTM5Njg3NDU2NiwtMTM5Njg3NDU2NiwtMTIxMTM4OTQ5My
-wtNjMyMDA4OTY3LC0xMjExMzg5NDkzLDE4NzA1MTY4ODYsLTE1
-Mjc5MzUxMDBdfQ==
+eyJoaXN0b3J5IjpbMTkyNDM1MzY3NywtMTYzNzQ4MDY5Myw5NT
+UwMTg5OTksMTkzMDQ2NjExOCw5NTUwMTg5OTksMTkzMDQ2NjEx
+OCwtNjk2NDgxNTc2LC04OTU4MjExNjAsMzA3NjQxOTI4LDExMT
+A3NDk3OCw0NTgzNzYxODIsMTU3ODQ5MzA3MywtMTY2NDUxNDMx
+OCwtMTc5NDM4NjA2LC0xMzk2ODc0NTY2LC0xMzk2ODc0NTY2LC
+0xMjExMzg5NDkzLC02MzIwMDg5NjcsLTEyMTEzODk0OTMsMTg3
+MDUxNjg4Nl19
 -->
