@@ -31,13 +31,13 @@ data:
 
 1. Service 생성될 ghost라는 namespace를 생성합니다.
 
-        `# kubectl create namespace ghost`    
+        # kubectl create namespace ghost   
      
-23. 생성된 ghost namespace를 확인합니다. 
+2. 생성된 ghost namespace를 확인합니다. 
 
       `# kubectl get namespaces`
         
-4.  Service yaml 파일을 다운 받아 ghost namesapce에 Service를 생성합니다.([ghost_service.yaml](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/sourcefile/ghost_service.yaml))
+3.  Service yaml 파일을 다운 받아 ghost namesapce에 Service를 생성합니다.([ghost_service.yaml](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/sourcefile/ghost_service.yaml))
 
        `# kubectl apply -f ghost_service.yaml` 
        
@@ -54,7 +54,7 @@ ghost   LoadBalancer   10.255.100.23   115.144.174.247   80:31435/TCP   4h36</co
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2MzQ2MTYzMiwxNjU5NTE3ODk0LDE2Nj
-g3OTU2MTQsMzc4NTQ3NzUzLC0xNDgwODY5MTMsODY3Njk0ODg1
-XX0=
+eyJoaXN0b3J5IjpbLTE1MTMxMzUyLDE4NjM0NjE2MzIsMTY1OT
+UxNzg5NCwxNjY4Nzk1NjE0LDM3ODU0Nzc1MywtMTQ4MDg2OTEz
+LDg2NzY5NDg4NV19
 -->
