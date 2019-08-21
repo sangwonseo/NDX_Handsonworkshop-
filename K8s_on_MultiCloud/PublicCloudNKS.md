@@ -51,7 +51,7 @@ Cluster Name을 Azure-cluster로 변경 후 진행 합니다. 나머지는 기�
 ## Step2. AWS에 NKS배포
 다음은 AmazonEKS 를 이용하여 배포 실습을 진행 하겠습니다.
 1. 배포 플랫폼 선택
-NKS 홈페이지의 우측상단의 +ADD CLUSTER 메뉴를 클릭합니다.
+NKS 홈페이지 우측상단의 '+ADD CLUSTER' 메뉴를 클릭합니다.
 ```
 ADD CLUSTER
 ```
@@ -67,7 +67,7 @@ ADD CREDENTIALS
 ```
 >AWS credential 생성 방법 : 가이드를 참조할 것 ([AWS Credential 생성 참조 링크](https://docs.netapp.com/us-en/kubernetes-service/create-auth-credentials-on-aws.html))
 
-이때, obtaining credentials for AWS를 클릭하면 credential 생성 방법을 자세히 확인 할 수 있습니다. AWS credential 이 있으면, AWS Console ([https://console.aws.amazon.com/](https://console.aws.amazon.com/)) 에 로그인하여 아래 단계를 진행 합니다.
+이때, 'obtaining credentials for AWS'를 클릭하면 credential 생성 방법을 자세히 확인 할 수 있습니다. AWS credential 이 있으면, AWS Console ([https://console.aws.amazon.com/](https://console.aws.amazon.com/)) 에 로그인하여 아래 단계를 진행 합니다.
 - Step1. Create an AWS user.
 - Step2. Create a policy which grants full access to:
  -- Autoscaling
@@ -153,8 +153,8 @@ MY CHARTS에 등록이 완료 되면, NKS Home > CONTROL PLANE > CLUSTERS > Azur
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMyMzAxNjkzLC01NTkzNjE2MTksMTU5NT
-U0OTM3MCwtMTcxOTk4ODY1LDY4NzIyMDczNSwtMjA0NjIxMTkx
-MSwtNDI4NzY0OTc2LC0yMDUwNTY0NjQxLC00OTQxNjc5NjQsLT
-E2NTUyNTg5MTcsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMzU2NjE2NTgzLDczMjMwMTY5MywtNTU5Mz
+YxNjE5LDE1OTU1NDkzNzAsLTE3MTk5ODg2NSw2ODcyMjA3MzUs
+LTIwNDYyMTE5MTEsLTQyODc2NDk3NiwtMjA1MDU2NDY0MSwtND
+k0MTY3OTY0LC0xNjU1MjU4OTE3LDczMDk5ODExNl19
 -->
