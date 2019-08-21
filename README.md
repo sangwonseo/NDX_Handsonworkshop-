@@ -1,4 +1,6 @@
-NCSC Hands-on Workshop 은 Multi-Hybrid Cloud Experience와 DevOps & MicroServices  2개의 모듈로 구성되어 있습니다. 
+NCSCDX Hands-on Workshop 은 Multi-Hbrid CloudEperience/
+
+DevOps & MicroServices  2개의 모듈로 구성되어 있습니다. 
 
 각 모듈은 여러 개의 시나리오로 구성되어 있습니다.  
 ## Pre-Works for Workshop
@@ -29,5 +31,6 @@ Hands-on Scenario 8 : 멀티 클라우드 환경에서 Application Life Manageme
 
  > **NOTE:: [NetApp Cloud Central과 AWS, Azure 연계 및 사전 구성](https://github.com/netappkr/NDX_Handsonworkshop-/tree/master/Pre-Work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjkzMDUxNzk0LDIwODIwNTM4NThdfQ==
+eyJoaXN0b3J5IjpbLTIwODQ5MDQ1NjQsMjkzMDUxNzk0LDIwOD
+IwNTM4NThdfQ==
 -->
