@@ -25,8 +25,9 @@
 
 3.  Trident에서 제공하는 Import 기능을 통해  Step1에서 생성한 content clone 볼륨을 해당 Cluster내의 PVC 볼륨으로 Import 합니다. (import-pvc.yaml)
 
-  ` # ./tridentctl import volume nfsBackend content_clone -f import-pvc.yaml -n trident
+      ` # ./tridentctl import volume nfsBackend content_clone -f import-pvc.yaml -n trident
 `
+
 8. Import된 PVC 볼륨을 확인합니다. 
  <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">debian@net8uz4wdg-master-1:/home/admindebian/trident-installer$ ./tridentctl import volume ontapnfs-user17 content_clone -f import-pvc.yaml -n trident
 +------------------------------------------+---------+---------------+----------+--------------------------------------+--------+---------+
@@ -43,19 +44,19 @@ ghost-content     Bound    pvc-d1e07765-c416-11e9-8a78-005056a8832a   5Gi       
  ## Step 3. Ghost 블로그 Container 실행   
 1. Ghost deployment yaml 파일로 신규 Ghost 블로그 POD를 생성합니다. 
 
- ` # kubectl create -f ghost_deployment.yaml -n ghost
+    ` # kubectl create -f ghost_deployment.yaml -n ghost
 `
 
 3. Ghost Pod 정상 동작을 확인합니다. 
  <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">debian@net8uz4wdg-master-1:/home/admindebian/trident-installer$ kubectl get pod -n ghost
 NAME                    READY   STATUS    RESTARTS   AGE
 ghost-75869fbd6-68ccd   1/1     Running   0          10m</code></pre>
-4. Ghost 블로그에 할당된  Service IP 및 Port 확인을 확인합니다.  
+3. Ghost 블로그에 할당된  Service IP 및 Port 확인을 확인합니다.  
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">
 debian@net8uz4wdg-master-1:/home/admindebian/trident-installer$ kubectl get svc -n ghost
 NAME    TYPE           CLUSTER-IP      EXTERNAL-IP       PORT(S)        AGE
 ghost   LoadBalancer   10.255.100.23   115.144.174.247   80:31435/TCP   21h</code></pre>
-5. 웹브라우저을 열어 http://EXTERNAL-IP 을 입력 후 Ghost 블로그 정상 동작 및 기존 데이터 Import 여부를 확인합니다.
+4. 웹브라우저을 열어 http://EXTERNAL-IP 을 입력 후 Ghost 블로그 정상 동작 및 기존 데이터 Import 여부를 확인합니다.
 
 ![enter image description here](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/images/ghost_import.PNG)
 
@@ -63,8 +64,9 @@ ghost   LoadBalancer   10.255.100.23   115.144.174.247   80:31435/TCP   21h</cod
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk0NDk2NDkwLC03NjYxMzg5MDksLTg5Mj
-I5NTE4OSwyMDU4ODMzMzksLTk2ODM4ODk1Myw3NjA3OTg5OTks
-LTM4NzUyODQ4OCwtMTEwMzY0ODIxOSwxNjk5OTc0NTM5LC0xND
-I5ODg0MzAsLTkzNTM3MjMwNCw4Nzc2MzU1MjZdfQ==
+eyJoaXN0b3J5IjpbMTQ0NjU0MjM2MCwzOTQ0OTY0OTAsLTc2Nj
+EzODkwOSwtODkyMjk1MTg5LDIwNTg4MzMzOSwtOTY4Mzg4OTUz
+LDc2MDc5ODk5OSwtMzg3NTI4NDg4LC0xMTAzNjQ4MjE5LDE2OT
+k5NzQ1MzksLTE0Mjk4ODQzMCwtOTM1MzcyMzA0LDg3NzYzNTUy
+Nl19
 -->
