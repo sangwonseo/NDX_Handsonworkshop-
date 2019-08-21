@@ -27,6 +27,7 @@ data:
       protocol: layer2
       addresses:
       - xx.xx.xx.xx </code></pre>
+      
 ## Step 2. External-IP Service  생성하기 
 
 1. Service 생성될 ghost라는 namespace를 생성합니다.
@@ -35,11 +36,11 @@ data:
      
 23. 생성된 ghost namespace를 확인합니다. 
 
-      ``` `# kubectl get namespaces`
-3 ```   
+      `# kubectl get namespaces`
+        
 4.  Service yaml 파일을 다운 받아 ghost namesapce에 Service를 생성합니다.([ghost_service.yaml](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/sourcefile/ghost_service.yaml))
 
-       `  ```  # kubectl apply -f ghost_service.yaml` 
+       `# kubectl apply -f ghost_service.yaml` 
        
 45.  생성된 Service와 해당됭 External IP를 확인합니다.
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined"># kubectl get svc -n ghost
@@ -54,6 +55,6 @@ ghost   LoadBalancer   10.255.100.23   115.144.174.247   80:31435/TCP   4h36</co
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMTIzMDc1OCwxNjY4Nzk1NjE0LDM3OD
-U0Nzc1MywtMTQ4MDg2OTEzLDg2NzY5NDg4NV19
+eyJoaXN0b3J5IjpbNDE1NjUwOSwxNjY4Nzk1NjE0LDM3ODU0Nz
+c1MywtMTQ4MDg2OTEzLDg2NzY5NDg4NV19
 -->
