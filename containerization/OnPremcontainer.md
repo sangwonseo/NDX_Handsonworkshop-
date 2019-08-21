@@ -20,14 +20,15 @@
  ## Step 2. Clone 볼륨을 K8S Cluster내의 PVC로 Import 수행      
 1. 기 설치된 K8S Cluster에 접속합니다.
 
-2.  
+2.  Triden
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2ODM4ODk1Myw3NjA3OTg5OTksLTM4Nz
-UyODQ4OCwtMTEwMzY0ODIxOSwxNjk5OTc0NTM5LC0xNDI5ODg0
-MzAsLTkzNTM3MjMwNCw4Nzc2MzU1MjZdfQ==
+eyJoaXN0b3J5IjpbLTE3ODk1MTEwMzUsLTk2ODM4ODk1Myw3Nj
+A3OTg5OTksLTM4NzUyODQ4OCwtMTEwMzY0ODIxOSwxNjk5OTc0
+NTM5LC0xNDI5ODg0MzAsLTkzNTM3MjMwNCw4Nzc2MzU1MjZdfQ
+==
 -->
