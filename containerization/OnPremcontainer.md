@@ -11,7 +11,10 @@
      * Storage 메뉴 > SVMs > svm-user-number 
 
 3. Content 볼륨에 대해 Clone을 수행합니다.
-     * More Actions > SVMs > svm-user-number 
+     * More Actions > Clone > Create > Volume 
+     * Thin Provisioning 활성화
+     * Create new Snapshot copy now 선택 
+     * Clone 클릭 ㄹ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMTkxMjU4Nyw4Nzc2MzU1MjZdfQ==
+eyJoaXN0b3J5IjpbMTMzMTkyMTg1NSw4Nzc2MzU1MjZdfQ==
 -->
