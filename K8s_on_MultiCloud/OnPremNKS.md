@@ -235,7 +235,7 @@ aggr1  online  RW  1GB  1023MB  0%
 svm-user1 SVM에 trident_로 시작하는 1GB 사이즈의 볼륨이 생성 된 것을 확인 할 수 있습니다.
 
 4. POD에 마운트
-<pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">debian@net5c0rjuz-master-1:~/trident-installer$ vi task-pv-pod.yaml
+<pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">debian@net5c0rjuz-master-1:~/trident-installer/setup$ vi task-pv-pod.yaml
 kind: Pod
 apiVersion: v1
 metadata:
@@ -266,11 +266,11 @@ Filesystem  Size  Used Avail Use% Mounted on
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODIzMTc1NzgsMTQxNjIwNjIxLDY4OT
-YxNTgzMCw1MzQ1MDQwODIsMTIzOTA3MjkyNywtMTU1NzY4ODg0
-MiwtMTEyNTYyNjIxMCwxMTM5NjQ4MTk0LDExOTkwMjIxMTEsLT
-E2Mzc0ODA2OTMsOTU1MDE4OTk5LDE5MzA0NjYxMTgsOTU1MDE4
-OTk5LDE5MzA0NjYxMTgsLTY5NjQ4MTU3NiwtODk1ODIxMTYwLD
-MwNzY0MTkyOCwxMTEwNzQ5NzgsNDU4Mzc2MTgyLDE1Nzg0OTMw
-NzNdfQ==
+eyJoaXN0b3J5IjpbNDY2NDkxNDY0LDE0MTYyMDYyMSw2ODk2MT
+U4MzAsNTM0NTA0MDgyLDEyMzkwNzI5MjcsLTE1NTc2ODg4NDIs
+LTExMjU2MjYyMTAsMTEzOTY0ODE5NCwxMTk5MDIyMTExLC0xNj
+M3NDgwNjkzLDk1NTAxODk5OSwxOTMwNDY2MTE4LDk1NTAxODk5
+OSwxOTMwNDY2MTE4LC02OTY0ODE1NzYsLTg5NTgyMTE2MCwzMD
+c2NDE5MjgsMTExMDc0OTc4LDQ1ODM3NjE4MiwxNTc4NDkzMDcz
+XX0=
 -->
