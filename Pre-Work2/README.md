@@ -140,6 +140,7 @@
 
 
 	> **_NOTE:_**  [1_createSVM.yml](./files/1_createSVM.yml) 화일은 아래와 같은 NetApp Module을 수행합니다.   
+	> **_NOTE:_**  <a href="./files/1_createSVM.yml" target="_blank">1_createSVM.yml</a> 화일은 아래와 같은 NetApp Module을 수행합니다.   
 
 	  |    module명                 |                        module 기능                     |
 	  |-----------------------------|--------------------------------------------------------|
