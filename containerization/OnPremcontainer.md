@@ -2,9 +2,8 @@
 
 **사전 준비사항** 
  - [ ] [K8s Cluster 접속 환경 셋업](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_on_MultiCloud/OnPremNKS.) 
- - [ ] Trident 설치 및 Backend 구성](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_on_MultiCloud/OnPremNKS.md) 
-  - [ ] VM 기반
-
+ - [ ] [Trident 설치 및 Backend 구성](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_on_MultiCloud/OnPremNKS.md) 
+ - [ ] [VM 기반의 Ghost 블로그 구성
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NjU2MzI2NF19
+eyJoaXN0b3J5IjpbLTMwNDkyMzkyNF19
 -->
