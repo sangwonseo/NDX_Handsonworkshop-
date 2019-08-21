@@ -23,7 +23,7 @@
 
 2.  Trident 설치 시 사용한 trident-installer 폴더로 이동합니다.
 
-3.  Trident에서 제공하는 Import 기능을 통해  Step1에서 생성한 content clone 볼륨을 해당 Cluster내의 PVC 볼륨으로 Import 합니다. (import-pvc.yaml)
+3.  Trident에서 제공하는 Import 기능을 통해  Step1에서 생성한 content clone 볼륨을 해당 Cluster내의 PVC 볼륨으로 Import 합니다. ([import-pvc.yaml](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/files/import-pvc.yaml))
 
       ` # ./tridentctl import volume nfsBackend content_clone -f import-pvc.yaml -n trident
 `
@@ -42,7 +42,7 @@ ghost-content     Bound    pvc-d1e07765-c416-11e9-8a78-005056a8832a   5Gi       
 > [Trident의 Legacy Volume Import Task](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_with_Trident/README.md)
 
  ## Step 3. Ghost 블로그 Container 실행   
-1. Ghost deployment yaml 파일로 신규 Ghost 블로그 POD를 생성합니다. 
+1. Ghost deployment yaml 파일로 신규 Ghost 블로그 POD를 생성합니다. ([ghost_deployment.yaml](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/files/ghost_deployment.yaml))
 
     ` # kubectl create -f ghost_deployment.yaml -n ghost
 `
@@ -65,9 +65,9 @@ ghost   LoadBalancer   10.255.100.23   115.144.174.247   80:31435/TCP   21h</cod
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI5MTkwNTU3LDE0NDY1NDIzNjAsMzk0ND
-k2NDkwLC03NjYxMzg5MDksLTg5MjI5NTE4OSwyMDU4ODMzMzks
-LTk2ODM4ODk1Myw3NjA3OTg5OTksLTM4NzUyODQ4OCwtMTEwMz
-Y0ODIxOSwxNjk5OTc0NTM5LC0xNDI5ODg0MzAsLTkzNTM3MjMw
-NCw4Nzc2MzU1MjZdfQ==
+eyJoaXN0b3J5IjpbMzc4OTYyMzYyLDkyOTE5MDU1NywxNDQ2NT
+QyMzYwLDM5NDQ5NjQ5MCwtNzY2MTM4OTA5LC04OTIyOTUxODks
+MjA1ODgzMzM5LC05NjgzODg5NTMsNzYwNzk4OTk5LC0zODc1Mj
+g0ODgsLTExMDM2NDgyMTksMTY5OTk3NDUzOSwtMTQyOTg4NDMw
+LC05MzUzNzIzMDQsODc3NjM1NTI2XX0=
 -->
