@@ -18,14 +18,14 @@
    ![enter image description here](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/images/content_clone_2.png)
 
  ## Step 2. Clone 볼륨을 K8S Cluster내의 PVC로 Import 수행      
-4. 기 설치된 K8S Cluster에 접속합니다.
+1. 기 설치된 K8S Cluster에 접속합니다.
 
-5.  Trident 설치 시 사용한 trident-installer 폴더로 이동합니다.
+2.  Trident 설치 시 사용한 trident-installer 폴더로 이동합니다.
 
-6.  Trident에서 제공하는 Import 기능을 통해  Step1에서 생성한 content clone 볼륨을 해당 Cluster내의 PVC 볼륨으로 Import 합니다. (import-pvc.yaml)
+3.  Trident에서 제공하는 Import 기능을 통해  Step1에서 생성한 content clone 볼륨을 해당 Cluster내의 PVC 볼륨으로 Import 합니다. (import-pvc.yaml)
   ` # ./tridentctl import volume nfsBackend content_clone -f import-pvc.yaml -n trident
 `
-
+4. Im
  
 
 
@@ -33,7 +33,8 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1ODgzMzM5LC05NjgzODg5NTMsNzYwNz
-k4OTk5LC0zODc1Mjg0ODgsLTExMDM2NDgyMTksMTY5OTk3NDUz
-OSwtMTQyOTg4NDMwLC05MzUzNzIzMDQsODc3NjM1NTI2XX0=
+eyJoaXN0b3J5IjpbLTEyNDU0MTA5MTIsMjA1ODgzMzM5LC05Nj
+gzODg5NTMsNzYwNzk4OTk5LC0zODc1Mjg0ODgsLTExMDM2NDgy
+MTksMTY5OTk3NDUzOSwtMTQyOTg4NDMwLC05MzUzNzIzMDQsOD
+c3NjM1NTI2XX0=
 -->
