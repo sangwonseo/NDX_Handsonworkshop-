@@ -1,4 +1,4 @@
----이번 Task는 기존 VM 기반의 Ghost 블로그 Application과 기존 데이터를 K8S Cluster로 이관합니다. 
+이번 Task는 기존 VM 기반의 Ghost 블로그 Application과 기존 데이터를 K8S Cluster로 이관합니다. 
 
 **사전 준비사항** 
  - [ ] [K8s Cluster 접속 환경 셋업](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_on_MultiCloud/OnPremNKS.) 
@@ -68,9 +68,10 @@ ghost   LoadBalancer   10.255.100.23   115.144.174.247   80:31435/TCP   21h</cod
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwODQ4NjgxNywzNzg5NjIzNjIsOTI5MT
-kwNTU3LDE0NDY1NDIzNjAsMzk0NDk2NDkwLC03NjYxMzg5MDks
-LTg5MjI5NTE4OSwyMDU4ODMzMzksLTk2ODM4ODk1Myw3NjA3OT
-g5OTksLTM4NzUyODQ4OCwtMTEwMzY0ODIxOSwxNjk5OTc0NTM5
-LC0xNDI5ODg0MzAsLTkzNTM3MjMwNCw4Nzc2MzU1MjZdfQ==
+eyJoaXN0b3J5IjpbLTk3MDExMTM0MiwxOTA4NDg2ODE3LDM3OD
+k2MjM2Miw5MjkxOTA1NTcsMTQ0NjU0MjM2MCwzOTQ0OTY0OTAs
+LTc2NjEzODkwOSwtODkyMjk1MTg5LDIwNTg4MzMzOSwtOTY4Mz
+g4OTUzLDc2MDc5ODk5OSwtMzg3NTI4NDg4LC0xMTAzNjQ4MjE5
+LDE2OTk5NzQ1MzksLTE0Mjk4ODQzMCwtOTM1MzcyMzA0LDg3Nz
+YzNTUyNl19
 -->
