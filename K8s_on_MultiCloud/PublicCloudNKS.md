@@ -17,7 +17,7 @@ Azure와의 접속을 위한 credential 정보를 입력합니다.
 ```
 ADD CREDENTIALS
 ```
-이때, obtaining credentials for Azure를 클릭하면 credential 생성 방법을 자세히 확인 할 수 있습니다.
+이때, 'obtaining credentials for Azure'를 클릭하면 credential 생성 방법을 자세히 확인 할 수 있습니다.
 > Azure credential 생성 방법 : 아래 가이드를 참조 할 것 
 > ([Azure Credential 생성 참조 링크](https://docs.netapp.com/us-en/kubernetes-service/create-auth-credentials-on-azure.html#create-new-azure-credentials))
 
@@ -152,8 +152,8 @@ MY CHARTS에 등록이 완료 되면, NKS Home > CONTROL PLANE > CLUSTERS > Azur
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0Mzc0MzMsMTU5NTU0OTM3MCwtMTcxOT
-k4ODY1LDY4NzIyMDczNSwtMjA0NjIxMTkxMSwtNDI4NzY0OTc2
-LC0yMDUwNTY0NjQxLC00OTQxNjc5NjQsLTE2NTUyNTg5MTcsNz
-MwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTU1OTM2MTYxOSwxNTk1NTQ5MzcwLC0xNz
+E5OTg4NjUsNjg3MjIwNzM1LC0yMDQ2MjExOTExLC00Mjg3NjQ5
+NzYsLTIwNTA1NjQ2NDEsLTQ5NDE2Nzk2NCwtMTY1NTI1ODkxNy
+w3MzA5OTgxMTZdfQ==
 -->
