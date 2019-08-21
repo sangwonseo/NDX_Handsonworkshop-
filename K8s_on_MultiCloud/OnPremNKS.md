@@ -44,11 +44,11 @@ NKS home 클릭 > 우측 상단 Organizations 아이콘 클릭 > NetAppKR_LAB �
 
 2. 다운받은 Key를 ppk 타입으로 변환합니다.
 다운로드 받은 private key를 이용하여 master node에 ssh 접속이 가능한데, 만약 Putty를 이용하여 접속을 한다면, Putty Private Key로 변환하여야 하며, 변환은 Putty Key Generator를 설치하여 생성 가능 합니다.
-PuTTYgen 을 실행하여 Conversions > Import key > 다운로드 받은 SSH Key (id_rsa) 선택 > Save Private key 메뉴 클릭하여 자신의 로컬 PC에 저장 합니다.
+PuTTYgen ([https://www.puttygen.com/](https://www.puttygen.com/))을 자신의 PC에 설치 후, 실행하여 Conversions > Import key > 다운로드 받은 SSH Key (id_rsa) 선택 > Save Private key 메뉴 클릭하여 자신의 로컬 PC에 저장 합니다.
 ![enter image description here](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_on_MultiCloud/images/03_Puttygen.png)
 
 3. Putty를 이용하여 SSH 접속합니다.
-그다음 Putty를 실행하고,
+Putty를 실행하고,
 * Host Name (or IP address) : master node의 IP address
 * Connection > SSH > Auth > Browse 클릭하여 Putty Private Key (.ppk 파일) 선택 > Open
 ![enter image description here](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_on_MultiCloud/images/04_Putty.png)
@@ -231,11 +231,11 @@ Filesystem  Size  Used Avail Use% Mounted on
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDkyMzE2NzksLTE1NTc2ODg4NDIsLT
-ExMjU2MjYyMTAsMTEzOTY0ODE5NCwxMTk5MDIyMTExLC0xNjM3
-NDgwNjkzLDk1NTAxODk5OSwxOTMwNDY2MTE4LDk1NTAxODk5OS
-wxOTMwNDY2MTE4LC02OTY0ODE1NzYsLTg5NTgyMTE2MCwzMDc2
-NDE5MjgsMTExMDc0OTc4LDQ1ODM3NjE4MiwxNTc4NDkzMDczLC
-0xNjY0NTE0MzE4LC0xNzk0Mzg2MDYsLTEzOTY4NzQ1NjYsLTEz
-OTY4NzQ1NjZdfQ==
+eyJoaXN0b3J5IjpbNTIyMTk4MTkyLC0xNTU3Njg4ODQyLC0xMT
+I1NjI2MjEwLDExMzk2NDgxOTQsMTE5OTAyMjExMSwtMTYzNzQ4
+MDY5Myw5NTUwMTg5OTksMTkzMDQ2NjExOCw5NTUwMTg5OTksMT
+kzMDQ2NjExOCwtNjk2NDgxNTc2LC04OTU4MjExNjAsMzA3NjQx
+OTI4LDExMTA3NDk3OCw0NTgzNzYxODIsMTU3ODQ5MzA3MywtMT
+Y2NDUxNDMxOCwtMTc5NDM4NjA2LC0xMzk2ODc0NTY2LC0xMzk2
+ODc0NTY2XX0=
 -->
