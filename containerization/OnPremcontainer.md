@@ -34,8 +34,7 @@
 +------------------------------------------+---------+---------------+----------+--------------------------------------+--------+---------+
 debian@net8uz4wdg-master-1:/home/admindebian/trident-installer$ kubectl get pvc -n ghost
 NAME              STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
-ghost-content     Bound    pvc-d1e07765-c416-11e9-8a78-005056a8832a   5Gi        RWO            netapp-csi     14s
-</code></pre>
+ghost-content     Bound    pvc-d1e07765-c416-11e9-8a78-005056a8832a   5Gi        RWO            netapp-csi     14s</code></pre>
 
 > [Trident의 Legacy Volume Import 기능 참조](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_with_Trident/README.md)
 
@@ -43,12 +42,16 @@ ghost-content     Bound    pvc-d1e07765-c416-11e9-8a78-005056a8832a   5Gi       
 1. Ghost deployment yaml 파일로 신규 Ghost 블로그 POD를 생성합니다. 
  ` # kubectl create -f ghost_deployment.yaml -n ghost
 `
-2. 
+2. Ghost Pod 정상 동작 확 
+ <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">debian@net8uz4wdg-master-1:/home/admindebian/trident-installer$ kubectl get pod -n ghost
+NAME                    READY   STATUS    RESTARTS   AGE
+ghost-75869fbd6-68ccd   1/1     Running   0          10m</code></pre>
+3. Ghost 블로그 Service IP 및 Port 확인 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODI4OTIzNjAsLTg5MjI5NTE4OSwyMD
+eyJoaXN0b3J5IjpbLTE2MzUxNDY3NDksLTg5MjI5NTE4OSwyMD
 U4ODMzMzksLTk2ODM4ODk1Myw3NjA3OTg5OTksLTM4NzUyODQ4
 OCwtMTEwMzY0ODIxOSwxNjk5OTc0NTM5LC0xNDI5ODg0MzAsLT
 kzNTM3MjMwNCw4Nzc2MzU1MjZdfQ==
