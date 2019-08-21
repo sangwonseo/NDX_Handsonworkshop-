@@ -31,9 +31,7 @@ data:
 
 1. Service 생성될 ghost라는 namespace를 생성합니다.
 
-        # kubectl create namespace ghost   
-     
-2. 생성된 ghost namespace를 확인합니다. 
+ 2. 생성된 ghost namespace를 확인합니다. 
 
       `# kubectl get namespaces`
         
@@ -54,7 +52,7 @@ ghost   LoadBalancer   10.255.100.23   115.144.174.247   80:31435/TCP   4h36</co
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTMxMzUyLDE4NjM0NjE2MzIsMTY1OT
-UxNzg5NCwxNjY4Nzk1NjE0LDM3ODU0Nzc1MywtMTQ4MDg2OTEz
-LDg2NzY5NDg4NV19
+eyJoaXN0b3J5IjpbODk2MjEzMDU3LC0xNTEzMTM1MiwxODYzND
+YxNjMyLDE2NTk1MTc4OTQsMTY2ODc5NTYxNCwzNzg1NDc3NTMs
+LTE0ODA4NjkxMyw4Njc2OTQ4ODVdfQ==
 -->
