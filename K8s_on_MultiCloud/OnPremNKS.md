@@ -230,7 +230,7 @@ svm-test  trident_pvc_db6adca2_bd17_11e9_b1a8_005056a80a4b
 aggr1  online  RW  1GB  1023MB  0%
 
 2 entries were displayed.</code></pre>
-svm-test SVM에 trident_로 시작하는 1GB 사이즈의 볼륨이 생성 된 것을 확인 할 수 있습니다.
+svm-us SVM에 trident_로 시작하는 1GB 사이즈의 볼륨이 생성 된 것을 확인 할 수 있습니다.
 
 4. POD에 마운트
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">$ vi task-pv-pod.yaml
@@ -264,11 +264,11 @@ Filesystem  Size  Used Avail Use% Mounted on
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg5NjE1ODMwLDUzNDUwNDA4MiwxMjM5MD
-cyOTI3LC0xNTU3Njg4ODQyLC0xMTI1NjI2MjEwLDExMzk2NDgx
-OTQsMTE5OTAyMjExMSwtMTYzNzQ4MDY5Myw5NTUwMTg5OTksMT
-kzMDQ2NjExOCw5NTUwMTg5OTksMTkzMDQ2NjExOCwtNjk2NDgx
-NTc2LC04OTU4MjExNjAsMzA3NjQxOTI4LDExMTA3NDk3OCw0NT
-gzNzYxODIsMTU3ODQ5MzA3MywtMTY2NDUxNDMxOCwtMTc5NDM4
-NjA2XX0=
+eyJoaXN0b3J5IjpbLTIwNTczMDc3NDIsNjg5NjE1ODMwLDUzND
+UwNDA4MiwxMjM5MDcyOTI3LC0xNTU3Njg4ODQyLC0xMTI1NjI2
+MjEwLDExMzk2NDgxOTQsMTE5OTAyMjExMSwtMTYzNzQ4MDY5My
+w5NTUwMTg5OTksMTkzMDQ2NjExOCw5NTUwMTg5OTksMTkzMDQ2
+NjExOCwtNjk2NDgxNTc2LC04OTU4MjExNjAsMzA3NjQxOTI4LD
+ExMTA3NDk3OCw0NTgzNzYxODIsMTU3ODQ5MzA3MywtMTY2NDUx
+NDMxOF19
 -->
