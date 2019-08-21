@@ -8,7 +8,7 @@
     vsphere_password: "xxxxxxxxxxx"
     vsphere_datacenter: NetApp-HCI-Datacenter-01 
     vsphere_folder: uservm
-    guest_template: linux_v1.2  
+    guest_template: linux_v1.3  
       
   vars_files:
     - vars/main.yml
