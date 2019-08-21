@@ -83,7 +83,9 @@ ADD CREDENTIALS
 NetApp Cloud portal로 돌아가서, 'ADD CREDENTIALS' 클릭하여 EKS 인증정보를 기입 합니다.
 
 3. Cloud 환경 구성 셋업
-기본 설정으로, Master node는 AWS managed service로 제공되며, 사용자는 Min / Max Worker 노드수를 정의 할 수 있습니다. 이번 Task에서는 Node size를 t2.medium으로 변경하고, Location은 Seoul Region으로 변경하여 설치 진행합니다.
+기본 설정으로, Master node는 AWS managed service로 제공되며, 사용자는 Min / Max Worker 노드수를 정의 할 수 있습니다. 이번 Task에서는 Node size 및 Region을 아래와 같이 변경하여 설치 진행합니다.
+* Node Size: t2.medium
+* Region: Seoul
 다음으로 'SUBMIT' 메뉴를 클릭 합니다.
 
 4. K8s Cluster 구성 셋업
@@ -153,7 +155,7 @@ MY CHARTS에 등록이 완료 되면, NKS Home > CONTROL PLANE > CLUSTERS > Azur
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyNjIxOTYyMyw3MzIzMDE2OTMsLTU1OT
+eyJoaXN0b3J5IjpbMTk4NjQ5OTYwOCw3MzIzMDE2OTMsLTU1OT
 M2MTYxOSwxNTk1NTQ5MzcwLC0xNzE5OTg4NjUsNjg3MjIwNzM1
 LC0yMDQ2MjExOTExLC00Mjg3NjQ5NzYsLTIwNTA1NjQ2NDEsLT
 Q5NDE2Nzk2NCwtMTY1NTI1ODkxNyw3MzA5OTgxMTZdfQ==
