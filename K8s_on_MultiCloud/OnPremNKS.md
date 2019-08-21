@@ -136,8 +136,8 @@ debian@net5c0rjuz-master-1:~/trident-installer$ vi setup/backend-ontap-nas.json
 "storageDriverName": "ontap-nas",
 "backendName": "nfsBackend",
 "managementLIF": "115.144.xxx.xxx",
-"dataLIF": "115.144.xxx.xxx",
-"svm": "svm-test",
+"dataLIF": "10.255.xxx.xxx",
+"svm": "svm-user1",
 "username": "admin",
 "password": "xxxxxxx"
 }
@@ -265,7 +265,7 @@ Filesystem  Size  Used Avail Use% Mounted on
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4MzAxMTQ5MiwxMjM5MDcyOTI3LC0xNT
+eyJoaXN0b3J5IjpbLTk4MDQ4MDU1NSwxMjM5MDcyOTI3LC0xNT
 U3Njg4ODQyLC0xMTI1NjI2MjEwLDExMzk2NDgxOTQsMTE5OTAy
 MjExMSwtMTYzNzQ4MDY5Myw5NTUwMTg5OTksMTkzMDQ2NjExOC
 w5NTUwMTg5OTksMTkzMDQ2NjExOCwtNjk2NDgxNTc2LC04OTU4
