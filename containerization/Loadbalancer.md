@@ -42,7 +42,7 @@ data:
 
        `# kubectl apply -f ghost_service.yaml` 
        
-45.  생성된 Service와 해당됭 External IP를 확인합니다.
+45.  생성된 Service와 할당된 External IP를 확인합니다.
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined"># kubectl get svc -n ghost
 NAME    TYPE           CLUSTER-IP      EXTERNAL-IP       PORT(S)        AGE
 ghost   LoadBalancer   10.255.100.23   115.144.174.247   80:31435/TCP   4h36</code></pre> 
@@ -55,6 +55,6 @@ ghost   LoadBalancer   10.255.100.23   115.144.174.247   80:31435/TCP   4h36</co
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTU0OTk4NjEsMTY2ODc5NTYxNCwzNz
-g1NDc3NTMsLTE0ODA4NjkxMyw4Njc2OTQ4ODVdfQ==
+eyJoaXN0b3J5IjpbMTY1OTUxNzg5NCwxNjY4Nzk1NjE0LDM3OD
+U0Nzc1MywtMTQ4MDg2OTEzLDg2NzY5NDg4NV19
 -->
