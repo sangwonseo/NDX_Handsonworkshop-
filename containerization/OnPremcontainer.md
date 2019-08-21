@@ -25,16 +25,16 @@
 3.  Trident에서 제공하는 Import 기능을 통해  Step1에서 생성한 content clone 볼륨을 해당 Cluster내의 PVC 볼륨으로 Import 합니다. (import-pvc.yaml)
   ` # ./tridentctl import volume nfsBackend content_clone -f import-pvc.yaml -n trident
 `
-4. Im
- 
+4. Import된 PVC 볼륨을 확인합니다. 
+ <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDU0MTA5MTIsMjA1ODgzMzM5LC05Nj
-gzODg5NTMsNzYwNzk4OTk5LC0zODc1Mjg0ODgsLTExMDM2NDgy
-MTksMTY5OTk3NDUzOSwtMTQyOTg4NDMwLC05MzUzNzIzMDQsOD
-c3NjM1NTI2XX0=
+eyJoaXN0b3J5IjpbMTAzNDg2MjM1OCwyMDU4ODMzMzksLTk2OD
+M4ODk1Myw3NjA3OTg5OTksLTM4NzUyODQ4OCwtMTEwMzY0ODIx
+OSwxNjk5OTc0NTM5LC0xNDI5ODg0MzAsLTkzNTM3MjMwNCw4Nz
+c2MzU1MjZdfQ==
 -->
