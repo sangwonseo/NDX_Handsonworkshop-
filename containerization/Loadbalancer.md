@@ -1,7 +1,3 @@
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODA4NjkxMyw4Njc2OTQ4ODVdfQ==
--->
 이번 Task는 K8S Cluster내의 Container를 외부에서 접속할 수 있는 S/W Load balancer Pod를 설치 합니다.
 
 **사전 준비사항** 
@@ -10,6 +6,7 @@ eyJoaXN0b3J5IjpbLTE0ODA4NjkxMyw4Njc2OTQ4ODVdfQ==
 ## Step 1. MetalLB manifest  적용 
 
 1. 이미 설치된  K8S Cluster에 접속합니다.
+
 2.  Metallb yaml 파일을 다운 받아 Cluster 내에서 적용합니다. ([Metallb.yaml](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/sourcefile/metallb.yaml))  
 
 `kubectl apply -f https://raw.githubusercontent.com/google/metallb/v0.7.3/manifests/metallb.yaml`
@@ -49,7 +46,8 @@ ghost   LoadBalancer   10.255.100.23   115.144.174.247   80:31435/TCP   4h36</co
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/)
    
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTUyMjAwNjEsMzc4NTQ3NzUzLC0xND
-gwODY5MTMsODY3Njk0ODg1XX0=
+eyJoaXN0b3J5IjpbMjA5NDYzMjAsMzc4NTQ3NzUzLC0xNDgwOD
+Y5MTMsODY3Njk0ODg1XX0=
 -->
