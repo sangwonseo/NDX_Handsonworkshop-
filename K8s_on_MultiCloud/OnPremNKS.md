@@ -142,10 +142,10 @@ debian@net5c0rjuz-master-1:~/trident-installer$ vi setup/backend-ontap-nas.json
 "password": "xxxxxxx"
 }
 debian@net5c0rjuz-master-1:~/trident-installer$ ./tridentctl -n trident create backend -f setup/backend-ontap-nas.json</code></pre>
-> 만약, Backend 생성시 aggr assign Error가 발생하면, SVM에 aggregate가 assign 되지 않아 발생하는 error 입니다. 스토리지에 CLI로 접속하여 SVM에 aggr을 assign 하도록 합니다.
+> 만약, Backend 생성시 'aggr assign Error'가 발생하면, SVM에 aggregate가 assign 되지 않아 발생하는 error 임. 스토리지에 CLI로 접속하여 SVM에 aggr을 assign 하여 해결
 ><pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">ssh admin@  115.144.xxx.xxx
 >password : xxxxxxxx
-OTC_Netapp_korea_lab::> vserver modify -vserver svm-test -aggr-list aggr1</code></pre>
+>OTC_Netapp_korea_lab::> vserver modify -vserver svm-test -aggr-list aggr1</code></pre>
 다시 Master node로 돌아가서,
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">debian@net5c0rjuz-master-1:~/trident-installer$ ./tridentctl -n trident create backend -f setup/backend-ontap-nas.json
 +------------+----------------+--------------------------------------+--------+---------+
@@ -261,11 +261,11 @@ Filesystem  Size  Used Avail Use% Mounted on
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzI5MjkyNjEsMTIzOTA3MjkyNywtMT
-U1NzY4ODg0MiwtMTEyNTYyNjIxMCwxMTM5NjQ4MTk0LDExOTkw
-MjIxMTEsLTE2Mzc0ODA2OTMsOTU1MDE4OTk5LDE5MzA0NjYxMT
-gsOTU1MDE4OTk5LDE5MzA0NjYxMTgsLTY5NjQ4MTU3NiwtODk1
-ODIxMTYwLDMwNzY0MTkyOCwxMTEwNzQ5NzgsNDU4Mzc2MTgyLD
-E1Nzg0OTMwNzMsLTE2NjQ1MTQzMTgsLTE3OTQzODYwNiwtMTM5
-Njg3NDU2Nl19
+eyJoaXN0b3J5IjpbNTM0NTA0MDgyLDEyMzkwNzI5MjcsLTE1NT
+c2ODg4NDIsLTExMjU2MjYyMTAsMTEzOTY0ODE5NCwxMTk5MDIy
+MTExLC0xNjM3NDgwNjkzLDk1NTAxODk5OSwxOTMwNDY2MTE4LD
+k1NTAxODk5OSwxOTMwNDY2MTE4LC02OTY0ODE1NzYsLTg5NTgy
+MTE2MCwzMDc2NDE5MjgsMTExMDc0OTc4LDQ1ODM3NjE4MiwxNT
+c4NDkzMDczLC0xNjY0NTE0MzE4LC0xNzk0Mzg2MDYsLTEzOTY4
+NzQ1NjZdfQ==
 -->
