@@ -2,9 +2,8 @@
 이번 Task는 온프레미스내의 Ghost 블로그  Container을 AWS와 Azure로 이관합니다. 
 
 **사전 준비사항** 
- - [ ] 
- - [ ] [Trident 설치 및 Backend 구성](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_on_MultiCloud/OnPremNKS.md) 
- - [ ] [VM 기반의 Ghost 블로그 App 설치](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/Pre-Work2/README.md)
+ - [ ] [오프레미스의 Legacy Application을 Container로 전환](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/OnPremcontainer.md)
+ - [ ]  [CVO를 활용한 NKS + Trident 구성](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_on_MultiCloud/NKSwithCVO.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2NjYyMTA0XX0=
+eyJoaXN0b3J5IjpbMTI5ODE0MjczOF19
 -->
