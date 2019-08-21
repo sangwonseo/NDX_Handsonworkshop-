@@ -3,8 +3,8 @@
 
 ---
 
-다음 Task는 Cloud (AWS, Azure) 상의 NKS 배포를 실습 합니다. [https://nks.netapp.io](https://nks.netapp.io)  로 직접 접속하여서 로그인하고 '+ADD A CLUSTER NOW' 메뉴 클릭하여 다음 단계를 진행합니다.
-Azure는 VM기반 배포를 진행하고, AWS는 Managed Service(EKS)를 활용하여 배포 하도록 합니다.
+다음 Task는 Public Cloud (AWS, Azure) 상의 NKS 배포를 실습 합니다. [https://nks.netapp.io](https://nks.netapp.io)  로 직접 접속하여서 로그인하고 '+ADD A CLUSTER NOW' 메뉴 클릭하여 다음 단계를 진행합니다.
+Azure는 VM기반으로 배포를 진행하고, AWS는 Managed Service(EKS)를 활용하여 배포 하도록 하겠습니다.
 ## Step1. Azure에 NKS 배포
 1. 배포 플랫폼 선택
 배포 진행의 첫번째 메뉴인 Choose a provider 에서 Microsoft Azure를 선택합니다.
@@ -152,8 +152,8 @@ MY CHARTS에 등록이 완료 되면, NKS Home > CONTROL PLANE > CLUSTERS > Azur
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NTU0OTM3MCwtMTcxOTk4ODY1LDY4Nz
-IyMDczNSwtMjA0NjIxMTkxMSwtNDI4NzY0OTc2LC0yMDUwNTY0
-NjQxLC00OTQxNjc5NjQsLTE2NTUyNTg5MTcsNzMwOTk4MTE2XX
-0=
+eyJoaXN0b3J5IjpbMTk5NTE5ODgzNSwxNTk1NTQ5MzcwLC0xNz
+E5OTg4NjUsNjg3MjIwNzM1LC0yMDQ2MjExOTExLC00Mjg3NjQ5
+NzYsLTIwNTA1NjQ2NDEsLTQ5NDE2Nzk2NCwtMTY1NTI1ODkxNy
+w3MzA5OTgxMTZdfQ==
 -->
