@@ -18,14 +18,14 @@
    ![enter image description here](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/images/content_clone_2.png)
 
  ## Step 2. Clone 볼륨을 K8S Cluster내의 PVC로 Import 수행      
-1. 기 설치된 K8S Cluster에 접속합니다.
+4. 기 설치된 K8S Cluster에 접속합니다.
 
-2.  Trident 설치 시 사용한 trident-installer 폴더로 이동합니다.
+5.  Trident 설치 시 사용한 trident-installer 폴더로 이동합니다.
 
-3.  Trident에서 제공하는 Import 기능을 통해  Step1에서 생성한 content clone 볼륨을 해당 Cluster내의 PVC 볼륨으로 Import 합니다. (import-pvc.yaml)
+6.  Trident에서 제공하는 Import 기능을 통해  Step1에서 생성한 content clone 볼륨을 해당 Cluster내의 PVC 볼륨으로 Import 합니다. (import-pvc.yaml)
   ` # ./tridentctl import volume nfsBackend content_clone -f import-pvc.yaml -n trident
 `
-4. Import된 PVC 볼륨을 확인합니다. 
+7. Import된 PVC 볼륨을 확인합니다. 
  <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">debian@net8uz4wdg-master-1:/home/admindebian/trident-installer$ ./tridentctl import volume ontapnfs-user17 content_clone -f import-pvc.yaml -n trident
 +------------------------------------------+---------+---------------+----------+--------------------------------------+--------+---------+
 |                   NAME                   |  SIZE   | STORAGE CLASS | PROTOCOL |             BACKEND UUID             | STATE  | MANAGED |
@@ -38,13 +38,15 @@ ghost-content     Bound    pvc-d1e07765-c416-11e9-8a78-005056a8832a   5Gi       
 </code></pre>
 
  ## Step 3. Ghost 블로그 Container 실행   
-1. 기 설치된 K8S Cluster에 접속합니다.
+1. Ghost deployment yaml 파일로 신규 Ghost 블로그 POD를 생성합니다. 
+ ` # .t
+`
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MjI5NTE4OSwyMDU4ODMzMzksLTk2OD
-M4ODk1Myw3NjA3OTg5OTksLTM4NzUyODQ4OCwtMTEwMzY0ODIx
-OSwxNjk5OTc0NTM5LC0xNDI5ODg0MzAsLTkzNTM3MjMwNCw4Nz
-c2MzU1MjZdfQ==
+eyJoaXN0b3J5IjpbMjMyMTI2ODczLC04OTIyOTUxODksMjA1OD
+gzMzM5LC05NjgzODg5NTMsNzYwNzk4OTk5LC0zODc1Mjg0ODgs
+LTExMDM2NDgyMTksMTY5OTk3NDUzOSwtMTQyOTg4NDMwLC05Mz
+UzNzIzMDQsODc3NjM1NTI2XX0=
 -->
