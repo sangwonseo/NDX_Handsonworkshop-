@@ -128,9 +128,6 @@ debian@net5c0rjuz-master-1:~/trident-installer$</code></pre>
 ## Step4. 기타 Object 생성 및 운영 예제
 1. Trident Backend 생성
 Trident 백엔드는 Trident와 스토리지 간의 관계를 정의합니다. Trident는 해당 스토리지와 통신하는 방법과 Trident가 해당 스토리지 시스템에서 볼륨을 프로비저닝하는 방법을 알려줍니다.
-
-Trident는 백엔드에서 스토리지 클래스에 의해 정의 된 요구 사항과 함께 스토리지 풀을 자동으로 제공합니다.
-
 Trident는 다양한 sample yaml 파일을 제공합니다. 이 sample 파일을 활용해서 backend를 생성해 보도록 하겠습니다.
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">debian@net5c0rjuz-master-1:~/trident-installer$ cp sample-input/backend-ontap-nas.json setup
 debian@net5c0rjuz-master-1:~/trident-installer$ vi setup/backend-ontap-nas.json
@@ -265,11 +262,11 @@ Filesystem  Size  Used Avail Use% Mounted on
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzOTgzMzYsNTM0NTA0MDgyLDEyMzkwNz
-I5MjcsLTE1NTc2ODg4NDIsLTExMjU2MjYyMTAsMTEzOTY0ODE5
-NCwxMTk5MDIyMTExLC0xNjM3NDgwNjkzLDk1NTAxODk5OSwxOT
-MwNDY2MTE4LDk1NTAxODk5OSwxOTMwNDY2MTE4LC02OTY0ODE1
-NzYsLTg5NTgyMTE2MCwzMDc2NDE5MjgsMTExMDc0OTc4LDQ1OD
-M3NjE4MiwxNTc4NDkzMDczLC0xNjY0NTE0MzE4LC0xNzk0Mzg2
-MDZdfQ==
+eyJoaXN0b3J5IjpbMTk0MjMyNTk4LDUzNDUwNDA4MiwxMjM5MD
+cyOTI3LC0xNTU3Njg4ODQyLC0xMTI1NjI2MjEwLDExMzk2NDgx
+OTQsMTE5OTAyMjExMSwtMTYzNzQ4MDY5Myw5NTUwMTg5OTksMT
+kzMDQ2NjExOCw5NTUwMTg5OTksMTkzMDQ2NjExOCwtNjk2NDgx
+NTc2LC04OTU4MjExNjAsMzA3NjQxOTI4LDExMTA3NDk3OCw0NT
+gzNzYxODIsMTU3ODQ5MzA3MywtMTY2NDUxNDMxOCwtMTc5NDM4
+NjA2XX0=
 -->
