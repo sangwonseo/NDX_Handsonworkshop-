@@ -221,7 +221,9 @@ root@net5c0rjuz-master-1:~# /etc/init.d/networking restart
 [ ok ] Restarting networking (via systemctl): networking.service.</code></pre>
 나머지 두개의 worker node 도 동일하게 ens192 네트웍 설정을 진행 합니다. 
 
-<pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">debian@net5c0rjuz-master-1:~$ tridentctl get backend -n trident
+<pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">
+
+debian@net5c0rjuz-master-1:~$ tridentctl get backend -n trident
 +------------+----------------+--------------------------------------+--------+---------+
 |    NAME    | STORAGE DRIVER |                 UUID                 | STATE  | VOLUMES |
 +------------+----------------+--------------------------------------+--------+---------+
@@ -279,11 +281,11 @@ This is test data!!!
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzMjk2OTk0MCwtNjEwNDU4NDQ5LC0xMT
-I0NzYyNTYwLDg4NjM3MjIxMCwxOTg5ODg5MjQxLC02MDk5OTgx
-NiwtOTQyNTgxMTI4LDIwMzcxOTEzNjYsLTM3NTA5NTkzLC05OT
-YwNjc0MTksLTQxMTEyOTU3NSwxODA1NjQ4MDYyLC03MzYyMzAz
-MzUsLTExMTA4NTMxNzIsLTI2OTMzNDQ2MSwtMjMwOTI1NjU5LD
-Q3ODc3NzQxMiwtMTY2ODUxNTgzNSwxNzY5MzIwNzc1LDEzOTIx
-NTM2NjddfQ==
+eyJoaXN0b3J5IjpbMjU4MDc0OTI4LDEyMzI5Njk5NDAsLTYxMD
+Q1ODQ0OSwtMTEyNDc2MjU2MCw4ODYzNzIyMTAsMTk4OTg4OTI0
+MSwtNjA5OTk4MTYsLTk0MjU4MTEyOCwyMDM3MTkxMzY2LC0zNz
+UwOTU5MywtOTk2MDY3NDE5LC00MTExMjk1NzUsMTgwNTY0ODA2
+MiwtNzM2MjMwMzM1LC0xMTEwODUzMTcyLC0yNjkzMzQ0NjEsLT
+IzMDkyNTY1OSw0Nzg3Nzc0MTIsLTE2Njg1MTU4MzUsMTc2OTMy
+MDc3NV19
 -->
