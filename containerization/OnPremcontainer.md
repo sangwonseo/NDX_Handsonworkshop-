@@ -8,7 +8,10 @@
  ## Step 1. 기존 Ghost 블로그 데이터 Clone 복제  
 1. 기 설치되어 있는 ONTAP Select의 System Manager에 접속합니다. 웹 브라우저에서 https://[ONTAP Select cluster management IP] 로 접속합니다.
 2. 부여 받은 SVM에 접속하여 생성된 볼륨들을 확인합니다.
+     * Storage 메뉴 > SVMs > svm-user-number 
+     * Storage Type: Standard SSD
+     * Volume Tiering Policy: Auto 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMzYwNjgyMV19
+eyJoaXN0b3J5IjpbODc3NjM1NTI2XX0=
 -->
