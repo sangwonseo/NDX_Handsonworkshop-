@@ -9,9 +9,11 @@
 2.  Metallb yaml 파일을 다운 받아 Cluster 내에서 적용합니다. ([Metallb.yaml](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/sourcefile/metallb.yaml))  
 
 `kubectl apply -f https://raw.githubusercontent.com/google/metallb/v0.7.3/manifests/metallb.yaml`
+
 3. MetalLB POD 정상 동작 동작을 확인합니다.
 
 `kubectl get pods -n metallb-system`
+
 5. Metallb configmap 파일을 다운 받아 address 부분에 사전에 배정된 IP을 기입합니다. ([Metallb_configmap.yaml](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/sourcefile/metallbconfigmap.yaml))
  <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">apiVersion: v1
 kind: ConfigMap
@@ -47,5 +49,5 @@ ghost   LoadBalancer   10.255.100.23   115.144.174.247   80:31435/TCP   4h36</co
    
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjA3NzAxMTAsMTkxMzg5Nzk4OF19
+eyJoaXN0b3J5IjpbLTIzNzA2OTM3NCwxOTEzODk3OTg4XX0=
 -->
