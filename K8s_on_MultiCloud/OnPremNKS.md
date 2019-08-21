@@ -26,7 +26,7 @@
 
 전체 절차는 아래와 같습니다.
 
-NKS home 선택 > 우측 상단 Organizations 메뉴에서 NetAppKR_LAB 선택 > + ADD CLUSTER 클릭 > NetApp | HCI 클릭 > 디폴트 설정 유지하면서 SUBMIT 클릭 > 디폴트 설정 유지(K8s version : 1.14.3)하고 SUBMIT 클릭
+NKS home 클릭 > 우측 상단 Organizations 아이콘 클릭 > NetAppKR_LAB 클릭 > + ADD CLUSTER 클릭 > NetApp | HCI 클릭 > 디폴트 설정 유지하면서 SUBMIT 클릭 > 디폴트 설정 유지(K8s version : 1.14.3)하고 SUBMIT 클릭
 
 약 5~10분후, On-premise 상에 K8s Cluster 설치가 완료 됩니다.
 
@@ -227,11 +227,11 @@ Filesystem  Size  Used Avail Use% Mounted on
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5OTAyMjExMSwtMTYzNzQ4MDY5Myw5NT
-UwMTg5OTksMTkzMDQ2NjExOCw5NTUwMTg5OTksMTkzMDQ2NjEx
-OCwtNjk2NDgxNTc2LC04OTU4MjExNjAsMzA3NjQxOTI4LDExMT
-A3NDk3OCw0NTgzNzYxODIsMTU3ODQ5MzA3MywtMTY2NDUxNDMx
-OCwtMTc5NDM4NjA2LC0xMzk2ODc0NTY2LC0xMzk2ODc0NTY2LC
-0xMjExMzg5NDkzLC02MzIwMDg5NjcsLTEyMTEzODk0OTMsMTg3
-MDUxNjg4Nl19
+eyJoaXN0b3J5IjpbMTEzOTY0ODE5NCwxMTk5MDIyMTExLC0xNj
+M3NDgwNjkzLDk1NTAxODk5OSwxOTMwNDY2MTE4LDk1NTAxODk5
+OSwxOTMwNDY2MTE4LC02OTY0ODE1NzYsLTg5NTgyMTE2MCwzMD
+c2NDE5MjgsMTExMDc0OTc4LDQ1ODM3NjE4MiwxNTc4NDkzMDcz
+LC0xNjY0NTE0MzE4LC0xNzk0Mzg2MDYsLTEzOTY4NzQ1NjYsLT
+EzOTY4NzQ1NjYsLTEyMTEzODk0OTMsLTYzMjAwODk2NywtMTIx
+MTM4OTQ5M119
 -->
