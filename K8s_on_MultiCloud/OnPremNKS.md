@@ -221,16 +221,16 @@ NAME  STATUS  VOLUME  CAPACITY  ACCESS MODES  STORAGECLASS  AGE
 basic  Bound  pvc-db6adca2-bd17-11e9-b1a8-005056a80a4b  1Gi  RWO  basic  5s
 debian@net5c0rjuz-master-1:~/trident-installer$</code></pre>
 PVC, PV 및 스토리지에 Volume까지 dynamic하게 생성 되었으며 서로 mapping 된 구조를 확인 할 수 있습니다. Storage CLI로 들어가서,
-<pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">OTC_Netapp_korea_lab::> vol show -vserver svm-test
+<pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">OTC_Netapp_korea_lab::> vol show -vserver svm-user1
 Vserver  Volume  Aggregate  State  Type  Size  Available Used%
 --------- ------------ ------------ ---------- ---- ---------- ---------- -----
-svm-test  svm_test_root
+svm-user1  svm_user1_root
 aggr1  online  RW  1GB  969.2MB  0%
-svm-test  trident_pvc_db6adca2_bd17_11e9_b1a8_005056a80a4b
+svm-user1  trident_pvc_db6adca2_bd17_11e9_b1a8_005056a80a4b
 aggr1  online  RW  1GB  1023MB  0%
 
 2 entries were displayed.</code></pre>
-svm-us SVM에 trident_로 시작하는 1GB 사이즈의 볼륨이 생성 된 것을 확인 할 수 있습니다.
+svm-user1 SVM에 trident_로 시작하는 1GB 사이즈의 볼륨이 생성 된 것을 확인 할 수 있습니다.
 
 4. POD에 마운트
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">$ vi task-pv-pod.yaml
@@ -264,11 +264,11 @@ Filesystem  Size  Used Avail Use% Mounted on
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTczMDc3NDIsNjg5NjE1ODMwLDUzND
-UwNDA4MiwxMjM5MDcyOTI3LC0xNTU3Njg4ODQyLC0xMTI1NjI2
-MjEwLDExMzk2NDgxOTQsMTE5OTAyMjExMSwtMTYzNzQ4MDY5My
-w5NTUwMTg5OTksMTkzMDQ2NjExOCw5NTUwMTg5OTksMTkzMDQ2
-NjExOCwtNjk2NDgxNTc2LC04OTU4MjExNjAsMzA3NjQxOTI4LD
-ExMTA3NDk3OCw0NTgzNzYxODIsMTU3ODQ5MzA3MywtMTY2NDUx
-NDMxOF19
+eyJoaXN0b3J5IjpbMTY2NDc1MjI3Miw2ODk2MTU4MzAsNTM0NT
+A0MDgyLDEyMzkwNzI5MjcsLTE1NTc2ODg4NDIsLTExMjU2MjYy
+MTAsMTEzOTY0ODE5NCwxMTk5MDIyMTExLC0xNjM3NDgwNjkzLD
+k1NTAxODk5OSwxOTMwNDY2MTE4LDk1NTAxODk5OSwxOTMwNDY2
+MTE4LC02OTY0ODE1NzYsLTg5NTgyMTE2MCwzMDc2NDE5MjgsMT
+ExMDc0OTc4LDQ1ODM3NjE4MiwxNTc4NDkzMDczLC0xNjY0NTE0
+MzE4XX0=
 -->
