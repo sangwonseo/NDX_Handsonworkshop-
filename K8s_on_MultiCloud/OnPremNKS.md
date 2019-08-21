@@ -33,7 +33,7 @@ NKS home 클릭 > 우측 상단 Organizations 아이콘 클릭 > NetAppKR_LAB �
 약 5~10분후, On-premise 상에 K8s Cluster 설치가 완료 됩니다.
 
 ## Step2. K8s Cluster 접속 환경 셋업
-이번 Step 에서는 기존에 On-premise 상의 HCI 설치되어 있는, NetApp의 Software Defined Storage인, ONTAP Select와 Trident를 이용하여 연동하는 실습을 진행합니다.
+이번 Step 에서는 기존에 On-premise 상의 HCI 에 설치 되어 있는, NetApp의 Software Defined Storage인, ONTAP Select와 Trident를 이용하여 연동하는 실습을 진행합니다.
 
 기 배포된 On-prem NKS에 Trident 설치를 위해서는 CLI로 진행해야 합니다. NKS의 Master 노드 접속을 위해서는 SSH Keys를 이용하여 접속을 진행합니다.
 1. SSH Key를 다운로드 받습니다.
@@ -229,7 +229,7 @@ Filesystem  Size  Used Avail Use% Mounted on
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNTIwNzMzLC0xNTU3Njg4ODQyLC0xMT
+eyJoaXN0b3J5IjpbNDYzMzAzNTg5LC0xNTU3Njg4ODQyLC0xMT
 I1NjI2MjEwLDExMzk2NDgxOTQsMTE5OTAyMjExMSwtMTYzNzQ4
 MDY5Myw5NTUwMTg5OTksMTkzMDQ2NjExOCw5NTUwMTg5OTksMT
 kzMDQ2NjExOCwtNjk2NDgxNTc2LC04OTU4MjExNjAsMzA3NjQx
