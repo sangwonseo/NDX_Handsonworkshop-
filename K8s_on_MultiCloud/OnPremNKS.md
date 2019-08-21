@@ -37,7 +37,7 @@ NKS home 클릭 > 우측 상단 Organizations 아이콘 클릭 > NetAppKR_LAB �
 > ONTAP Select : NetApp이 제공하는 Software Defined Storage 라인업으로, FAS/AFF 동일한 OS를 사용하기 때문에, 대부분의 기능이 호환됨
 > Trident : Kubernetes 클러스터에서 Dynamic Storage Provisioning 을 지원하는 External Provisioner
 
-기 배포된 On-prem NKS에 Trident 설치를 위해서는 CLI로 진행해야 합니다. NKS의 Master 노드 접속을 위해서는 SSH Keys를 이용하여 접속을 진행합니다.
+기 배포된 On-prem NKS에 Trident 설치를 위해서는 CLI로 진행해야 합니다. NKS의 Master 노드 접속을 위해서는 SSH Key를 이용하여 접속을 진행합니다.
 1. SSH Key를 다운로드 받습니다.
 >SSH Key download 방법은 아래 Link 참조
 >[https://docs.netapp.com/us-en/kubernetes-service/ssh-to-a-node-in-an-nks-cluster.html#get-the-ssh-keys](https://docs.netapp.com/us-en/kubernetes-service/ssh-to-a-node-in-an-nks-cluster.html#get-the-ssh-keys)
@@ -231,11 +231,11 @@ Filesystem  Size  Used Avail Use% Mounted on
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxOTA3NDgxMCwtMTU1NzY4ODg0MiwtMT
-EyNTYyNjIxMCwxMTM5NjQ4MTk0LDExOTkwMjIxMTEsLTE2Mzc0
-ODA2OTMsOTU1MDE4OTk5LDE5MzA0NjYxMTgsOTU1MDE4OTk5LD
-E5MzA0NjYxMTgsLTY5NjQ4MTU3NiwtODk1ODIxMTYwLDMwNzY0
-MTkyOCwxMTEwNzQ5NzgsNDU4Mzc2MTgyLDE1Nzg0OTMwNzMsLT
-E2NjQ1MTQzMTgsLTE3OTQzODYwNiwtMTM5Njg3NDU2NiwtMTM5
-Njg3NDU2Nl19
+eyJoaXN0b3J5IjpbLTE2NDkyMzE2NzksLTE1NTc2ODg4NDIsLT
+ExMjU2MjYyMTAsMTEzOTY0ODE5NCwxMTk5MDIyMTExLC0xNjM3
+NDgwNjkzLDk1NTAxODk5OSwxOTMwNDY2MTE4LDk1NTAxODk5OS
+wxOTMwNDY2MTE4LC02OTY0ODE1NzYsLTg5NTgyMTE2MCwzMDc2
+NDE5MjgsMTExMDc0OTc4LDQ1ODM3NjE4MiwxNTc4NDkzMDczLC
+0xNjY0NTE0MzE4LC0xNzk0Mzg2MDYsLTEzOTY4NzQ1NjYsLTEz
+OTY4NzQ1NjZdfQ==
 -->
