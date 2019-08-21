@@ -2,11 +2,11 @@
 
  - [Task 1. 외부 접속을 위한 S/W Load Balancer 구현](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/Loadbalancer.md)
  
- - Task 2. 오프레미스의 Legacy Application을 Container로 전환 
+ - [Task 2. 오프레미스의 Legacy Application을 Container로 전환](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/OnPremcontainer.md) 
  
  - Task 3. 오프레미스의 Container Application을 Public Cloud (AWS,Azure) 확장 
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NTg2ODQ3MywyNTIzMzM0OV19
+eyJoaXN0b3J5IjpbLTEzOTQyMTk3NDUsMjUyMzMzNDldfQ==
 -->
