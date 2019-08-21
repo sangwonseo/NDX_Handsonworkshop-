@@ -255,9 +255,9 @@ spec:
         - mountPath: "/usr/share/nginx/html"
           name: task-pv-storage
 
-$ kubectl create -f task-pv-pod.yaml
-$ kubectl get pod --watch     ### POD가 구동되었는지 확인
-$ kubectl exec -it task-pv-pod -- df -h /usr/share/nginx/html    ### POD에 Volume이 mount 되었는지 확인
+debian@net5c0rjuz-master-1:~/trident-installer/setup$ kubectl create -f task-pv-pod.yaml
+debian@net5c0rjuz-master-1:~/trident-installer/setup$ kubectl get pod --watch     ### POD가 구동되었는지 확인
+debian@net5c0rjuz-master-1:~/trident-installer/setup$ kubectl exec -it task-pv-pod -- df -h /usr/share/nginx/html    ### POD에 Volume이 mount 되었는지 확인
 
 Filesystem  Size  Used Avail Use% Mounted on
 115.144.xxx.xxx:/trident_pvc_db6adca2_bd17_11e9_b1a8_005056a80a4b  1.0G  256K  1.0G  1% /usr/share/nginx/html</code></pre>
@@ -266,11 +266,11 @@ Filesystem  Size  Used Avail Use% Mounted on
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY2NDkxNDY0LDE0MTYyMDYyMSw2ODk2MT
-U4MzAsNTM0NTA0MDgyLDEyMzkwNzI5MjcsLTE1NTc2ODg4NDIs
-LTExMjU2MjYyMTAsMTEzOTY0ODE5NCwxMTk5MDIyMTExLC0xNj
-M3NDgwNjkzLDk1NTAxODk5OSwxOTMwNDY2MTE4LDk1NTAxODk5
-OSwxOTMwNDY2MTE4LC02OTY0ODE1NzYsLTg5NTgyMTE2MCwzMD
-c2NDE5MjgsMTExMDc0OTc4LDQ1ODM3NjE4MiwxNTc4NDkzMDcz
-XX0=
+eyJoaXN0b3J5IjpbMTY3NTc0NjI3OCwxNDE2MjA2MjEsNjg5Nj
+E1ODMwLDUzNDUwNDA4MiwxMjM5MDcyOTI3LC0xNTU3Njg4ODQy
+LC0xMTI1NjI2MjEwLDExMzk2NDgxOTQsMTE5OTAyMjExMSwtMT
+YzNzQ4MDY5Myw5NTUwMTg5OTksMTkzMDQ2NjExOCw5NTUwMTg5
+OTksMTkzMDQ2NjExOCwtNjk2NDgxNTc2LC04OTU4MjExNjAsMz
+A3NjQxOTI4LDExMTA3NDk3OCw0NTgzNzYxODIsMTU3ODQ5MzA3
+M119
 -->
