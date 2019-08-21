@@ -10,7 +10,7 @@ Azure는 VM기반으로 배포를 진행하고, AWS는 Managed Service(EKS)를 �
 배포 진행의 첫번째 메뉴인 Choose a provider 에서 Microsoft Azure를 선택합니다.
 ![enter image description here](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_on_MultiCloud/images/05_Azure.png)
 
-Configure your provider에서는 Service provider의 환경을 구성할 수 있습니다. 
+Configure your provider에서는 Service provider의 환경을 구성 할 수 있습니다. 
 
 2. Credential 정보 입력
 먼저, Azure와의 접속을 위한 credential 정보를 입력합니다.
@@ -152,7 +152,7 @@ MY CHARTS에 등록이 완료 되면, NKS Home > CONTROL PLANE > CLUSTERS > Azur
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5NTE5ODgzNSwxNTk1NTQ5MzcwLC0xNz
+eyJoaXN0b3J5IjpbLTQ3NzQwMDQzNywxNTk1NTQ5MzcwLC0xNz
 E5OTg4NjUsNjg3MjIwNzM1LC0yMDQ2MjExOTExLC00Mjg3NjQ5
 NzYsLTIwNTA1NjQ2NDEsLTQ5NDE2Nzk2NCwtMTY1NTI1ODkxNy
 w3MzA5OTgxMTZdfQ==
