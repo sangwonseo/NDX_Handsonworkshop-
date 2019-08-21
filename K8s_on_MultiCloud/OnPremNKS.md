@@ -12,7 +12,7 @@
 ## Step 1. NKS에서 HCI 기반의 Cluster 생성
 
 1. NetApp Cloud Portal ([https://cloud.netapp.com](https://cloud.netapp.com))에 자신의 계정으로 login 하여, 'NKS(NetApp Kubernetes Service)' 를 선택 합니다.
-![enter image description here](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_on_MultiCloud/images/01_NKS%20memu.png)
+![enter image description here](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_on_MultiCloud/images/01_NKS%20memu1.png)
 >30일 trial license를 제공하기 때문에, credit card 등록없이 체험 가능
 
 또는, [NKS 홈페이지](https://nks.netapp.io)  로 직접 접속하여서 로그인하면, 아래 웹페이지로 접속이 되고, '+ADD A CLUSTER NOW' 메뉴 선택하여 다음 단계를 진행 할 수 있습니다.
@@ -227,11 +227,11 @@ Filesystem  Size  Used Avail Use% Mounted on
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMDQ2NjExOCw5NTUwMTg5OTksMTkzMD
-Q2NjExOCwtNjk2NDgxNTc2LC04OTU4MjExNjAsMzA3NjQxOTI4
-LDExMTA3NDk3OCw0NTgzNzYxODIsMTU3ODQ5MzA3MywtMTY2ND
-UxNDMxOCwtMTc5NDM4NjA2LC0xMzk2ODc0NTY2LC0xMzk2ODc0
-NTY2LC0xMjExMzg5NDkzLC02MzIwMDg5NjcsLTEyMTEzODk0OT
-MsMTg3MDUxNjg4NiwtMTUyNzkzNTEwMCwzNzc3NDc0MzcsMTg5
-NDU3MTk2NV19
+eyJoaXN0b3J5IjpbOTU1MDE4OTk5LDE5MzA0NjYxMTgsOTU1MD
+E4OTk5LDE5MzA0NjYxMTgsLTY5NjQ4MTU3NiwtODk1ODIxMTYw
+LDMwNzY0MTkyOCwxMTEwNzQ5NzgsNDU4Mzc2MTgyLDE1Nzg0OT
+MwNzMsLTE2NjQ1MTQzMTgsLTE3OTQzODYwNiwtMTM5Njg3NDU2
+NiwtMTM5Njg3NDU2NiwtMTIxMTM4OTQ5MywtNjMyMDA4OTY3LC
+0xMjExMzg5NDkzLDE4NzA1MTY4ODYsLTE1Mjc5MzUxMDAsMzc3
+NzQ3NDM3XX0=
 -->
