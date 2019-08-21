@@ -98,7 +98,7 @@ root@net5c0rjuz-master-1:~# /etc/init.d/networking restart
 나머지 두개의 worker node 도 동일하게 ens192 네트웍 설정을 진행 합니다. 
 
 ## Step3. K8s cluster에 Trident 설치
-다음으로 Trident 구성을 진행합니다. NKS HCI에는 기본으로 Trident 19.04.1 버전의 패키지가 다운로드 되어 있습니다. 그렇지 않으면, 다시 다운로드하여 설치하여도 됩니다.
+다음으로 Trident 구성을 진행합니다. NKS HCI에는 기본으로 Trident 19.04.1 버전의 패키지가 다운로드 되어 있습니다. 그렇지 않으면, 다시 다운로드하여 설치 하여도 됩니다.
 1. Installer download (기존 download 되어 있는 패키지 사용시는 skip)
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">$ wget https://github.com/NetApp/trident/releases/download/v19.07.0/trident-installer-19.07.0.tar.gz
 $ tar -xf trident-installer-19.07.0.tar.gz
@@ -264,11 +264,11 @@ Filesystem  Size  Used Avail Use% Mounted on
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjM3NDM4ODgsMTIzOTA3MjkyNywtMT
-U1NzY4ODg0MiwtMTEyNTYyNjIxMCwxMTM5NjQ4MTk0LDExOTkw
-MjIxMTEsLTE2Mzc0ODA2OTMsOTU1MDE4OTk5LDE5MzA0NjYxMT
-gsOTU1MDE4OTk5LDE5MzA0NjYxMTgsLTY5NjQ4MTU3NiwtODk1
-ODIxMTYwLDMwNzY0MTkyOCwxMTEwNzQ5NzgsNDU4Mzc2MTgyLD
-E1Nzg0OTMwNzMsLTE2NjQ1MTQzMTgsLTE3OTQzODYwNiwtMTM5
-Njg3NDU2Nl19
+eyJoaXN0b3J5IjpbLTMwNzY0MjM5NiwxMjM5MDcyOTI3LC0xNT
+U3Njg4ODQyLC0xMTI1NjI2MjEwLDExMzk2NDgxOTQsMTE5OTAy
+MjExMSwtMTYzNzQ4MDY5Myw5NTUwMTg5OTksMTkzMDQ2NjExOC
+w5NTUwMTg5OTksMTkzMDQ2NjExOCwtNjk2NDgxNTc2LC04OTU4
+MjExNjAsMzA3NjQxOTI4LDExMTA3NDk3OCw0NTgzNzYxODIsMT
+U3ODQ5MzA3MywtMTY2NDUxNDMxOCwtMTc5NDM4NjA2LC0xMzk2
+ODc0NTY2XX0=
 -->
