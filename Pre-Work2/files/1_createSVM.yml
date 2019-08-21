@@ -85,7 +85,7 @@
       junction_path: "/content"
       space_guarantee: none
       unix_permissions: "777"
-      snapdir_access: "yes"
+      snapdir_access: "no"
       volume_security_style: unix
       <<: *login
 
