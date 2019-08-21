@@ -143,8 +143,7 @@ debian@net5c0rjuz-master-1:~/trident-installer$ vi setup/backend-ontap-nas.json
 }
 debian@net5c0rjuz-master-1:~/trident-installer$ ./tridentctl -n trident create backend -f setup/backend-ontap-nas.json
 
-Error: could not create backend: problem creating storage backend 'ontap-nas': SVM svm-test has no assigned aggregates (400 Bad Request)
-command terminated with exit code 1</code></pre>
+</code></pre>
 만약, Backend 생성시 위와 같은 Error가 발생하면, SVM에 aggregate가 assign 되지 않아 발생하는 error 입니다. 스토리지에 CLI로 접속하여 SVM에 aggr을 assign 하도록 합니다.
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">ssh admin@  115.144.xxx.xxx
 password : xxxxxxxx
@@ -265,7 +264,7 @@ Filesystem  Size  Used Avail Use% Mounted on
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4MDQ4MDU1NSwxMjM5MDcyOTI3LC0xNT
+eyJoaXN0b3J5IjpbMTk1ODE3MTQxMiwxMjM5MDcyOTI3LC0xNT
 U3Njg4ODQyLC0xMTI1NjI2MjEwLDExMzk2NDgxOTQsMTE5OTAy
 MjExMSwtMTYzNzQ4MDY5Myw5NTUwMTg5OTksMTkzMDQ2NjExOC
 w5NTUwMTg5OTksMTkzMDQ2NjExOCwtNjk2NDgxNTc2LC04OTU4
