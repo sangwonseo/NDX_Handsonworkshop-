@@ -11,7 +11,7 @@
      
       `# kubectl create namespace ghost`
      
-1. AWS내에 설치된 K8SCluster에서 신규 PVC를 생성합니다. ([ghost_PVC.yaml](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/files/ghost_PVC.yaml))
+2. AWS내에 설치된 K8SCluster에서 신규 PVC를 생성합니다. ([ghost_PVC.yaml](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/files/ghost_PVC.yaml))
      
      `# kubectl apply -f ghost_pvc.yaml -n ghost` 
 
@@ -30,11 +30,13 @@
      > CVO의 Data LIF 정보는 Cloud Manager GUI에서 확인 가능 
      ![enter image description here](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/images/cvo_nfs_datalif.PNG)
 
-6. 
+6. 데이터 복제 완료 후 Sync Relationship을 삭제합니다. 
+
+7. NKS GUI 이동 후 
     
     
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTAwMjg3NjcsMTIxMzY4NDI4MCwtMT
-cwMjM0NTEwM119
+eyJoaXN0b3J5IjpbLTExMDA4ODM1NTEsLTE2MTAwMjg3NjcsMT
+IxMzY4NDI4MCwtMTcwMjM0NTEwM119
 -->
