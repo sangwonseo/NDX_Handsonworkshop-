@@ -19,10 +19,7 @@
      * Source: NFS Server 
      * Target: NFS Server 
      *  
-     * Thin Provisioning 활성화
-     * Create new Snapshot copy now 선택 
-     * Clone 클릭  
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzOTAxODMyMiwtMTcwMjM0NTEwM119
+eyJoaXN0b3J5IjpbMTA0MTM3NDc2MSwtMTcwMjM0NTEwM119
 -->
