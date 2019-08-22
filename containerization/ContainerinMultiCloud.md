@@ -48,10 +48,11 @@
      * Kubernetes Dashboard 클릭
      * Name Space: Ghost 선택
      * Services 클릭 
+![enter image description here](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/images/ghost_external_ip.PNG)
 11. Ghost Service 내의 External end Points를 클릭하여 Ghost 블로그 POD 정상 동작을 확인합니다.     
-
+![enter image description here](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/images/aws_ghost.PNG)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNDc4MzAzMiw0NTgzNDQ0MDAsMjE0MT
-E2MjI3NywtMzE1MDg4MjU5LC0xNjEwMDI4NzY3LDEyMTM2ODQy
-ODAsLTE3MDIzNDUxMDNdfQ==
+eyJoaXN0b3J5IjpbLTE5NjQyNDE1MDgsLTkzNDc4MzAzMiw0NT
+gzNDQ0MDAsMjE0MTE2MjI3NywtMzE1MDg4MjU5LC0xNjEwMDI4
+NzY3LDEyMTM2ODQyODAsLTE3MDIzNDUxMDNdfQ==
 -->
