@@ -6,7 +6,7 @@
  - [ ]  [CVO를 활용한 NKS + Trident 구성](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_on_MultiCloud/NKSwithCVO.md)
   - [ ]  [Cloud Sync 구성](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/Data_Mobility_MultiCloud/OnPremtoCloudStorage.md)
  
-  ## Step 1. 온프라미스 Ghost POD 및 데이터를 AWS로 이동 
+  ## Step 1. 온프레미스 Ghost POD 및 데이터를 AWS로 이동 
 1. NKS에서 설치한 AWS K8SCluster 콘솔에 접속합니다. 
 
 2. Service 생성될 ghost라는 namespace를 생성합니다.
@@ -49,6 +49,6 @@
 11. Ghost Service 내의 External end Points를 클릭하여 Ghost 블로그 POD 정상 동작을 확인합니다.     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc4MDc1NDQxLC0zMTUwODgyNTksLTE2MT
-AwMjg3NjcsMTIxMzY4NDI4MCwtMTcwMjM0NTEwM119
+eyJoaXN0b3J5IjpbMjE0MTE2MjI3NywtMzE1MDg4MjU5LC0xNj
+EwMDI4NzY3LDEyMTM2ODQyODAsLTE3MDIzNDUxMDNdfQ==
 -->
