@@ -34,15 +34,16 @@
 
 7. 데이터 복제 완료 후 Sync Relationship을 삭제합니다. 
 
-8. AWS K8SCluster 설치된 NKS GUI로 이동 후 Chart를 통해 Ghost 블로그 Pod를 설치합니다. 
-         * Source: NFS Server 
-     * Target: NFS Server 
+8. AWS K8SCluster 설치된 NKS GUI로 이동 후 My Charts를 통해 Ghost 블로그 Pod를 설치합니다. 
+     * Solutions -> ADD SOLUTION -> My Charts -> Ghost 클릭
+     * storageClassName: netapp-file
+     * name: ghost-content 
      *  Enable data-in-flight encryption when syncing data? : No
      * Source NFS Server IP: 10.255.100.xx (SVM Data LIF)
      * Target NFS Server IP: 10.200.x.x ( CVO nfs Data LIF)
     
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MTkyNTY4NiwtMTYxMDAyODc2NywxMj
+eyJoaXN0b3J5IjpbLTMxMjg0MzEyNCwtMTYxMDAyODc2NywxMj
 EzNjg0MjgwLC0xNzAyMzQ1MTAzXX0=
 -->
