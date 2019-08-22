@@ -7,11 +7,14 @@
   - [ ]  [Cloud Sync 구성](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/Data_Mobility_MultiCloud/OnPremtoCloudStorage.md)
  
   ## Step 1. 온프라미스 Ghost POD 및 데이터를 AWS로 이동 
-1. CloudSync GUI로 이동합니다.
+1. AWS내에 설치된 K8SCluster에서 신규 PVC를 생성합니다.
 
-2. Create New Sync Relationship을 클릭합니다.
 
-3. 아래 정보를 기반으로 Relationship을 생성합니다.
+3. CloudSync GUI로 이동합니다.
+
+4. Create New Sync Relationship을 클릭합니다.
+
+5. 아래 정보를 기반으로 Relationship을 생성합니다.
      * Source: NFS Server 
      * Target: NFS Server 
      *  
@@ -20,5 +23,5 @@
      * Clone 클릭  
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA2MjA4MTE0LC0xNzAyMzQ1MTAzXX0=
+eyJoaXN0b3J5IjpbMTU1MzAwMDkyNiwtMTcwMjM0NTEwM119
 -->
