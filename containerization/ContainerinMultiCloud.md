@@ -8,7 +8,7 @@
  
   ## Step 1. 온프라미스 Ghost POD 및 데이터를 AWS로 이동 
 1. AWS내에 설치된 K8SCluster에서 신규 PVC를 생성합니다. (ghost_PVC.yaml)
-     `# kubectl apply -f ghost_service.yaml` 
+     `# kubectl apply -f ghost_pvc.yaml -n ghost` 
 
 
 3. CloudSync GUI로 이동합니다.
@@ -21,5 +21,5 @@
      *  
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMjU5OTQyOCwtMTcwMjM0NTEwM119
+eyJoaXN0b3J5IjpbMTk0MzE0MzI0MCwtMTcwMjM0NTEwM119
 -->
