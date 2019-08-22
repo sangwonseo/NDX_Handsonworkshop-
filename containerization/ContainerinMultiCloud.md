@@ -11,10 +11,11 @@
      
       `# kubectl create namespace ghost`
      
-1. AWS내에 설치된 K8SCluster에서 신규 PVC를 생성합니다. (ghost_PVC.yaml)
+1. AWS내에 설치된 K8SCluster에서 신규 PVC를 생성합니다. ([ghost_PVC.yaml](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/files/ghost_PVC.yaml))
      
      `# kubectl apply -f ghost_pvc.yaml -n ghost` 
 
+> Trident 구성  후 신규 PVC 생성 과정 
 
 3. CloudSync GUI로 이동합니다.
 
@@ -25,10 +26,11 @@
      * Target: NFS Server 
      *  Enable data-in-flight encryption when syncing data? : No
      * Source NFS Server IP: 10.255.100.xx (SVM Data LIF)
-     * Target NFS Server IP: 10.200.
+     * Target NFS Server IP: 10.200.x.x ( CVO Data LIF)
+    
     
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMjU0NTgzNSwxMjEzNjg0MjgwLC0xNz
+eyJoaXN0b3J5IjpbLTIzMTkyODk2MywxMjEzNjg0MjgwLC0xNz
 AyMzQ1MTAzXX0=
 -->
