@@ -38,12 +38,13 @@
      * Solutions -> ADD SOLUTION -> My Charts -> Ghost 클릭
      * storageClassName: netapp-file
      * name: ghost-content 
-     *  Enable data-in-flight encryption when syncing data? : No
-     * Source NFS Server IP: 10.255.100.xx (SVM Data LIF)
-     * Target NFS Server IP: 10.200.x.x ( CVO nfs Data LIF)
-    
-   
+     * Install 클릭 
+ 9. 설치 완료 후 해당 K8S Cluster Dashboard GUI 접속 후 Service IP을 확인합니다. 
+     * 
+     * storageClassName: netapp-file
+     * name: ghost-content 
+     * Install 클릭  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxMjg0MzEyNCwtMTYxMDAyODc2NywxMj
+eyJoaXN0b3J5IjpbMjEyMzE3NTQwNCwtMTYxMDAyODc2NywxMj
 EzNjg0MjgwLC0xNzAyMzQ1MTAzXX0=
 -->
