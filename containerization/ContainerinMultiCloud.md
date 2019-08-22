@@ -19,11 +19,14 @@
 
       > [Trident 구성  후 신규 PVC 생성 과정](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_on_MultiCloud/OnPremNKS.md) 
 
-4. CloudSync GUI로 이동합니다.
+4. PVC 생성된 것을 CVO GUI에서 확인합니다. 
 
-5. Create New Sync Relationship을 클릭합니다.
 
-6. 아래 정보를 기반으로 Relationship을 생성합니다.
+6. CloudSync GUI로 이동합니다.
+
+7. Create New Sync Relationship을 클릭합니다.
+
+8. 아래 정보를 기반으로 Relationship을 생성합니다.
      * Source: NFS Server 
      * Target: NFS Server 
      *  Enable data-in-flight encryption when syncing data? : No
@@ -32,9 +35,9 @@
      > CVO의 Data LIF 정보는 Cloud Manager GUI에서 확인 가능 
      ![enter image description here](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/images/cvo_nfs_datalif.PNG)
 
-7. 데이터 복제 완료 후 Sync Relationship을 삭제합니다. 
+9. 데이터 복제 완료 후 Sync Relationship을 삭제합니다. 
 
-8. AWS K8SCluster 설치된 NKS GUI로 이동 후 My Charts를 통해 Ghost 블로그 Pod를 설치합니다. 
+10. AWS K8SCluster 설치된 NKS GUI로 이동 후 My Charts를 통해 Ghost 블로그 Pod를 설치합니다. 
      * Solutions -> ADD SOLUTION -> My Charts -> Ghost 클릭
      * storageClassName: netapp-file
      * name: ghost-content 
@@ -43,9 +46,9 @@
      * Kubernetes Dashboard 클릭
      * Name Space: Ghost 선택
      * Services 클릭 
-10. Ghost Service 내의 External end Points를 클릭하여 Ghost 블로그 POD 정상 동작을 확인합니다.     
+11. Ghost Service 내의 External end Points를 클릭하여 Ghost 블로그 POD 정상 동작을 확인합니다.     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxNTA4ODI1OSwtMTYxMDAyODc2NywxMj
-EzNjg0MjgwLC0xNzAyMzQ1MTAzXX0=
+eyJoaXN0b3J5IjpbLTE3MDIwMzg4MzYsLTMxNTA4ODI1OSwtMT
+YxMDAyODc2NywxMjEzNjg0MjgwLC0xNzAyMzQ1MTAzXX0=
 -->
