@@ -20,7 +20,7 @@
       > [Trident 구성  후 신규 PVC 생성 과정](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_on_MultiCloud/OnPremNKS.md) 
 
 4. PVC 생성된 것을 CVO GUI에서 확인합니다. 
-
+![enter image description here](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/images/cvo_pvc.PNG)
 
 6. CloudSync GUI로 이동합니다.
 
@@ -49,6 +49,6 @@
 11. Ghost Service 내의 External end Points를 클릭하여 Ghost 블로그 POD 정상 동작을 확인합니다.     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDIwMzg4MzYsLTMxNTA4ODI1OSwtMT
-YxMDAyODc2NywxMjEzNjg0MjgwLC0xNzAyMzQ1MTAzXX0=
+eyJoaXN0b3J5IjpbNzc4MDc1NDQxLC0zMTUwODgyNTksLTE2MT
+AwMjg3NjcsMTIxMzY4NDI4MCwtMTcwMjM0NTEwM119
 -->
