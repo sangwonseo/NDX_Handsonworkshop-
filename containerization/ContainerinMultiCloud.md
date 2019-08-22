@@ -7,23 +7,23 @@
   - [ ]  [Cloud Sync 구성](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/Data_Mobility_MultiCloud/OnPremtoCloudStorage.md)
  
   ## Step 1. 온프라미스 Ghost POD 및 데이터를 AWS로 이동 
-1. NKS에서 설치한 AWS K8S
+1. NKS에서 설치한 AWS K8SCluster 콘솔에 접속합니다. 
 
 2. Service 생성될 ghost라는 namespace를 생성합니다.
      
       `# kubectl create namespace ghost`
      
-4. AWS내에 설치된 K8SCluster에서 신규 PVC를 생성합니다. ([ghost_PVC.yaml](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/files/ghost_PVC.yaml))
+3. AWS내에 설치된 K8SCluster에서 신규 PVC를 생성합니다. ([ghost_PVC.yaml](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/files/ghost_PVC.yaml))
      
      `# kubectl apply -f ghost_pvc.yaml -n ghost` 
 
       > [Trident 구성  후 신규 PVC 생성 과정](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_on_MultiCloud/OnPremNKS.md) 
 
-5. CloudSync GUI로 이동합니다.
+4. CloudSync GUI로 이동합니다.
 
-6. Create New Sync Relationship을 클릭합니다.
+5. Create New Sync Relationship을 클릭합니다.
 
-7. 아래 정보를 기반으로 Relationship을 생성합니다.
+6. 아래 정보를 기반으로 Relationship을 생성합니다.
      * Source: NFS Server 
      * Target: NFS Server 
      *  Enable data-in-flight encryption when syncing data? : No
@@ -32,13 +32,17 @@
      > CVO의 Data LIF 정보는 Cloud Manager GUI에서 확인 가능 
      ![enter image description here](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/images/cvo_nfs_datalif.PNG)
 
-8. 데이터 복제 완료 후 Sync Relationship을 삭제합니다. 
+7. 데이터 복제 완료 후 Sync Relationship을 삭제합니다. 
 
-9. NKS로 GUI내의 AWS에 설치된  
-    
+8. AWS K8SCluster 설치된 NKS GUI로 이동 후 Chart를 통해 Ghost 블로그 Pod를 설치합니다. 
+         * Source: NFS Server 
+     * Target: NFS Server 
+     *  Enable data-in-flight encryption when syncing data? : No
+     * Source NFS Server IP: 10.255.100.xx (SVM Data LIF)
+     * Target NFS Server IP: 10.200.x.x ( CVO nfs Data LIF)
     
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NDU3NTA5NiwtMTYxMDAyODc2NywxMj
+eyJoaXN0b3J5IjpbMTE5MTkyNTY4NiwtMTYxMDAyODc2NywxMj
 EzNjg0MjgwLC0xNzAyMzQ1MTAzXX0=
 -->
