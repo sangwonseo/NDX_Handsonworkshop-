@@ -4,10 +4,10 @@
  
  - [Task 2. 오프레미스의 Legacy Application을 Container로 전환](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/OnPremcontainer.md) 
  
- [- Task 3. 오프레미스의 Container Application을 Public Cloud (AWS,Azure) 확장](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/ContainerinMultiCloud.md) 
+ - [Task 3. 오프레미스의 Container Application을 Public Cloud (AWS,Azure) 확장](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/ContainerinMultiCloud.md) 
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMjU3MzQ5MCwtMTUzNTY1MDQ3MCwtMT
+eyJoaXN0b3J5IjpbMTY2ODgxNTk0NCwtMTUzNTY1MDQ3MCwtMT
 M5NDIxOTc0NSwyNTIzMzM0OV19
 -->
