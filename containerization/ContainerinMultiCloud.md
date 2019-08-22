@@ -38,7 +38,7 @@
      ![enter image description here](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/images/cvo_nfs_datalif.PNG)
 
 9. 데이터 복제 완료 후 Sync Relationship을 삭제합니다. 
-
+![enter image description here](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/images/trident_cloudsync.PNG)
 10. AWS K8SCluster 설치된 NKS GUI로 이동 후 My Charts를 통해 Ghost 블로그 Pod를 설치합니다. 
      * Solutions -> ADD SOLUTION -> My Charts -> Ghost 클릭
      * storageClassName: netapp-file
@@ -51,7 +51,7 @@
 11. Ghost Service 내의 External end Points를 클릭하여 Ghost 블로그 POD 정상 동작을 확인합니다.     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU4MzQ0NDAwLDIxNDExNjIyNzcsLTMxNT
-A4ODI1OSwtMTYxMDAyODc2NywxMjEzNjg0MjgwLC0xNzAyMzQ1
-MTAzXX0=
+eyJoaXN0b3J5IjpbLTkzNDc4MzAzMiw0NTgzNDQ0MDAsMjE0MT
+E2MjI3NywtMzE1MDg4MjU5LC0xNjEwMDI4NzY3LDEyMTM2ODQy
+ODAsLTE3MDIzNDUxMDNdfQ==
 -->
