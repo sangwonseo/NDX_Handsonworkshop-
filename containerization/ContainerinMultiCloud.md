@@ -43,11 +43,11 @@
      * Kubernetes Dashboard 클릭
      * Name Space: Ghost 선택
      * Services 클릭 
-10. Se    
+10. Ghost Service 내의 External end Points를 클릭하여     
      * storageClassName: netapp-file
      * name: ghost-content 
      * Install 클릭  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MTU2MzcxMCwtMTYxMDAyODc2NywxMj
+eyJoaXN0b3J5IjpbLTk3MDc4MjM3MiwtMTYxMDAyODc2NywxMj
 EzNjg0MjgwLC0xNzAyMzQ1MTAzXX0=
 -->
