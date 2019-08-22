@@ -17,7 +17,7 @@ NCSCDX Hands-on Workshop 은 Multi-Hbrid CloudEperience/DevOps & MicroServices  
 
 ## DevOps & MicroServices Hands-on Workshop 
 
-[Hands-on Scenario 5 : Kubernetes 환경에서 Stateful Application 구현](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_with_Trident/README.md)
+[Hands-on Scenario 5 : Kubernetes 환경에서 Trident를 이용한 데이터 관리](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_with_Trident/README.md)
 
 Hands-on Scenario 6 : 하이브리드 클라우드 환경에서 자동화 구현
 
@@ -28,6 +28,6 @@ Hands-on Scenario 8 : 멀티 클라우드 환경에서 Application Life Manageme
 
  > **NOTE:: [NetApp Cloud Central과 AWS, Azure 연계 및 사전 구성](https://github.com/netappkr/NDX_Handsonworkshop-/tree/master/Pre-Work)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0NTE5MTQ4MiwtMjA4NDkwNDU2NCwyOT
-MwNTE3OTQsMjA4MjA1Mzg1OF19
+eyJoaXN0b3J5IjpbLTExMTY0NzU3NjMsMTY0NTE5MTQ4MiwtMj
+A4NDkwNDU2NCwyOTMwNTE3OTQsMjA4MjA1Mzg1OF19
 -->
