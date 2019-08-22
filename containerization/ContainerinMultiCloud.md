@@ -7,9 +7,9 @@
   - [ ]  [Cloud Sync 구성](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/Data_Mobility_MultiCloud/OnPremtoCloudStorage.md)
  
   ## Step 1. 온프라미스 Ghost POD 및 데이터를 AWS로 이동 
-1. AWS내에 설치된 K8SCluster에서 신규 PVC를 생성합니다.
+1. AWS내에 설치된 K8SCluster에서 신규 PVC를 생성합니다. (ghost_PVC.yaml)
+     `# kubectl apply -f ghost_service.yaml` 
 
-2. 
 
 3. CloudSync GUI로 이동합니다.
 
@@ -21,5 +21,5 @@
      *  
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0MTM3NDc2MSwtMTcwMjM0NTEwM119
+eyJoaXN0b3J5IjpbMTcxMjU5OTQyOCwtMTcwMjM0NTEwM119
 -->
