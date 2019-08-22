@@ -11,8 +11,14 @@
 
 2. Create New Sync Relationship을 클릭합니다.
 
-3. 아래 정보를 기반으로 Relatio
+3. 아래 정보를 기반으로 Relationship을 생성합니다.
+     * Source: NFS Server 
+     * Target: NFS Server 
+     *  
+     * Thin Provisioning 활성화
+     * Create new Snapshot copy now 선택 
+     * Clone 클릭  
+   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTU4NzA3NDAsLTE3MDIzNDUxMDNdfQ
-==
+eyJoaXN0b3J5IjpbNDA2MjA4MTE0LC0xNzAyMzQ1MTAzXX0=
 -->
