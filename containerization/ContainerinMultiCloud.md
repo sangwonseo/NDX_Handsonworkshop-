@@ -32,6 +32,8 @@
      *  Enable data-in-flight encryption when syncing data? : No
      * Source NFS Server IP: 10.255.100.xx (SVM Data LIF)
      * Target NFS Server IP: 10.200.x.x ( CVO nfs Data LIF)
+     * Source Volume Name : ㅇ Attach된 PVC 이름 확인
+     *  Target Volume Name : 신규 
      > CVO의 Data LIF 정보는 Cloud Manager GUI에서 확인 가능 
      ![enter image description here](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/images/cvo_nfs_datalif.PNG)
 
@@ -49,6 +51,7 @@
 11. Ghost Service 내의 External end Points를 클릭하여 Ghost 블로그 POD 정상 동작을 확인합니다.     
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0MTE2MjI3NywtMzE1MDg4MjU5LC0xNj
-EwMDI4NzY3LDEyMTM2ODQyODAsLTE3MDIzNDUxMDNdfQ==
+eyJoaXN0b3J5IjpbLTE2MjMyNzU0MywyMTQxMTYyMjc3LC0zMT
+UwODgyNTksLTE2MTAwMjg3NjcsMTIxMzY4NDI4MCwtMTcwMjM0
+NTEwM119
 -->
