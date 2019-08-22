@@ -43,11 +43,9 @@
      * Kubernetes Dashboard 클릭
      * Name Space: Ghost 선택
      * Services 클릭 
-10. Ghost Service 내의 External end Points를 클릭하여     
-     * storageClassName: netapp-file
-     * name: ghost-content 
-     * Install 클릭  
+10. Ghost Service 내의 External end Points를 클릭하여 Ghost 블로그 POD 정상 동작을 확인합니다.     
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MDc4MjM3MiwtMTYxMDAyODc2NywxMj
+eyJoaXN0b3J5IjpbLTMxNTA4ODI1OSwtMTYxMDAyODc2NywxMj
 EzNjg0MjgwLC0xNzAyMzQ1MTAzXX0=
 -->
