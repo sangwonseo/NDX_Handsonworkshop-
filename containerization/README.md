@@ -1,6 +1,6 @@
 **Legacy Application을 Container로 마이그레이션하는 시나리오는 총 3개의 Task로 구성 되어 있습니다.** 
 
- - [Load Balancer 구현](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/Loadbalancer.md)
+ - [Task 1. Load Balancer 구현](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/Loadbalancer.md)
  
  - [Task 2. 오프레미스의 Legacy Application을 Container로 전환](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/OnPremcontainer.md) 
  
@@ -8,6 +8,6 @@
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgyMTk5NDA2LC0xNTM1NjUwNDcwLC0xMz
-k0MjE5NzQ1LDI1MjMzMzQ5XX0=
+eyJoaXN0b3J5IjpbLTk5MzE3MDUwLDQ4MjE5OTQwNiwtMTUzNT
+Y1MDQ3MCwtMTM5NDIxOTc0NSwyNTIzMzM0OV19
 -->
