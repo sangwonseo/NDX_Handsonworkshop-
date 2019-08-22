@@ -23,8 +23,9 @@
 5. 아래 정보를 기반으로 Relationship을 생성합니다.
      * Source: NFS Server 
      * Target: NFS Server 
-     *  
+     *  Enable data-in-flight encryption when syncing data?
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMzY4NDI4MCwtMTcwMjM0NTEwM119
+eyJoaXN0b3J5IjpbLTE5MDQ2NDkyNDMsMTIxMzY4NDI4MCwtMT
+cwMjM0NTEwM119
 -->
