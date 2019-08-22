@@ -15,7 +15,7 @@
      
      `# kubectl apply -f ghost_pvc.yaml -n ghost` 
 
-> Trident 구성  후 신규 PVC 생성 과정 
+      > [Trident 구성  후 신규 PVC 생성 과정](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/K8s_on_MultiCloud/OnPremNKS.md) 
 
 3. CloudSync GUI로 이동합니다.
 
@@ -27,10 +27,13 @@
      *  Enable data-in-flight encryption when syncing data? : No
      * Source NFS Server IP: 10.255.100.xx (SVM Data LIF)
      * Target NFS Server IP: 10.200.x.x ( CVO Data LIF)
+     > 
+
+
     
     
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMTkyODk2MywxMjEzNjg0MjgwLC0xNz
-AyMzQ1MTAzXX0=
+eyJoaXN0b3J5IjpbOTkyMDMxMDY4LDEyMTM2ODQyODAsLTE3MD
+IzNDUxMDNdfQ==
 -->
