@@ -40,7 +40,7 @@ data:
         
 4.  Service yaml 파일을 다운 받아 ghost namesapce에 Service를 생성합니다.([ghost_service.yaml](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/sourcefile/ghost_service.yaml))
 
-       `# kubectl apply -f ghost_service.yaml` 
+       `# kubectl apply -f ghost_service.yaml -n ghost` 
        
 5.  생성된 Service와 할당된 External IP를 확인합니다.
 <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined"># kubectl get svc -n ghost
@@ -55,7 +55,7 @@ ghost   LoadBalancer   10.255.100.23   115.144.174.247   80:31435/TCP   4h36</co
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNTEyODYwNCwtMTUxMzEzNTIsMTg2Mz
-Q2MTYzMiwxNjU5NTE3ODk0LDE2Njg3OTU2MTQsMzc4NTQ3NzUz
-LC0xNDgwODY5MTMsODY3Njk0ODg1XX0=
+eyJoaXN0b3J5IjpbLTE0MzgzODM4MDgsLTE1MTMxMzUyLDE4Nj
+M0NjE2MzIsMTY1OTUxNzg5NCwxNjY4Nzk1NjE0LDM3ODU0Nzc1
+MywtMTQ4MDg2OTEzLDg2NzY5NDg4NV19
 -->
