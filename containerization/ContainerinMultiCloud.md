@@ -40,11 +40,14 @@
      * name: ghost-content 
      * Install 클릭 
  9. 설치 완료 후 해당 K8S Cluster Dashboard GUI 접속 후 Service IP을 확인합니다. 
-     * 
+     * Kubernetes Dashboard 클릭
+     * Name Space: Ghost 선택
+     * Services 클릭 
+10. Se    
      * storageClassName: netapp-file
      * name: ghost-content 
      * Install 클릭  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMzE3NTQwNCwtMTYxMDAyODc2NywxMj
+eyJoaXN0b3J5IjpbMTc5MTU2MzcxMCwtMTYxMDAyODc2NywxMj
 EzNjg0MjgwLC0xNzAyMzQ1MTAzXX0=
 -->
