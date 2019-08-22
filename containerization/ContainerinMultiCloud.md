@@ -26,14 +26,14 @@
      * Target: NFS Server 
      *  Enable data-in-flight encryption when syncing data? : No
      * Source NFS Server IP: 10.255.100.xx (SVM Data LIF)
-     * Target NFS Server IP: 10.200.x.x ( CVO Data LIF)
-     > 
+     * Target NFS Server IP: 10.200.x.x ( CVO nfs Data LIF)
+     > CVO의 Data LIF 정보는 Cloud Manager GUI에서 확인 가능 
 
 
     
     
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkyMDMxMDY4LDEyMTM2ODQyODAsLTE3MD
-IzNDUxMDNdfQ==
+eyJoaXN0b3J5IjpbMTQ5ODk4NTE2MiwxMjEzNjg0MjgwLC0xNz
+AyMzQ1MTAzXX0=
 -->
