@@ -23,9 +23,12 @@
 5. 아래 정보를 기반으로 Relationship을 생성합니다.
      * Source: NFS Server 
      * Target: NFS Server 
-     *  Enable data-in-flight encryption when syncing data?
+     *  Enable data-in-flight encryption when syncing data? : No
+     * Source NFS Server IP: 10.255.100.xx (SVM Data LIF)
+     * Target NFS Server IP: 10.200.
+    
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDQ2NDkyNDMsMTIxMzY4NDI4MCwtMT
-cwMjM0NTEwM119
+eyJoaXN0b3J5IjpbLTQzMjU0NTgzNSwxMjEzNjg0MjgwLC0xNz
+AyMzQ1MTAzXX0=
 -->
