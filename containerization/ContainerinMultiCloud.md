@@ -28,12 +28,13 @@
      * Source NFS Server IP: 10.255.100.xx (SVM Data LIF)
      * Target NFS Server IP: 10.200.x.x ( CVO nfs Data LIF)
      > CVO의 Data LIF 정보는 Cloud Manager GUI에서 확인 가능 
+     ![enter image description here](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/images/cvo_nfs_datalif.PNG)
 
-
+6. 
     
     
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5ODk4NTE2MiwxMjEzNjg0MjgwLC0xNz
-AyMzQ1MTAzXX0=
+eyJoaXN0b3J5IjpbLTE2MTAwMjg3NjcsMTIxMzY4NDI4MCwtMT
+cwMjM0NTEwM119
 -->
