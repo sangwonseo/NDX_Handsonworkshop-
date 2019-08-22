@@ -1,8 +1,3 @@
----
-
-
----
-
 이번 Task는 NetApp Kubernetes Services를 이용하여 On-premise에 있는 NetApp HCI 장비에 K8s Cluster를 배포하는 실습을 진행합니다.
 
 <strong>사전 준비사항</strong>
@@ -266,11 +261,11 @@ Filesystem  Size  Used Avail Use% Mounted on
 
 [메인 메뉴로 이동](https://github.com/netappkr/NDX_Handsonworkshop-/) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3NTc0NjI3OCwxNDE2MjA2MjEsNjg5Nj
-E1ODMwLDUzNDUwNDA4MiwxMjM5MDcyOTI3LC0xNTU3Njg4ODQy
-LC0xMTI1NjI2MjEwLDExMzk2NDgxOTQsMTE5OTAyMjExMSwtMT
-YzNzQ4MDY5Myw5NTUwMTg5OTksMTkzMDQ2NjExOCw5NTUwMTg5
-OTksMTkzMDQ2NjExOCwtNjk2NDgxNTc2LC04OTU4MjExNjAsMz
-A3NjQxOTI4LDExMTA3NDk3OCw0NTgzNzYxODIsMTU3ODQ5MzA3
-M119
+eyJoaXN0b3J5IjpbLTI5ODk4NzY0LDE2NzU3NDYyNzgsMTQxNj
+IwNjIxLDY4OTYxNTgzMCw1MzQ1MDQwODIsMTIzOTA3MjkyNywt
+MTU1NzY4ODg0MiwtMTEyNTYyNjIxMCwxMTM5NjQ4MTk0LDExOT
+kwMjIxMTEsLTE2Mzc0ODA2OTMsOTU1MDE4OTk5LDE5MzA0NjYx
+MTgsOTU1MDE4OTk5LDE5MzA0NjYxMTgsLTY5NjQ4MTU3NiwtOD
+k1ODIxMTYwLDMwNzY0MTkyOCwxMTEwNzQ5NzgsNDU4Mzc2MTgy
+XX0=
 -->
