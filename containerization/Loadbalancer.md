@@ -6,14 +6,14 @@
 ## Step 1. MetalLB manifest  적용 
 
 1. 이미 설치된  K8S Cluster에 접속합니다.
-2.  Metallb yaml 파일을 다운 받아 Cluster 내에서 적용합니다. ([etallb.yaml](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/files/metallb.yaml))
+2.  Metallb yaml 파일을 다운 받아 Cluster 내에서 적용합니다. ([metallb.yaml](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/files/metallb.yaml))
    ` # kubectl apply -f metallb.yaml`
 
 3.  MetalLB POD 정상 동작 동작을 확인합니다.
 
    `# kubectl get pods -n metallb-system`
  
-4.  Metallb configmap 파일을 다운 받아 address 부분에 사전에 배정된 IP을 기입합니다. ([etallb_configmap.yaml](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/files/metallbconfigmap.yaml))
+4.  Metallb configmap 파일을 다운 받아 address 부분에 사전에 배정된 IP을 기입합니다. ([metallb_configmap.yaml](https://github.com/netappkr/NDX_Handsonworkshop-/blob/master/containerization/files/metallbconfigmap.yaml))
   <pre class=" language-undefined"><code class="prism language-&quot;NotActions&quot;: language-undefined">apiVersion: v1
 kind: ConfigMap
 metadata:
